@@ -1,0 +1,1 @@
+## Security > WEB Firewall > 콘솔 사용 가이드 > Managed
