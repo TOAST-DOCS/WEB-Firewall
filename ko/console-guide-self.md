@@ -24,7 +24,7 @@ Self형 Web Firewall 서비스를 이용하기 위해 **TOAST Cloud Console**에
 
 * Image 탭에서 PLOS WAF 선택
 
-![waf_02.png](/files/2134548686701164473)
+<center>![alt](http://static.toastoven.net/prod_securitycheck/waf_02.png)</center>
 [그림1] 웹 방화벽 Instance 생성
 
 2\. Instance 정보 입력
@@ -35,14 +35,14 @@ Self형 Web Firewall 서비스를 이용하기 위해 **TOAST Cloud Console**에
 * 장치 크기 (GB) : 용량
 * Instance 수 : Instance 생성 개수
 
-![waf_03.png](/files/2134549570623236718)
+<center>![alt](http://static.toastoven.net/prod_securitycheck/waf_03.png)</center>
 [그림2] 웹 방화벽 Instance 정보 입력
 
 ※ 권장사양
 
 * 아래 표를 참고하여 고객 서비스 환경에 따라 알맞은 Flavor 및 장치 크기를 설정하시기 바랍니다
 
-![waf_04.png](/files/2134551003034178006)
+<center>![alt](http://static.toastoven.net/prod_securitycheck/waf_04.png)</center>
 [그림3] 웹 방화벽 권장사양
 
 3\. Key Pairs & Security 설정
@@ -61,7 +61,7 @@ Self형 Web Firewall 서비스를 이용하기 위해 **TOAST Cloud Console**에
 * 웹 방화벽 공인 IP를 설정합니다.
 * 설정할 Instance를 클릭하고 상단 추가 기능 탭에서 Floating IP 연결을 클릭합니다.
 
-![waf_05.png](/files/2134563431558164773)
+<center>![alt](http://static.toastoven.net/prod_securitycheck/waf_05.png)</center>
 [그림4] 웹 방화벽 Floating IP 연결
 
 ## 웹 방화벽 초기 설정

@@ -34,5 +34,6 @@ Managed Web Firewall 서비스를 신청하기 위해 **TOAST Cloud Console**에
 * 문의사항 및 요청사항은 Q&A에 작성하면 전문 엔지니어가 확인 후 답변을 제공합니다.
 * 이벤트 처리 현황에 대한 메일 수신 및 긴급 건에 대한 유선연락을 받을 수 있습니다.
 
-![waf_06.png](/files/2134578298222660180)
+<center>![alt](http://static.toastoven.net/prod_securitycheck/waf_06.png)</center>
+
 [그림1] 보안관제 대응 현황

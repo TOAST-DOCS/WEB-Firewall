@@ -54,5 +54,5 @@ TOAST Cloud 웹 방화벽 서비스는 Self형 서비스와 Managed형 서비스
 ※ 보호할 대상 도메인의 트래픽을 웹 방화벽으로 경유하기 위해 웹 방화벽 IP로 DNS 변경 작업이 필요합니다.
 ※ 서비스 장애를 대비하기 위해 웹 방화벽은 Active-Active 구성을 권고합니다.
 
-![waf (14).png](/files/2143240248739404813)
+<center>![alt](http://static.toastoven.net/prod_securitycheck/waf (14).png)</center>
 [그림1] Web Firewall 서비스 구성도
