@@ -1,8 +1,8 @@
 ## Security > WEB Firewall > 콘솔 사용 가이드 > Managed
 
-웹 방화벽 Managed형 서비스는 운영대행 서비스와 365일 24시간 보안관제 서비스를 제공합니다.
+웹 방화벽 Managed 서비스는 운영대행 서비스와 365일 24시간 보안관제 서비스를 제공합니다.
 
-Managed Web Firewall 서비스를 신청하기 위해 **TOAST Cloud Console**에 로그인하고, 서비스 목록 내 Security Web Firewall 을 클릭하여 활성화합니다.
+WEB Firewall Managed 서비스를 신청하기 위해 **TOAST Cloud Console**에 로그인하고, 서비스 목록 내 Security WEB Firewall 을 클릭하여 활성화합니다.
 
 ## 서비스 신청 및 해제
 
@@ -21,7 +21,7 @@ Managed Web Firewall 서비스를 신청하기 위해 **TOAST Cloud Console**에
 
 * 서비스 신청 후 전문 엔지니어가 고객에게 직접 연락하여 사전 상담을 진행합니다.
 
-1. 웹 방화벽 구성 및 설정
+2. 웹 방화벽 구성 및 설정
 
 * 컨설팅 이후 협의한 사항으로 전문 엔지니어가 직접 웹 방화벽을 생성하고 구성합니다.
 * 요구사항, 보안정책 설정, 관제센터 로그 연동 등 모든 운영 업무를 지원합니다.
@@ -30,10 +30,9 @@ Managed Web Firewall 서비스를 신청하기 위해 **TOAST Cloud Console**에
 
 ## 웹 방화벽 서비스 이용
 
-* Web Firewall 현황 페이지에서 발생한 이벤트 및 처리 현황을 확인할 수 있습니다.
+* WEB Firewall 현황 페이지에서 발생한 이벤트 및 처리 현황을 확인할 수 있습니다.
 * 문의사항 및 요청사항은 Q&A에 작성하면 전문 엔지니어가 확인 후 답변을 제공합니다.
 * 이벤트 처리 현황에 대한 메일 수신 및 긴급 건에 대한 유선연락을 받을 수 있습니다.
 
 <center>![alt](http://static.toastoven.net/prod_securitycheck/waf_06.png)</center>
-
-[그림1] 보안관제 대응 현황
+<center>[그림1] 보안관제 대응 현황</center>
