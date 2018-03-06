@@ -16,12 +16,13 @@ WEB Firewall 서비스를 이용하기 위해 **TOAST Cloud Console**에 로그�
 ### 웹 방화벽 해제
 
 1. 웹 방화벽 Instance 선택 후 삭제
+
 ※ 웹 방화벽 구성 시 트래픽이 웹 방화벽으로 경유되어 이용 중 Instance를 삭제할 경우 서비스 장애가 발생할 수 있습니다.
 ※ 사용중인 웹 서비스 확인 후에 Instance 삭제를 권고 드립니다.
 
 ## 웹 방화벽 Instance 생성 세부 절차
 
-1. Instance 생성
+1\. Instance 생성
 
 * Image 탭에서 PLOS WAF 선택
 
@@ -37,7 +38,7 @@ WEB Firewall 서비스를 이용하기 위해 **TOAST Cloud Console**에 로그�
 * Instance 수 : Instance 생성 개수
 
 <center>![alt](http://static.toastoven.net/prod_securitycheck/waf_03.png)</center>
-[그림2] 웹 방화벽 Instance 정보 입력
+<center>[그림2] 웹 방화벽 Instance 정보 입력</center>
 
 3\. Key Pairs & Security 설정
 
@@ -57,7 +58,7 @@ WEB Firewall 서비스를 이용하기 위해 **TOAST Cloud Console**에 로그�
 ※ 서비스 이외 포트가 외부에 노출되지 않도록 Security Groups 설정을 권고합니다.
 
 <center>![alt](http://static.toastoven.net/prod_securitycheck/waf_05.png)</center>
-[그림4] 웹 방화벽 Floating IP 연결
+<center>[그림4] 웹 방화벽 Floating IP 연결</center>
 
 ## 웹 방화벽 초기 설정
 
