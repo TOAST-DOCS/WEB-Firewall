@@ -55,4 +55,4 @@ TOAST Cloud 웹 방화벽 서비스는 Self형 서비스와 Managed형 서비스
 ※ 서비스 장애를 대비하기 위해 웹 방화벽은 Active-Active 구성을 권고합니다.
 
 <center>![alt](http://static.toastoven.net/prod_securitycheck/waf_14.png)</center>
-[그림1] Web Firewall 서비스 구성도
+<center>[그림1] Web Firewall 서비스 구성도</center>
