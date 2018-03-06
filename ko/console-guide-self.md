@@ -27,7 +27,7 @@ WEB Firewall 서비스를 이용하기 위해 **TOAST Cloud Console**에 로그�
 * Image 탭에서 PLOS WAF 선택
 
 <center>![alt](http://static.toastoven.net/prod_securitycheck/waf_02.png)</center>
-[그림1] 웹 방화벽 Instance 생성
+<center>[그림1] 웹 방화벽 Instance 생성</center>
 
 2\. Instance 정보 입력
 
