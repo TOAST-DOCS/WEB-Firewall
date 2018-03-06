@@ -1,12 +1,12 @@
 ## Security > WEB Firewall > 개요
 
-TOAST Cloud 웹 방화벽 서비스는 Self형 서비스와 Managed형 서비스를 제공하며, 고객 클라우드 영역에 웹 방화벽이 독립적으로 구성 되어 클라우드 보안 환경을 유연하게 운영할 수 있습니다.
+TOAST Cloud 웹 방화벽 서비스는 Self 서비스와 Managed 서비스를 제공하며, 고객 클라우드 영역에 웹 방화벽이 구성 되어 독립적인 운영 환경을 제공합니다. 국내 최고 성능 및 안정성을 제공하는 파이오링크 제품을 통해 웹 보안을 제공하고 있습니다.
 
-## Web Firewall 특/장점
+## WEB Firewall 특/장점
 
-* Self형 서비스
+* Self 서비스
     * 고객이 직접 구축 및 운영할 수 있도록 웹 방화벽 이미지 및 운영 가이드 문서를 제공
-* Managed형 서비스
+* Managed 서비스
     * 전문 엔지니어를 통한 웹 방화벽 운영 대행 및 보안관제 서비스 제공
     * 보안관제 전문 지정업체의 24시간 보안관제 서비스를 통해 보안사고 발생 시 빠른 대응 가능
     * 웹 방화벽 실시간 장애 모니터링 및 대응 서비스 제공
@@ -47,12 +47,12 @@ TOAST Cloud 웹 방화벽 서비스는 Self형 서비스와 Managed형 서비스
 
 * REST-API를 통해 장비 설정 및 모니터링이 가능하여 유연한 관리가 가능합니다.
 
-## Web Firewall 서비스 구성도
+## WEB Firewall 서비스 구성도
 
 * 외부에서 인입되는 웹 어플리케이션 위협 트래픽과 외부 정보 유출을 차단하여 웹서버를 보호할 수 있습니다.
 * 웹 방화벽은 웹서버 앞단에서 Proxy 방식으로 동작하여 모든 웹트래픽에 대해 검사합니다.
 ※ 보호할 대상 도메인의 트래픽을 웹 방화벽으로 경유하기 위해 웹 방화벽 IP로 DNS 변경 작업이 필요합니다.
-※ 서비스 장애를 대비하기 위해 웹 방화벽은 Active-Active 구성을 권고합니다.
+※ 서비스 장애를 대비하기 위해 Load Balancer를 이용한 웹 방화벽 Active-Active 구성을 권고합니다.
 
 <center>![alt](http://static.toastoven.net/prod_securitycheck/waf_14.png)</center>
 <center>[그림1] Web Firewall 서비스 구성도</center>
