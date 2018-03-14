@@ -46,6 +46,7 @@ WEB Firewall 서비스를 이용하기 위해 **TOAST Cloud Console**에 로그�
 * SSH 터미널 접근에 사용할 Key Pairs를 생성하고 선택합니다.
 * 적용할 Security Groups 을 선택하여 접근제어를 적용합니다.
 
+※ Security Groups에서 웹 방화벽 관리용 포트(TCP/8443) 및 서비스 포트들에 대한 허용이 필요합니다.
 ※ 허용된 IP 및 포트에 대해서만 접근할 수 있도록 Security Groups 설정을 권고합니다.
 
 4\. Network 설정
