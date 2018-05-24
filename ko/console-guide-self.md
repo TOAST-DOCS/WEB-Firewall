@@ -11,13 +11,11 @@ WEB Firewall 서비스를 이용하기 위해 **TOAST Cloud Console**에 로그�
 
 1. Console 내 이용 신청 <span style="color:#1995dc">**\|바로 가기\|** </span> 버튼을 통해 Instance 생성 페이지로 이동
 2. Image 리스트에서 PLOS WAF 선택 후 Instance 정보를 입력 후 생성
-
 ※ Instance 생성이 완료되는 즉시 이용 요금이 부과됩니다.
 
 ### 웹 방화벽 해제
 
 1. 웹 방화벽 Instance 선택 후 삭제
-
 ※ 웹 방화벽 구성 시 트래픽이 웹 방화벽으로 경유되어 이용 중 Instance를 삭제할 경우 서비스 장애가 발생할 수 있습니다.
 ※ 사용중인 웹 서비스 확인 후에 Instance 삭제를 권고 드립니다.
 
@@ -45,23 +43,27 @@ WEB Firewall 서비스를 이용하기 위해 **TOAST Cloud Console**에 로그�
 
 * SSH 터미널 접근에 사용할 Key Pairs를 생성하고 선택합니다.
 * 적용할 Security Groups 을 선택하여 접근제어를 적용합니다.
+※ 아래 예시와 같이 신뢰된 IP 및 사용 포트에 대해서 Security Groups 설정을 진행합니다.
 
-※ Security Groups에서 웹 방화벽 관리용 포트(TCP/8443) 및 서비스 포트들에 대한 허용이 필요합니다.
-※ 허용된 IP 및 포트에 대해서만 접근할 수 있도록 Security Groups 설정을 권고합니다.
+| Direction | IP 프로토콜 | 포트 범위 | 원격 | 설명 |
+| :-------: | :-----: | :---: | :---: | :--- |
+| Ingress | TCP | 80 (HTTP) | 0.0.0.0/0 (CIDR) | 웹 서비스 포트 |
+| Ingress | TCP | 443 (HTTPS) | 0.0.0.0/0 (CIDR) | 웹 서비스 포트 |
+| Ingress | TCP | 8443 | x.x.x.x/32 (CIDR) | 웹 방화벽 관리용 포트 (관리자 IP만 허용) |
+| Ingress | TCP | 22 (SSH) | x.x.x.x/32 (CIDR) | 웹 방화벽 터미널 포트 (관리자 IP만 허용) |
+| Ingress | ICMP | - | 192.168.0.0/24 (CIDR) | 웹 방화벽과 웹 서버 간 Health Check 통신 |
+
+※ 웹 방화벽의 기본 Health Check 방식은 ICMP로 설정되어 있으며, 웹 서버와 Health Check 실패 시 웹 서비스가 동작하지 않습니다.
 
 4\. Network 설정
 
 * 사용할 Subnet을 선택합니다.
-
-※ 웹 방화벽과 웹 서버는 서로 통신이 가능하도록 설정합니다.
+※ 서로 다른 VPC와의 통신에는 Peerings 설정이 필요합니다.
 
 5. Floating IP 연결
 
 * 웹 방화벽 공인 IP를 설정합니다.
 * 설정할 Instance를 클릭하고 상단 추가 기능 탭에서 Floating IP 연결을 클릭합니다.
-
-※ 설정한 공인 IP는 보호할 웹 서버들의 대표 공인 IP로 사용됩니다.
-※ 서비스 이외 포트가 외부에 노출되지 않도록 Security Groups 설정을 권고합니다.
 
 <center>![alt](http://static.toastoven.net/prod_securitycheck/waf_05.png)</center>
 <center>[그림3] 웹 방화벽 Floating IP 연결</center>
@@ -78,7 +80,6 @@ WEB Firewall 서비스를 이용하기 위해 **TOAST Cloud Console**에 로그�
 
 [WEBFRONT-KS 초기 설정 가이드](http://static.toastoven.net/prod_securitycheck/WEBFRONT-KS_초기 설정 가이드.pptx)
 ※ 초기 설정 완료 후, 보호 대상 도메인 트래픽이 웹 방화벽으로 경유 되도록 웹 방화벽 Floating IP로 DNS 변경 작업이 필요합니다.
-※ 웹 방화벽 콘솔 접근은 신뢰된 IP에서만 접근 가능하도록 Security Groups 설정을 권고합니다.
 
 ## 웹 방화벽 운영
 
@@ -90,3 +91,4 @@ WEB Firewall 서비스를 이용하기 위해 **TOAST Cloud Console**에 로그�
 
 [WEBFRONT-KS 애플리케이션 구성 설명서](http://static.toastoven.net/prod_securitycheck/WEBFRONT-KS_애플리케이션 구성 설명서.pdf)
 [WEBFRONT-KS 시스템 구성 설명서](http://static.toastoven.net/prod_securitycheck/WEBFRONT-KS_시스템 구성 설명서.pdf)
+※ Self 서비스에서는 사용 가이드만 제공되며, Managed 서비스 이용 시 운영대행 및 24시간 보안관제 서비스를 제공합니다.
