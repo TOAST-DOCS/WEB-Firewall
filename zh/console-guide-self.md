@@ -11,11 +11,13 @@ WEB Firewall 서비스를 이용하기 위해 **TOAST Cloud Console**에 로그�
 
 1. Console 내 이용 신청 <span style="color:#1995dc">**\|바로 가기\|** </span> 버튼을 통해 Instance 생성 페이지로 이동
 2. Image 리스트에서 PLOS WAF 선택 후 Instance 정보를 입력 후 생성
+
 ※ Instance 생성이 완료되는 즉시 이용 요금이 부과됩니다.
 
 ### 웹 방화벽 해제
 
 1. 웹 방화벽 Instance 선택 후 삭제
+
 ※ 웹 방화벽 구성 시 트래픽이 웹 방화벽으로 경유되어 이용 중 Instance를 삭제할 경우 서비스 장애가 발생할 수 있습니다.
 ※ 사용중인 웹 서비스 확인 후에 Instance 삭제를 권고 드립니다.
 
@@ -43,6 +45,7 @@ WEB Firewall 서비스를 이용하기 위해 **TOAST Cloud Console**에 로그�
 
 * SSH 터미널 접근에 사용할 Key Pairs를 생성하고 선택합니다.
 * 적용할 Security Groups 을 선택하여 접근제어를 적용합니다.
+
 ※ 아래 예시와 같이 신뢰된 IP 및 사용 포트에 대해서 Security Groups 설정을 진행합니다.
 
 | Direction | IP 프로토콜 | 포트 범위 | 원격 | 설명 |
@@ -58,6 +61,7 @@ WEB Firewall 서비스를 이용하기 위해 **TOAST Cloud Console**에 로그�
 4\. Network 설정
 
 * 사용할 Subnet을 선택합니다.
+
 ※ 서로 다른 VPC와의 통신에는 Peerings 설정이 필요합니다.
 
 5. Floating IP 연결
