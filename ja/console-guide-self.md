@@ -1,9 +1,9 @@
-## Security > WEB Firewall > 콘솔 사용 가이드 > Self
+## Security > Web Firewall > 콘솔 사용 가이드 > Self
 
-WEB Firewall Self 서비스는 웹 서버를 보호할 수 있도록 웹 방화벽 Instance를 생성하고 운영할 수 있는 가이드를 제공합니다.
-아래에서 WEB Firewall Self 서비스 사용 방법을 소개합니다.
+Web Firewall Self 서비스는 웹 서버를 보호할 수 있도록 웹 방화벽 Instance를 생성하고 운영할 수 있는 가이드를 제공합니다.
+아래에서 Web Firewall Self 서비스 사용 방법을 소개합니다.
 
-WEB Firewall 서비스를 이용하기 위해 **TOAST Cloud Console**에 로그인하고, 서비스 목록 내 Security > WEB Firewall 을 클릭하여 활성화합니다.
+Web Firewall 서비스를 이용하기 위해 **TOAST Cloud Console**에 로그인하고, 서비스 목록 내 Security > Web Firewall 을 클릭하여 활성화합니다.
 
 ## 서비스 신청 및 해제
 
@@ -95,4 +95,4 @@ WEB Firewall 서비스를 이용하기 위해 **TOAST Cloud Console**에 로그�
 
 [WEBFRONT-KS 애플리케이션 구성 설명서](http://static.toastoven.net/prod_securitycheck/WEBFRONT-KS_애플리케이션 구성 설명서.pdf)
 [WEBFRONT-KS 시스템 구성 설명서](http://static.toastoven.net/prod_securitycheck/WEBFRONT-KS_시스템 구성 설명서.pdf)
-※ Self 서비스에서는 사용 가이드만 제공되며, Managed 서비스 이용 시 운영대행 및 24시간 보안관제 서비스를 제공합니다.
+※ Self 서비스에서는 사용 가이드만 제공되며, Managed 서비스 이용 시 운영 대행 및 24시간 보안 관제 서비스를 제공합니다.
