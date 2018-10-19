@@ -7,6 +7,8 @@ Web Firewall 서비스를 이용하기 위해 **TOAST Cloud Console**에 로그�
 
 ## 서비스 신청 및 해제
 
+![webfirewall_01_201812.png](https://static.toastoven.net/prod_web_firewall/webfirewall_01_201812.png)
+
 ### 웹 방화벽 생성
 
 1. Console 내 이용 신청 <span style="color:#1995dc">**\|바로 가기\|** </span> 버튼을 통해 Instance 생성 페이지로 이동
@@ -16,35 +18,14 @@ Web Firewall 서비스를 이용하기 위해 **TOAST Cloud Console**에 로그�
 
 ### 웹 방화벽 해제
 
-1. 웹 방화벽 Instance 선택 후 삭제
+웹 방화벽 Instance 선택 후 삭제
 
 ※ 웹 방화벽 구성 시 트래픽이 웹 방화벽으로 경유되어 이용 중 Instance를 삭제할 경우 서비스 장애가 발생할 수 있습니다.
 ※ 사용중인 웹 서비스 확인 후에 Instance 삭제를 권고 드립니다.
 
 ## 웹 방화벽 Instance 생성 세부 절차
 
-1\. Instance 생성
-
-* Image 탭에서 PLOS WAF 선택
-
-<center>![alt](http://static.toastoven.net/prod_securitycheck/waf_02.png)</center>
-<center>[그림1] 웹 방화벽 Instance 생성</center>
-
-2\. Instance 정보 입력
-
-* Availability Zone : Instance 생성 존
-* 이름 : Instance 이름
-* Flavor : 하드웨어 스펙
-* 장치 크기 (GB) : 용량
-* Instance 수 : Instance 생성 개수
-
-<center>![alt](http://static.toastoven.net/prod_securitycheck/waf_03.png)</center>
-<center>[그림2] 웹 방화벽 Instance 정보 입력</center>
-
-3\. Key Pairs & Security 설정
-
-* SSH 터미널 접근에 사용할 Key Pairs를 생성하고 선택합니다.
-* 적용할 Security Groups 을 선택하여 접근제어를 적용합니다.
+![webfirewall_02_201812.png](https://static.toastoven.net/prod_web_firewall/webfirewall_02_201812.png)
 
 ※ 아래 예시와 같이 신뢰된 IP 및 사용 포트에 대해서 Security Groups 설정을 진행합니다.
 
@@ -58,20 +39,6 @@ Web Firewall 서비스를 이용하기 위해 **TOAST Cloud Console**에 로그�
 
 ※ 웹 방화벽의 기본 Health Check 방식은 ICMP로 설정되어 있으며, 웹 서버와 Health Check 실패 시 웹 서비스가 동작하지 않습니다.
 
-4\. Network 설정
-
-* 사용할 Subnet을 선택합니다.
-
-※ 서로 다른 VPC와의 통신에는 Peerings 설정이 필요합니다.
-
-5. Floating IP 연결
-
-* 웹 방화벽 공인 IP를 설정합니다.
-* 설정할 Instance를 클릭하고 상단 추가 기능 탭에서 Floating IP 연결을 클릭합니다.
-
-<center>![alt](http://static.toastoven.net/prod_securitycheck/waf_05.png)</center>
-<center>[그림3] 웹 방화벽 Floating IP 연결</center>
-
 ## 웹 방화벽 초기 설정
 
 웹 방화벽 초기 설정 가이드를 참고하여 초기 설정을 진행하며, 주요 내용은 다음과 같습니다.
@@ -82,7 +49,7 @@ Web Firewall 서비스를 이용하기 위해 **TOAST Cloud Console**에 로그�
 * 웹 방화벽 IP로 접근 테스트하여 웹 서비스 정상 여부를 확인합니다.
 * 설정한 내용을 저장하고 백업합니다.
 
-[WEBFRONT-KS 초기 설정 가이드](http://static.toastoven.net/prod_securitycheck/WEBFRONT-KS_초기 설정 가이드.pptx)
+[WEBFRONT-KS 초기 설정 가이드](http://static.toastoven.net/prod_web_firewall/WEBFRONT-KS_초기%20설정%20가이드.pptx)
 ※ 초기 설정 완료 후, 보호 대상 도메인 트래픽이 웹 방화벽으로 경유 되도록 웹 방화벽 Floating IP로 DNS 변경 작업이 필요합니다.
 
 ## 웹 방화벽 운영
@@ -93,6 +60,6 @@ Web Firewall 서비스를 이용하기 위해 **TOAST Cloud Console**에 로그�
 * 학습기능을 활용하여 예외처리 등 정책 최적화를 진행합니다.
 * 보안 로그를 모니터링 합니다.
 
-[WEBFRONT-KS 애플리케이션 구성 설명서](http://static.toastoven.net/prod_securitycheck/WEBFRONT-KS_애플리케이션 구성 설명서.pdf)
-[WEBFRONT-KS 시스템 구성 설명서](http://static.toastoven.net/prod_securitycheck/WEBFRONT-KS_시스템 구성 설명서.pdf)
+[WEBFRONT-KS 애플리케이션 구성 설명서](http://static.toastoven.net/prod_web_firewall/WEBFRONT-KS_애플리케이션%20구성%20설명서.pdf)
+[WEBFRONT-KS 시스템 구성 설명서](http://static.toastoven.net/prod_web_firewall/WEBFRONT-KS_시스템%20구성%20설명서.pdf)
 ※ Self 서비스에서는 사용 가이드만 제공되며, Managed 서비스 이용 시 운영 대행 및 24시간 보안 관제 서비스를 제공합니다.

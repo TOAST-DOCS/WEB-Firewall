@@ -56,5 +56,5 @@ Web Firewall 서비스는 Self 서비스와 Managed 서비스를 제공합니다
 ※ 서비스 장애를 대비하기 위해 Load Balancer를 이용한 웹 방화벽 Active-Active 구성을 권고합니다.
 ※ 보안 관제센터의 서비스 지원은 Managed 서비스 신청 시 이용 가능합니다.
 
-<center>![alt](http://static.toastoven.net/prod_securitycheck/waf_12.png)</center>
+<center>![alt](http://static.toastoven.net/prod_web_firewall/waf_12.png)</center>
 <center>[그림1] Web Firewall 서비스 구성도</center>

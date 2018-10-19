@@ -6,6 +6,8 @@ Web Firewall 서비스를 신청하기 위해 **TOAST Cloud Console**에 로그�
 
 ## 서비스 신청 및 해제
 
+![webfirewall_03_201812.png](https://static.toastoven.net/prod_web_firewall/webfirewall_03_201812.png)
+
 ### 이용 신청
 
 1. Console 내 Managed 서비스 **\|이용 신청\|** 버튼을 클릭하여 신청
@@ -33,5 +35,4 @@ Web Firewall 서비스를 신청하기 위해 **TOAST Cloud Console**에 로그�
 * 문의사항 및 요청사항은 Q&A에 작성하면 전문 엔지니어가 확인 후 답변을 제공합니다.
 * 이벤트 처리 현황에 대한 메일 수신 및 긴급 건에 대한 유선 연락을 받을 수 있습니다.
 
-<center>![alt](http://static.toastoven.net/prod_securitycheck/waf_06.png)</center>
-<center>[그림1] 보안 관제 대응 현황</center>
+![webfirewall_04_201812.png](https://static.toastoven.net/prod_web_firewall/webfirewall_04_201812.png)
