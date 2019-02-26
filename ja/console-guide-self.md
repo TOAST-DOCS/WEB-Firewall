@@ -1,4 +1,4 @@
-﻿## Security > WEB Firewall > コンソール使用ガイド > Self
+## Security > WEB Firewall > コンソール使用ガイド > Self
 
 WEB Firewall Selfサービスでは、Webサーバーを保護できるようにWebファイアウォールインスタンスを作成して運営できるガイドを提供します。
 ここではWEB Firewall Selfサービスの使用方法を紹介します。
