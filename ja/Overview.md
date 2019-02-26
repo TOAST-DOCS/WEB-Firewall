@@ -1,4 +1,4 @@
-﻿## Security > WEB Firewall > 概要
+## Security > WEB Firewall > 概要
 
 WEB Firewallサービスには、SelfサービスとManagedサービスがあります。Selfサービスを選択すると、お客様が直接Webファイアウォールを構築でき、Managedサービスを選択すると、専門エンジニアがWebファイアウォールの運用およびセキュリティー監視サービスを提供します。お客様のクラウド領域にWebファイアウォールが構成され、独立的な運営環境を提供します。 
 
