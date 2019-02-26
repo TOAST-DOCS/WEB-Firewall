@@ -1,4 +1,4 @@
-﻿## Security > WEB Firewall > コンソール使用ガイド > Managed
+## Security > WEB Firewall > コンソール使用ガイド > Managed
 
 WEB Firewall Managedサービスは、運営代行サービスと24時間365日セキュリティー監視サービスを提供します。
 
