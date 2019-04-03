@@ -1,61 +1,62 @@
-## Security > WEB Firewall > 개요
+## Security > WEB Firewall > Overview
 
-WEB Firewall 서비스에는 Self 서비스와 Managed 서비스가 있습니다. Self 서비스를 선택하면 고객이 직접 웹 방화벽을 구축할 수 있고, Managed 서비스를 선택하면 전문 엔지니어가 웹 방화벽 운영 및 보안관제 서비스를 제공합니다. 고객 클라우드 영역에 웹 방화벽이 구성되며, 독립적인 운영 환경을 제공합니다. 
+WEB Firewall is comprised of Self-Service and Managed Service.  
+With Self-Service, users can implement WEB Firewall on their own; Managed Service supports professional engineers in the operation of WEB Firewall and security surveillance. The WEB Firewall service is configured in user's cloud area, as standalone operating environment. 
 
-국내 최고 성능 및 안정성을 제공하는 파이오링크 제품을 통해 웹 보안을 제공합니다.
+Our web security service is provided by Piolink, which is well-known for its high-performance and stable products. 
 
-## WEB Firewall 주요 기능
+## Main Features 
 
-* Self 서비스
-    * 고객이 직접 웹 방화벽을 구축하고 운영할 수 있도록 웹 방화벽 이미지 및 운영 가이드를 제공합니다.
-* Managed 서비스
-    * 전문 엔지니어를 통한 웹 방화벽 운영 대행 및 보안관제 서비스를 제공합니다.
-    * 보안관제 전문 업체의 24시간 보안관제 서비스를 통해 보안 사고 발생 시 빠르게 대응할 수 있습니다.
-    * 웹 방화벽 실시간 장애 모니터링 및 대응 서비스를 제공합니다.
-    * 콘솔의 현황 페이지에서 웹 방화벽 이벤트 및 보안관제 업무 처리 현황을 실시간으로 확인할 수 있습니다.
-    * 주기적인 패치 및 패턴 업데이트 관리 서비스를 제공합니다.
-* 웹 방화벽이 고객 클라우드 영역에 단독으로 구성돼 독립적인 환경 제공
-    * 고객 클라우드 인프라 영역에 웹 방화벽 인스턴스가 생성되며, 이를 통해 독립적인 운영 환경과 보안성을 보장합니다.
-* 검증된 솔루션 사용으로 보안성 및 안정성 보장
-    * OWASP TOP 10, 국정원 8대 취약점에 완벽하게 대응해 다양한 유형의 위협으로부터 보호합니다.
-    * GS 인증, PCI-DSS 인증, CC 인증 등 주요 규제를 준수하여 제품 안정성을 보장합니다.
+* Self-Service 
+    * Provides WEB Firewall images and operating guides for customers to implement and operate on their own.   
+* Managed Service 
+    * Operates WEB Firewall and security surveillance at the support of professional engineers. 
+    * Allows fast response to security incidents with security provider's around-the-clock surveillance services.
+    * Provides real-time fault monitoring and response service.
+    * Provides events and processing status of WEB Firewall and security surveillance on console.
+    * Manages patches and pattern updates on a regular basis. 
+* Serves as Standalone Environment with WEB Firewall Configured in User's Cloud Area 
+    * WEB Firewall instance is created in user's cloud infrastructure area, which ensures independent operations and security.
+* Security and Stability Ensured with Verified Solutions
+    * Protects from various types of threats with near-perfect solutions to OWASP TOP 10 and 8 vulnerabilities of National Intelligence Service.    
+    * Ensures product stability, in compliance with regulations including GS Certificate, PCI-DSS Certificate, and CC Certificate.
 
-## 파이오링크 WEBFRONT-KS 웹 방화벽 주요 기능
+## Main Features of WEBFRONT-KS of Piolink  
 
-### 웹 트래픽 보호 기능
+### Web Traffic Protection 
 
-* 웹 서비스 요청 트래픽을 검사하여 악의적인 요청을 차단합니다.
-* 웹 서비스 응답 트래픽을 검사하여 웹 변조 방지 및 민감한 개인정보 유출을 차단합니다.
+* Screen out malicious requests by inspecting web-service request traffic. 
+* Inspect web-service response traffic to prevent web fabrication and block leakage of sensitive personal information. 
 
-### 학습 기능
+### Learning  
 
-* 웹 트래픽을 학습하여 손쉬운 보안 정책을 적용할 수 있도록 지원합니다.
+* Support to learn web traffic and apply easy security policy. 
 
-### 로드 밸런싱 기능
+### Load Balancing  
 
-* L7 기반의 부하분산 모드를 제공하여 1대의 웹 방화벽으로 다수의 웹 서버를 보호할 수 있습니다.
-* 별도의 로드 밸런서를 구성하지 않아도 웹 서버 상태에 따른 부하분산을 제공하여 안정적인 서비스를 제공합니다.
+* Under the L7-based load balancing mode, multiple web servers can be protected with 1:1 web firewall. 
+* Load balancing is provided upon web server status, with no additional load balancer configuration, for stable services. 
 
-### 고성능 트래픽 처리
+### High-Performance Traffic 
 
-* 고성능 설계로 DDoS 공격 등 높은 트래픽이 발생한 상황에서도 안정적인 처리량(throughput)을 제공합니다.
+* High-performance design provides stable throughput even when traffic is high, due to threats such as DDoS attacks.
 
-### 위장 기능
+### Cloaking Techniques 
 
-* URL 응답 정보를 위장하여 웹 서버 URL 정보 유출을 방지할 수 있습니다.
-* 웹 서버 응답 정보를 위장하여 웹 서버 주요 정보 유출을 방지할 수 있습니다.
+* Cloaking URL response information helps to prevent leakage of web server url information. 
+* By masquerading web server response information, leakage of important information can be prevented. 
 
-### REST-API 지원
+### REST-API Support 
 
-* REST-API를 통해 장비를 설정하고 모니터링을 할 수 있어 유연하게 관리할 수 있습니다.
+* REST API provides equipment setting and monitoring to enable flexible management. 
 
-## WEB Firewall 서비스 구성도
+## WEB Firewall Service Configuration 
 
-* 외부에서 들어오는 웹 애플리케이션 위협 트래픽과 외부 정보 유출을 차단하여 웹 서버를 보호할 수 있습니다.
-* 웹 방화벽은 웹 서버 앞단에서 프락시 방식으로 동작하여 모든 웹 트래픽을 검사합니다.
+* External web application threatening traffic and external information leakage can be blocked to protect web servers. 
+* WEB Firewall operates in the proxy mode ahead of a web server to monitor all web traffic. 
 
-※ 보호할 대상 도메인의 트래픽을 웹 방화벽으로 경유하게 하려면 웹 방화벽 IP로 DNS를 변경해야 합니다.
-※ 서비스 장애를 대비하려면 로드 밸런서를 이용한 웹 방화벽 Active-Active 구성을 권장합니다.
-※ 보안관제 센터의 서비스 지원은 Managed 서비스 신청 시 이용할 수 있습니다.
+※ To lead domain traffic you want to protect to go through WEB Firewall, change your DNS settings into WEB Firewall IP. 
+※ To prevent potential service failure, it is recommended to configure Active-Active web firewall by using load balancer. 
+※ Service support from security surveillance center is available when Managed Service is applied.  
 
-![webfirewall_00_201903_en.png](https://static.toastoven.net/prod_web_firewall/webfirewall_00_201903_en.png)
+![webfirewall_00_2018_12.png](https://static.toastoven.net/prod_web_firewall/webfirewall_00_201812.png)

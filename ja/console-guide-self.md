@@ -49,7 +49,7 @@ Webファイアウォールの初期設定ガイドを参照して初期設定�
 * WebファイアウォールIPへのアクセスをテストして、Webサービスが正常かどうかを確認します。
 *設定した内容を保存してバックアップします。
 
-[WEBFRONT-KS初期設定ガイド](http://static.toastoven.net/prod_web_firewall/WEBFRONT-KS_初期%20設定%20ガイド.pptx)
+[WEBFRONT-KS初期設定ガイド](http://static.toastoven.net/prod_web_firewall/WEBFRONT-KS_초기%20설정%20가이드.pptx)
 ※初期設定完了後、保護対象ドメイントラフィックがWebファイアウォールを経由するように、DNSをWebファイアウォールFloating IPに変更する必要があります。
 
 ## Webファイアウォールの運用
@@ -60,6 +60,6 @@ Webファイアウォール構成説明書を参照して機器を運用しま�
 *学習機能を活用して、例外処理などのポリシー最適化を行います。
 *セキュリティーログをモニタリングします。
 
-[WEBFRONT-KSアプリケーション構成説明書](http://static.toastoven.net/prod_web_firewall/WEBFRONT-KS_アプリケーション%20構成%20説明書.pdf)
-[WEBFRONT-KSシステム構成説明書](http://static.toastoven.net/prod_web_firewall/WEBFRONT-KS_システム%20構成%20説明書.pdf)
+[WEBFRONT-KSアプリケーション構成説明書](http://static.toastoven.net/prod_web_firewall/WEBFRONT-KS_애플리케이션%20구성%20설명서.pdf)
+[WEBFRONT-KSシステム構成説明書](http://static.toastoven.net/prod_web_firewall/WEBFRONT-KS_시스템%20구성%20설명서.pdf)
 ※ Selfサービスでは使用ガイドのみ提供され、Managedサービス利用時、運営代行および24時間セキュリティー監視サービスを提供します。
