@@ -1,5 +1,11 @@
 ## Security > Web Firewall > Release Notes
 
+### July 23, 2019
+
+#### Feature Updates 
+* [Console] UI updated, including the initialization feature of SelectBox 
+
+
 ### June 25, 2019
 
 #### Feature Updates

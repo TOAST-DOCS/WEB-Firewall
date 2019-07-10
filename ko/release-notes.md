@@ -1,5 +1,11 @@
 ## Security > Web Firewall > 릴리스 노트
 
+### 2019.07.23
+
+#### 기능 개선
+* [Console] SelectBox 초기화 기능 추가 등 UI 개선
+
+
 ### 2019.06.25
 
 #### 기능 개선
