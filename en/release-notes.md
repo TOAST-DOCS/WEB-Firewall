@@ -1,4 +1,4 @@
-## Security > Web Firewall > 릴리스 노트
+## Security > Web Firewall > Release Notes
 
 ### July 23, 2019
 
