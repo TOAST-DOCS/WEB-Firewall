@@ -1,5 +1,20 @@
 ## Security > Web Firewall > Release Notes
 
+### August 27, 2019
+
+#### Feature Updates 
+* [Console] 다국어 글꼴 통일
+* [Console] 로그인 리다이렉션 처리
+
+#### 버그 수정
+* [Console] 관제현황 화면에서 처리상태 검색 시 항목코드 수정
+* [Console] 관제현황 화면에서 기간 검색 시 종료일 자정 지정
+* [Console] 관제현황 화면에서 언어 전환 시 대응현황리스트 UI깨짐 수정
+* [Console] 신청현황 화면에서 관제 해제 시 빌링 API URL 변경
+* [Batch] 토큰 만료 체크 시 기준 시간대 변경
+* [Batch] 빌링 API 호출 시 에러 핸들링 수정
+
+
 ### July 23, 2019
 
 #### Feature Updates 
@@ -9,14 +24,14 @@
 ### June 25, 2019
 
 #### Feature Updates
-* Put more emphasis on the phrases asking of user's consent 
+* [Console] Put more emphasis on the phrases asking of user's consent 
 
 
 ### May 14, 2019
 
 #### Updates
-* Changes in the mail delivery processing 
-* Translation enabled into multiple languages 
+* [API] Changes in the mail delivery processing 
+* [Console] Translation enabled into multiple languages 
 
 
 ### 2019.02.26
