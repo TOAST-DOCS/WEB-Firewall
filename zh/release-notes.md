@@ -3,16 +3,16 @@
 ### August 27, 2019
 
 #### Feature Updates 
-* [Console] 다국어 글꼴 통일
-* [Console] 로그인 리다이렉션 처리
+* [Console] Same fonts applied for multiple languages 
+* [Console] Logins processed for redirection 
 
-#### 버그 수정
-* [Console] 관제현황 화면에서 처리상태 검색 시 항목코드 수정
-* [Console] 관제현황 화면에서 기간 검색 시 종료일 자정 지정
-* [Console] 관제현황 화면에서 언어 전환 시 대응현황리스트 UI깨짐 수정
-* [Console] 신청현황 화면에서 관제 해제 시 빌링 API URL 변경
-* [Batch] 토큰 만료 체크 시 기준 시간대 변경
-* [Batch] 빌링 API 호출 시 에러 핸들링 수정
+#### Bug Fixes 
+* [Console] Modified item codes in the search of processing status on the **Monitoring Status** page 
+* [Console] Allowed the search of cases of the end date as well, in the search of period on the **Monitoring Status** page 
+* [Console] Properly showed UI of the list of status for language conversion on the **Monitoring Status** page
+* [Console] Changed URL for the billing API when monitoring is released on the **Application Status** page 
+* [Batch] Changed standard time range as token expiration is confirmed
+* [Batch] Fixed error in handling of billing API calls
 
 
 ### July 23, 2019
