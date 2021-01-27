@@ -32,7 +32,7 @@ WEB Firewall 서비스를 이용하려면 **TOAST Console**에 로그인하고, 
 ## 웹 방화벽 서비스 이용
 
 * WEB Firewall 현황 페이지에서 발생한 이벤트 및 처리 현황을 확인할 수 있습니다.
-  * 이벤트 처리 현황 목록은 최근 1년 데이터에 대한 검색이 가능합니다.
+  * 이벤트 처리 현황 목록은 최근 1년 데이터만 검색할 수 있습니다.
 * 이벤트 처리 현황에 대한 메일 수신 및 긴급 사항에 대해 유선으로 연락받을 수 있습니다.
 
 ![webfirewall_04_201812.png](https://static.toastoven.net/prod_web_firewall/webfirewall_04_201812.png)
