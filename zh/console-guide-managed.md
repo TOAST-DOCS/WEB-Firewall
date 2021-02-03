@@ -32,6 +32,7 @@ To enable WEB Firewall, login to **TOAST Console** and click **Security > WEB Fi
 ## Enable Service 
 
 * You can find events and their processing status on the page of WEB Firewall. 
+    * Only data for the last 1 year can be searched from the event processing status list.
 * Regarding event processing status, you may be contacted by mail or phone for urgency. 
 
 ![webfirewall_04_201812.png](https://static.toastoven.net/prod_web_firewall/webfirewall_04_201812.png)
