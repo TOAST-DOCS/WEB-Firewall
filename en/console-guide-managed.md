@@ -2,7 +2,7 @@
 
 The WEB Firewall Managed service provides service operations and 24/7 security surveillance.   
 
-To enable WEB Firewall, login to **TOAST Console** and click **Security > WEB Firewall** on the service list. 
+To enable WEB Firewall, login to **NHN Cloud Console** and click **Security > WEB Firewall** on the service list. 
 
 ## Service Application and Release 
 

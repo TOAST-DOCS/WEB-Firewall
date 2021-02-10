@@ -3,7 +3,7 @@
 WEB Firewall Selfサービスでは、Webサーバーを保護できるようにWebファイアウォールインスタンスを作成して運営できるガイドを提供します。
 ここではWEB Firewall Selfサービスの使用方法を紹介します。
 
-WEB Firewallサービスを利用するには、**TOAST Console**にログインし、サービスリストから**Security > WEB Firewall**をクリックします。
+WEB Firewallサービスを利用するには、**NHN Cloud Console**にログインし、サービスリストから**Security > WEB Firewall**をクリックします。
 
 ## サービス申請および解除
 
