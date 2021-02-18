@@ -3,7 +3,7 @@
 The WEB Firewall Self-Service provides guides to create and operate  WEB Firewall instances for the protection of web servers. 
 This document shows how to use the WEB Firewall Self-Service. 
 
-To enable WEB Firewall, login to **TOAST Console** and click **Security > WEB Firewall** on the service list. 
+To enable WEB Firewall, login to **NHN Cloud Console** and click **Security > WEB Firewall** on the service list. 
 
 ## Service Application and Release 
 
