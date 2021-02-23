@@ -2,7 +2,7 @@
 
 WEB Firewall Managedサービスは、運営代行サービスと24時間365日セキュリティー監視サービスを提供します。
 
-WEB Firewallサービスのご利用は、**TOAST Console**にログインし、サービスリストから**Security > WEB Firewall**をクリックします。
+WEB Firewallサービスのご利用は、**NHN Cloud Console**にログインし、サービスリストから**Security > WEB Firewall**をクリックします。
 
 ## サービス申請および解除
 
@@ -32,6 +32,7 @@ WEB Firewallサービスのご利用は、**TOAST Console**にログインし、
 ## Webファイアウォールサービスの利用
 
 * WEB Firewall状況ページで、発生したイベントおよび処理状況を確認できます。
-*イベント処理状況に対するメール受信および緊急事項について、電話で連絡を受けることができます。
+  * イベント処理状況リストは、過去1年間のデータのみ検索できます。  
+* イベント処理状況に対するメール受信および緊急事項について、電話で連絡を受けることができます。
 
 ![webfirewall_04_201812.png](https://static.toastoven.net/prod_web_firewall/webfirewall_04_201812.png)
