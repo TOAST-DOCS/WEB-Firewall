@@ -50,7 +50,9 @@ Follow the guide for WEB Firewall initial setting, including the following:
 * Save and back up the setting. 
 
 [Guide for WEBFRONT-KS Initial Settings](http://static.toastoven.net/prod_web_firewall/WEBFRONT-KS_초기%20설정%20가이드.pptx)
-※After initial setting is completed, change your DNS setting to WEB Firewall floating IP, to lead the domain traffic you need to protect to go through WEB Traffic. 
+* After initial setting is completed, change your DNS setting to WEB Firewall floating IP, to lead the domain traffic you need to protect to go through WEB Traffic. 
+* The PLOS of the web firewall must be updated to the latest version as specified in the release note provided by the manufacturer.
+  * To download release note: Access firewall > SYSTEM > General Settings > Manage PLOS > Download PLOS > Download.
 
 ## Operations 
 
