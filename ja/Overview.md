@@ -58,4 +58,4 @@ WEB Firewallサービスには、SelfサービスとManagedサービスがあり
 ※サービス障害に備えるには、ロードバランサーを利用したWebファイアウォールActive-Active構成を推奨します。
 ※セキュリティー監視センターのサービスサポートは、Managedサービス申請時に利用できます。
 
-![webfirewall_00_201903_en.png](https://static.toastoven.net/prod_web_firewall/webfirewall_00_201903_en.png)
+![webfirewall_overview01_en_210525.png](https://static.toastoven.net/prod_web_firewall/webfirewall_overview01_en_210525.png)
