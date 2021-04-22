@@ -59,4 +59,4 @@ Our web security service is provided by Piolink, which is well-known for its hig
 ※ To prevent potential service failure, it is recommended to configure Active-Active web firewall by using load balancer. 
 ※ Service support from security surveillance center is available when Managed Service is applied.  
 
-![webfirewall_00_201903_en.png](https://static.toastoven.net/prod_web_firewall/webfirewall_00_201903_en.png)
+![webfirewall_overview01_en_210525.png](https://static.toastoven.net/prod_web_firewall/webfirewall_overview01_en_210525.png)
