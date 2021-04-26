@@ -7,7 +7,7 @@ WEB Firewallサービスを利用するには、**NHN Cloud Console**にログ�
 
 ## サービス申請および解除
 
-![webfirewall_01_201812.png](https://static.toastoven.net/prod_web_firewall/webfirewall_01_201812.png)
+![webfirewall_console_guide_self_en_210525.png](https://static.toastoven.net/prod_web_firewall/webfirewall_console_guide_self_en_210525.png)
 
 ### Webファイアウォール作成
 
