@@ -6,7 +6,7 @@ WEB Firewallサービスのご利用は、**NHN Cloud Console**にログイン�
 
 ## サービス申請および解除
 
-![webfirewall_console_guide_managed_en_210525.png](https://static.toastoven.net/prod_web_firewall/webfirewall_console_guide_managed_en_210525.png)
+![webfirewall_console_guide_managed_en_210518.png](https://static.toastoven.net/prod_web_firewall/webfirewall_console_guide_managed_en_210518.png)
 
 ### 利用申請
 
