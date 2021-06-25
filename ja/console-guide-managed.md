@@ -35,4 +35,4 @@ WEB Firewallサービスのご利用は、**NHN Cloud Console**にログイン�
   * イベント処理状況リストは、過去1年間のデータのみ検索できます。  
 * イベント処理状況に対するメール受信および緊急事項について、電話で連絡を受けることができます。
 
-![webfirewall_04_201812.png](https://static.toastoven.net/prod_web_firewall/webfirewall_04_201812.png)
+![webfirewall_console_guide_managed_jp_210625_1.png](https://static.toastoven.net/prod_web_firewall/webfirewall_console_guide_managed_jp_210625_1.png)
