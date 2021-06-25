@@ -7,7 +7,7 @@ WEB Firewall 서비스를 이용하려면 **NHN Cloud (공공기관용) Console*
 
 ## 서비스 신청 및 해제
 
-![webfirewall_console_guide_self_210518.png](https://static.toastoven.net/prod_web_firewall/webfirewall_console_guide_self_210518.png)
+![webfirewall_console_guide_self_210625.png](https://static.toastoven.net/prod_web_firewall/webfirewall_console_guide_self_210625.png)
 
 ### 웹 방화벽 생성
 
