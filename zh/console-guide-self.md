@@ -25,7 +25,7 @@ Select and delete WEB Firewall instances.
 
 ## Creating WEB Firewall Instances 
 
-![webfirewall_02_201812.png](https://static.toastoven.net/prod_web_firewall/webfirewall_02_201812.png)
+![webfirewall_console_guide_self_1_210625.png](https://static.toastoven.net/prod_web_firewall/webfirewall_console_guide_self_1_210625.png)
 
 ※ Security groups are set as below for reliable IPs and ports, like below.  
 
