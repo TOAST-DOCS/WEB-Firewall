@@ -2,7 +2,7 @@
 
 WEB Firewall Managed 서비스는 운영 대행 서비스와 24시간 365일 보안관제 서비스를 제공합니다.
 
-WEB Firewall 서비스를 이용하려면 **NHN Cloud Console**에 로그인하고, 서비스 목록에서 **Security > WEB Firewall**을 클릭합니다.
+WEB Firewall 서비스를 이용하려면 **NHN Cloud (공공기관용) Console**에 로그인하고, 서비스 목록에서 **Security > WEB Firewall**을 클릭합니다.
 
 ## 서비스 신청 및 해제
 
