@@ -3,11 +3,11 @@
 WEB Firewall Self 서비스에서는 웹 서버를 보호할 수 있도록 웹 방화벽 인스턴스를 생성하고 운영할 수 있는 가이드를 제공합니다.
 여기에서는 WEB Firewall Self 서비스 사용 방법을 소개합니다.
 
-WEB Firewall 서비스를 이용하려면 **NHN Cloud Console**에 로그인하고, 서비스 목록에서 **Security > WEB Firewall**을 클릭합니다.
+WEB Firewall 서비스를 이용하려면 **NHN Cloud (공공기관용) Console**에 로그인하고, 서비스 목록에서 **Security > WEB Firewall**을 클릭합니다.
 
 ## 서비스 신청 및 해제
 
-![webfirewall_console_guide_self_210625.png](https://static.toastoven.net/prod_web_firewall/webfirewall_console_guide_self_210625.png)
+![webfirewall_console_guide_self_gov_210628.png](https://static.toastoven.net/prod_web_firewall/webfirewall_console_guide_self_gov_210628.png)
 
 ### 웹 방화벽 생성
 

@@ -7,7 +7,7 @@ WEB Firewallサービスを利用するには、**NHN Cloud Console**にログ�
 
 ## サービス申請および解除
 
-![webfirewall_console_guide_self_en_210518.png](https://static.toastoven.net/prod_web_firewall/webfirewall_console_guide_self_en_210518.png)
+![webfirewall_console_guide_self_jp_210625.png](https://static.toastoven.net/prod_web_firewall/webfirewall_console_guide_self_jp_210625.png)
 
 ### Webファイアウォール作成
 
@@ -25,7 +25,7 @@ Webファイアウォールインスタンスを選択して削除します。
 
 ## Webファイアウォールインスタンス作成方法
 
-![webfirewall_02_201812.png](https://static.toastoven.net/prod_web_firewall/webfirewall_02_201812.png)
+![webfirewall_console_guide_self_1_210625.png](https://static.toastoven.net/prod_web_firewall/webfirewall_console_guide_self_1_210625.png)
 
 ※下記の例のように、信頼するIPおよび使用ポートに対してセキュリティーグループ(security group)を設定します。
 

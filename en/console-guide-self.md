@@ -7,7 +7,7 @@ To enable WEB Firewall, login to **NHN Cloud Console** and click **Security > WE
 
 ## Service Application and Release 
 
-![webfirewall_console_guide_self_en_210518.png](https://static.toastoven.net/prod_web_firewall/webfirewall_console_guide_self_en_210518.png)
+![webfirewall_console_guide_self_en_210625.png](https://static.toastoven.net/prod_web_firewall/webfirewall_console_guide_self_en_210625.png)
 
 ### Create WEB Firewall 
 
@@ -25,7 +25,7 @@ Select and delete WEB Firewall instances.
 
 ## Creating WEB Firewall Instances 
 
-![webfirewall_02_201812.png](https://static.toastoven.net/prod_web_firewall/webfirewall_02_201812.png)
+![webfirewall_console_guide_self_1_210625.png](https://static.toastoven.net/prod_web_firewall/webfirewall_console_guide_self_1_210625.png)
 
 ※ Security groups are set as below for reliable IPs and ports, like below.  
 
