@@ -25,7 +25,7 @@ WEB Firewall 서비스를 이용하려면 **NHN Cloud Console**에 로그인하�
 
 ## 웹 방화벽 인스턴스 생성 세부 절차
 
-![webfirewall_02_201812.png](https://static.toastoven.net/prod_web_firewall/webfirewall_02_201812.png)
+![webfirewall_console_guide_self_1_210625.png](https://static.toastoven.net/prod_web_firewall/webfirewall_console_guide_self_1_210625.png)
 
 ※ 아래 예시와 같이 신뢰하는 IP 및 사용 포트에 대해서 보안 그룹(security group)을 설정합니다.
 
