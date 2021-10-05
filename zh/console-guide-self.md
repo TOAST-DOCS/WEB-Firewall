@@ -49,7 +49,7 @@ Follow the guide for WEB Firewall initial setting, including the following:
 * Test the access to WEB Firewall IP to see if the web service works properly. 
 * Save and back up the setting. 
 
-[Guide for WEBFRONT-KS Initial Settings](http://static.toastoven.net/prod_web_firewall/WEBFRONT-KS_초기%20설정%20가이드.pptx)
+[Guide for WEBFRONT-KS Initial Settings](https://static.toastoven.net/prod_web_firewall/WEBFRONT-KS_초기%20설정%20가이드.pptx)
 ※After initial setting is completed, change your DNS setting to WEB Firewall floating IP, to lead the domain traffic you need to protect to go through WEB Traffic. 
 
 ## Operations 
@@ -60,7 +60,7 @@ Read through the WEB Firewall configuration description to run equipment, includ
 * Make use of the learning technique to optimize policy, including exception handling.  
 * Monitor security logs. 
 
-[Description of WEBFRONT-KS Application Configuration](http://static.toastoven.net/prod_web_firewall/WEBFRONT-KS_애플리케이션%20구성%20설명서.pdf)
-[Description of WEBFRONT-KS System Configuration](http://static.toastoven.net/prod_web_firewall/WEBFRONT-KS_시스템%20구성%20설명서.pdf)
+[Description of WEBFRONT-KS Application Configuration](https://static.toastoven.net/prod_web_firewall/WEBFRONT-KS_애플리케이션%20구성%20설명서.pdf)
+[Description of WEBFRONT-KS System Configuration](https://static.toastoven.net/prod_web_firewall/WEBFRONT-KS_시스템%20구성%20설명서.pdf)
 
 ※ Self-Service provides User Guides only, while Managed Service supports with operations and around-the-clock security surveillance service.    
