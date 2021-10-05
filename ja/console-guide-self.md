@@ -49,7 +49,7 @@ Webファイアウォールインスタンスを選択して削除します。
  * WebファイアウォールIPへのアクセスをテストして、Webサービスが正常かどうかを確認します。
  *設定した内容を保存してバックアップします。
 
-[WEBFRONT-KS初期設定ガイド](http://static.toastoven.net/prod_web_firewall/WEBFRONT-KS_초기%20설정%20가이드.pptx)
+[WEBFRONT-KS初期設定ガイド](https://static.toastoven.net/prod_web_firewall/WEBFRONT-KS_초기%20설정%20가이드.pptx)
 * 初期設定完了後、保護対象ドメイントラフィックがWebファイアウォールを経由するように、DNSをWebファイアウォールFloating IPに変更する必要があります。
 * 開発元で提供するリリースノートを参考にしてWebファイアウォールPLOSを最新バージョンにアップデートする必要があります。
   * リリースノートダウンロード方法：Webファイアウォール接続 > SYSTEM > 一般設定 > PLOS管理 > ダウンロードPLOS > ダウンロード
@@ -63,6 +63,6 @@ Webファイアウォール構成説明書を参照して機器を運用しま�
 *学習機能を活用して、例外処理などのポリシー最適化を行います。
 *セキュリティーログをモニタリングします。
 
-[WEBFRONT-KSアプリケーション構成説明書](http://static.toastoven.net/prod_web_firewall/WEBFRONT-KS_애플리케이션%20구성%20설명서.pdf)
-[WEBFRONT-KSシステム構成説明書](http://static.toastoven.net/prod_web_firewall/WEBFRONT-KS_시스템%20구성%20설명서.pdf)
+[WEBFRONT-KSアプリケーション構成説明書](https://static.toastoven.net/prod_web_firewall/WEBFRONT-KS_애플리케이션%20구성%20설명서.pdf)
+[WEBFRONT-KSシステム構成説明書](https://static.toastoven.net/prod_web_firewall/WEBFRONT-KS_시스템%20구성%20설명서.pdf)
 ※ Selfサービスでは使用ガイドのみ提供され、Managedサービス利用時、運営代行および24時間セキュリティー監視サービスを提供します。
