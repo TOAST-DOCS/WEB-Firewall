@@ -25,7 +25,7 @@ Webファイアウォールインスタンスを選択して削除します。
 
 ## Webファイアウォールインスタンス作成方法
 
-![webfirewall_console_guide_self_1_210625.png](https://static.toastoven.net/prod_web_firewall/webfirewall_console_guide_self_1_210625.png)
+![webfirewall_console_guide_self_1_210625.png](https://static.toastoven.net/prod_web_firewall/webfirewall_console_guide_self_1_220523.png)
 
 ※下記の例のように、信頼するIPおよび使用ポートに対してセキュリティーグループ(security group)を設定します。
 
