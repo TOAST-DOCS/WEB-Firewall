@@ -6,11 +6,11 @@ WEB Firewall 서비스를 이용하려면 **NHN Cloud Console**에 로그인하�
 
 ## 서비스 신청 및 해제
 
-![webfirewall_console_guide_managed_210625.png](https://static.toastoven.net/prod_web_firewall/webfirewall_console_guide_managed_210625.png)
+![webfirewall_console_guide_managed_210625.png](https://static.toastoven.net/prod_web_firewall/webfirewall_console_guide_managed_220613.png)
 
 ### 이용 신청
 
-1. **WEB Firewall** 콘솔의 **이용요금** 아래 **Managed** 행에서 **이용 신청** 버튼을 클릭합니다.
+1. **WEB Firewall** 콘솔의 **Managed 이용 신청**에서 **신청** 버튼을 클릭합니다.
 2. 운영 대행 및 보안관제 서비스를 위해 전문 엔지니어가 고객에게 유선 연락합니다.
 
 ### 이용 해제
