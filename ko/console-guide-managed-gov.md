@@ -35,4 +35,4 @@ WEB Firewall 서비스를 이용하려면 **NHN Cloud (공공기관용) Console*
   * 이벤트 처리 현황 목록은 최근 1년 데이터만 검색할 수 있습니다.
 * 이벤트 처리 현황에 대한 메일 수신 및 긴급 사항에 대해 유선으로 연락받을 수 있습니다.
 
-![webfirewall_console_guide_managed_210625_1.png](https://static.toastoven.net/prod_web_firewall/webfirewall_console_guide_managed_210625_1.png)
+![webfirewall_console_guide_managed_210625_1.png](https://static.toastoven.net/prod_web_firewall/webfirewall_console_guide_managed_220627_1.png)
