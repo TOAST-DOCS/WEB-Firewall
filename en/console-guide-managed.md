@@ -35,4 +35,4 @@ To enable WEB Firewall, login to **NHN Cloud Console** and click **Security > WE
     * Only data for the last 1 year can be searched from the event processing status list.
 * Regarding event processing status, you may be contacted by mail or phone for urgency. 
 
-![webfirewall_console_guide_managed_en_210625_1.png](https://static.toastoven.net/prod_web_firewall/webfirewall_console_guide_managed_en_210625_1.png)
+![webfirewall_console_guide_managed_en_210625_1.png](https://static.toastoven.net/prod_web_firewall/webfirewall_console_guide_managed_en_220627_1.png)
