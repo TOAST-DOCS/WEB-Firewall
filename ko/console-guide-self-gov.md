@@ -49,7 +49,7 @@ WEB Firewall 서비스를 이용하려면 **NHN Cloud (공공기관용) Console*
   * 웹 방화벽 IP로 접근하는 것을 테스트하여 웹 서비스 정상 여부를 확인합니다.
   * 설정한 내용을 저장하고 백업합니다.
 
-[WEBFRONT-KS 초기 설정 가이드](https://static.toastoven.net/prod_web_firewall/WEBFRONT-KS_초기%20설정%20가이드.pptx)
+[WEBFRONT-KS 초기 설정 가이드](https://static.toastoven.net/prod_web_firewall/WEBFRONT-KS_초기%20설정%20가이드.pdf)
 * 초기 설정 완료 후, 보호 대상 도메인 트래픽이 웹 방화벽으로 경유하도록 웹 방화벽 플로팅 IP로 DNS를 변경해야 합니다.
 * 제조사에서 제공하는 릴리스 노트를 참고하여 웹 방화벽 PLOS 버전을 최신으로 업데이트해야 합니다.
   * 릴리스 노트 다운로드 방법: 웹 방화벽 접속 > SYSTEM > 일반 설정 > PLOS 관리 > 다운로드 PLOS > 다운로드
