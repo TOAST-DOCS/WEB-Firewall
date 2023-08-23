@@ -62,6 +62,6 @@ WEB Firewall 서비스를 이용하려면 **NHN Cloud Console**에 로그인하�
 * 학습 기능을 활용하여 예외 처리 등 정책 최적화를 진행합니다.
 * 보안 로그를 모니터링합니다.
 
-[WEBFRONT-KS 애플리케이션 구성 설명서](https://static.toastoven.net/prod_web_firewall/WEBFRONT-KS_애플리케이션%20구성%20설명서.pdf)
-[WEBFRONT-KS 시스템 구성 설명서](https://static.toastoven.net/prod_web_firewall/WEBFRONT-KS_시스템%20구성%20설명서.pdf)
+[WEBFRONT-KS 애플리케이션 구성 설명서](https://static.toastoven.net/prod_web_firewall/WEBFRONT-KS_애플리케이션%20구성%20설명서.pdf) <BR>
+[WEBFRONT-KS 시스템 구성 설명서](https://static.toastoven.net/prod_web_firewall/WEBFRONT-KS_시스템%20구성%20설명서.pdf) <BR>
 ※ Self 서비스에서는 사용 가이드만 제공되며, Managed 서비스 이용 시 운영 대행 및 24시간 보안관제 서비스를 제공합니다.
