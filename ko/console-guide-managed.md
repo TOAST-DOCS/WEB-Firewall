@@ -6,7 +6,8 @@ WEB Firewall 서비스를 이용하려면 **NHN Cloud Console**에 로그인하�
 
 ## 서비스 신청 및 해제
 
-![webfirewall_console_guide_managed_210625.png](https://static.toastoven.net/prod_web_firewall/webfirewall_console_guide_managed_220613.png)
+![webfirewall_console_guide_managed_210625.png](https://static.toastoven.net/prod_web_firewall/webfirewall_console_guide_managed_1_230905.png)
+![webfirewall_console_guide_managed_210625.png](https://static.toastoven.net/prod_web_firewall/webfirewall_console_guide_managed_2_230905.png)
 
 ### 이용 신청
 
