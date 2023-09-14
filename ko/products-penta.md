@@ -3,6 +3,7 @@
 ## 개요
 
 아시아 태평양 1위 웹 방화벽인 WAPPLES의 보안 기술을 바탕으로 개발된 클라우드 웹 방화벽 제품으로, 다양한 private 및 public 클라우드 환경에서 최적화된 웹 보안 서비스를 제공합니다.
+
 CC인증을 획득한 WAPPLES SA는 클라우드 환경에서 높은 신뢰성을 보장하며, 일반적인 웹 공격뿐만 아니라 API 보안, Bot 대응, DDoS 보안까지 제공하는 WAAP(Web Application & API Protection) 솔루션입니다.
 
 
