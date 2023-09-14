@@ -1,5 +1,13 @@
 ## Security > Web Firewall > Release Notes
 
+### 2023. 09. 26.
+
+#### 제품 추가
+* 펜타시큐리티(WAPPLES SA) 제품 추가
+
+#### 기능 추가
+* [Console] Managed 이용 신청 시 제품을 선택할 수 있도록 기능 추가
+
 ### August 27, 2019
 
 #### Feature Updates 
