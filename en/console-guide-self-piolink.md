@@ -7,7 +7,7 @@ To use the WEB Firewall service, log in to **NHN Cloud Console** and click on **
 
 ## Apply for and Cancel a Service
 
-![webfirewall\_console\_guide\_self\_210625.png](https://static.toastoven.net/prod_web_firewall/webfirewall_console_guide_self_220613.png)
+![webfirewall_console_guide_self_210625.png](https://static.toastoven.net/prod_web_firewall/webfirewall_console_guide_self_220613.png)
 
 ### Create Web Firewall
 
@@ -25,7 +25,7 @@ Select and delete a Web firewall instance.
 
 ## Detailed Procedure to Create Web Firewall Instance
 
-![webfirewall\_console\_guide\_self\_1\_210625.png](https://static.toastoven.net/prod_web_firewall/webfirewall_console_guide_self_piolink_230904.png)
+![webfirewall_console_guide_self_1_210625.png](https://static.toastoven.net/prod_web_firewall/webfirewall_console_guide_self_piolink_230904.png)
 
 ※ Set up a security group for trusted IPs and ports to use, as shown in the example below.
 

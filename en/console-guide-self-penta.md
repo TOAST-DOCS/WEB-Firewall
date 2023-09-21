@@ -7,7 +7,7 @@ To use the WEB Firewall service, log in to **NHN Cloud Console** and click on **
 
 ## Apply for and Cancel a Service
 
-![webfirewall\_console\_guide\_self\_210625.png](https://static.toastoven.net/prod_web_firewall/webfirewall_console_guide_self_220613.png)
+![webfirewall_console_guide_self_210625.png](https://static.toastoven.net/prod_web_firewall/webfirewall_console_guide_self_220613.png)
 
 ### Create Web Firewall
 
@@ -25,7 +25,7 @@ Select and delete a Web firewall instance.
 
 ## Detailed Procedure to Create Web Firewall Instance
 
-![webfirewall\_console\_guide\_self\_1\_210625.png](https://static.toastoven.net/prod_web_firewall/webfirewall_console_guide_self_penta_230904.png)
+![webfirewall_console_guide_self_1_210625.png](https://static.toastoven.net/prod_web_firewall/webfirewall_console_guide_self_penta_230904.png)
 
 ※ Set up a security group for trusted IPs and ports to use, as shown in the example below.
 
@@ -78,6 +78,6 @@ Select and delete a Web firewall instance.
 
 * Provide web firewall's overall user manual and how to use it in Web Firewall's Management Tools (UI).
 * Refer to the location of user manual on the screen below for instructions on how to use web firewall in general. 
-![wapples\_manual.png](https://static.toastoven.net/prod_web_firewall/wapples_manual.png)
+![wapples_manual.png](https://static.toastoven.net/prod_web_firewall/wapples_manual.png)
 
 ※ Self-service only provides the user guide and Managed Service provides operating agency service and 24-hour security control services.
