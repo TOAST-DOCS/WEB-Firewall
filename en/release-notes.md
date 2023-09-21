@@ -1,5 +1,13 @@
 ## Security > Web Firewall > Release Notes
 
+### September 26, 2023
+
+#### Added Products
+* Added the Penta Security (WAPPLES SA) product
+
+#### Feature Updates
+* [Console] Added a feature to select a product when applying for the Managed service
+
 ### August 27, 2019
 
 #### Feature Updates 
