@@ -6,12 +6,14 @@ To enable WEB Firewall, login to **NHN Cloud Console** and click **Security > WE
 
 ## Service Application and Release 
 
-![webfirewall_console_guide_managed_en_210625.png](https://static.toastoven.net/prod_web_firewall/webfirewall_console_guide_managed_en_220613.png)
+![webfirewall_console_guide_managed_210625.png](https://static.toastoven.net/prod_web_firewall/webfirewall_console_guide_managed_1_230905.png)
+![webfirewall_console_guide_managed_210625.png](https://static.toastoven.net/prod_web_firewall/webfirewall_console_guide_managed_2_230905.png)
 
 ### Apply for Service 
 
 1. Go to **Managed** under **Pricing** on the **WEB Firewall **console, and click **Apply for Service**  
-2. Then, you will be contacted by a professional engineer who provides operations and security surveillance services.  
+2. Select **Product Information** from the the Managed service pop-up.
+3. Then, you will be contacted by a professional engineer who provides operations and security surveillance services.  
 
 ### Release 
 
