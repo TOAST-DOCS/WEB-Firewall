@@ -1,4 +1,4 @@
-## Security > WEB Firewall > 콘솔 사용 가이드 > Self > 펜타시큐리티(WAPPLES SA)
+![image](https://github.com/TOAST-DOCS/WEB-Firewall/assets/144001028/c8566481-3e2e-436f-b96e-1abbb37526ae)## Security > WEB Firewall > 콘솔 사용 가이드 > Self > 펜타시큐리티(WAPPLES SA)
 
 WEB Firewall Self 서비스에서는 웹 서버를 보호할 수 있도록 웹 방화벽 인스턴스를 생성하고 운영할 수 있는 가이드를 제공합니다.
 여기에서는 WEB Firewall Self 서비스 사용 방법을 소개합니다.
@@ -7,7 +7,7 @@ WEB Firewall 서비스를 이용하려면 **NHN Cloud Console**에 로그인하�
 
 ## 서비스 신청 및 해제
 
-![webfirewall_console_guide_self_210625.png](https://static.toastoven.net/prod_web_firewall/webfirewall_console_guide_self_220613.png)
+![webfirewall_console_guide_self_1_240321.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Penta/webfirewall_console_guide_self_1_240321.png)
 
 ### 웹 방화벽 생성
 
