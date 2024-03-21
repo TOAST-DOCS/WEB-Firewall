@@ -7,7 +7,7 @@ WEB Firewall 서비스를 이용하려면 **NHN Cloud Console**에 로그인하�
 
 ## 서비스 신청 및 해제
 
-![webfirewall_console_guide_self_210625.png](https://static.toastoven.net/prod_web_firewall/webfirewall_console_guide_self_220613.png)
+![webfirewall_console_guide_self_1_240321.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Penta/webfirewall_console_guide_self_1_240321.png)
 
 ### 웹 방화벽 생성
 
