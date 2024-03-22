@@ -5,27 +5,38 @@ WEB Firewall Self 서비스에서는 웹 서버를 보호할 수 있도록 웹 �
 
 WEB Firewall 서비스를 이용하려면 **NHN Cloud Console**에 로그인하고, 서비스 목록에서 **Security > WEB Firewall**을 클릭합니다.
 
+![webfirewall_console_guide_self_0_240322.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Penta/webfirewall_console_guide_self_0_240322.png)
+<br><br>
+
 ## 서비스 신청 및 해제
 
 ![webfirewall_console_guide_self_1_240321.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Penta/webfirewall_console_guide_self_1_240321.png)
+<br><br>
+![webfirewall_console_guide_self_2_240322.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Penta/webfirewall_console_guide_self_2_240322.png)
+
 
 ### 웹 방화벽 생성
 
 1. **WEB Firewall** 콘솔의 **Self 이용 신청**에서 **바로 가기**를 클릭해 인스턴스 생성 페이지로 이동합니다.
 2. **+ 인스턴스 생성**을 클릭하고 이미지 목록에서 PENTA WAF를 선택한 후 인스턴스 정보를 입력합니다. 자세한 방법은 아래 **웹 방화벽 인스턴스 생성 세부 절차**를 참고하십시오.
 
-※ 인스턴스가 생성되는 즉시 이용 요금이 부과됩니다.
+> [참고]
+> * 인스턴스가 생성되는 즉시 이용 요금이 부과됩니다.
+<br>
 
 ### 웹 방화벽 해제
 
 웹 방화벽 인스턴스를 선택하고 삭제합니다.
 
-※ 웹 방화벽 구성 시 트래픽이 웹 방화벽으로 경유되어 이용하는 도중에 인스턴스를 삭제할 경우 서비스 장애가 발생할 수 있습니다.<BR>
-※ 사용 중인 웹 서비스를 확인한 후 인스턴스를 삭제하시기 바랍니다.
+> [주의]
+> * 웹 방화벽 구성 시 트래픽이 웹 방화벽으로 경유되어 이용하는 도중에 인스턴스를 삭제할 경우 서비스 장애가 발생할 수 있습니다.<BR>
+> * 사용 중인 웹 서비스를 확인한 후 인스턴스를 삭제하시기 바랍니다.
+<br>
 
 ## 웹 방화벽 인스턴스 생성 세부 절차
 
 ![webfirewall_console_guide_self_1_210625.png](https://static.toastoven.net/prod_web_firewall/webfirewall_console_guide_self_penta_230904.png)
+<br>
 
 ※ 아래 예시와 같이 신뢰하는 IP 및 사용 포트에 대해서 보안 그룹(security group)을 설정합니다.
 
@@ -40,7 +51,8 @@ WEB Firewall 서비스를 이용하려면 **NHN Cloud Console**에 로그인하�
 | Egress | TCP | 443 (HTTPS) | 218.145.29.101/32 (CIDR) | WAF 라이선스 업데이트 서버 |
 | Egress | TCP | 5001 | 218.145.29.168/32 (CIDR) | WAF 보안룰(custom rule) 업데이트 서버 |
 
-※ 참고 : WAF 이중화(설정 동기화 기능 사용 시) 또는 Auto Scaling 사용 시 WAF 간 5984, 6984 포트 허용 필요
+> [참고]
+> * WAF 이중화(설정 동기화 기능 사용 시) 또는 Auto Scaling 사용 시 WAF 간 5984 포트 허용 필요
 
 ## 웹 방화벽 초기 설정
 
@@ -69,10 +81,12 @@ WEB Firewall 서비스를 이용하려면 **NHN Cloud Console**에 로그인하�
 
 7. X-Forwarded-For IP 설정하기
     * 보안 설정 > 정책 부가 설정 > X-Forwarded-For 설정(Block & Detect 모두 설정)
+<br>
 
-* WAF 적용 시 참고 사항
-    * NHN Cloud 관리형 서비스 공급자(managed service provider, MSP)를 통해 고객 인프라 환경에 WAF 서비스가 적용되도록 네트워크 routing을 변경 구성합니다.
-    * 고객 인프라 구성에 따라 WAF 플로팅 IP로 DNS 변경이 필요하거나, WAF 이중화 구성 시 상단 로드 밸런서 IP로 DNS 변경이 필요할 수 있습니다.
+> [WAF 적용 시 참고 사항]
+> * NHN Cloud 관리형 서비스 공급자(managed service provider, MSP)를 통해 고객 인프라 환경에 WAF 서비스가 적용되도록 네트워크 routing을 변경 구성합니다.
+> * 고객 인프라 구성에 따라 WAF 플로팅 IP로 DNS 변경이 필요하거나, WAF 이중화 구성 시 상단 로드 밸런서 IP로 DNS 변경이 필요할 수 있습니다.
+<br>
 
 ## 웹 방화벽 운영
 
@@ -80,4 +94,5 @@ WEB Firewall 서비스를 이용하려면 **NHN Cloud Console**에 로그인하�
 * 아래 화면의 사용자 매뉴얼 위치를 참고하여 웹 방화벽 운영 전반의 이용 방법을 참고하십시오.
 ![wapples_manual.png](https://static.toastoven.net/prod_web_firewall/wapples_manual.png)
 
-※ Self 서비스에서는 사용 가이드만 제공되며, Managed 서비스 이용 시 운영 대행 및 24시간 보안관제 서비스를 제공합니다.
+> [참고]
+> * Self 서비스에서는 사용 가이드만 제공되며, Managed 서비스 이용 시 운영 대행 및 24시간 보안관제 서비스를 제공합니다.
