@@ -3,56 +3,111 @@
 WEB Firewall Self 서비스에서는 웹 서버를 보호할 수 있도록 웹 방화벽 인스턴스를 생성하고 운영할 수 있는 가이드를 제공합니다.
 여기에서는 WEB Firewall Self 서비스 사용 방법을 소개합니다.
 
-WEB Firewall 서비스를 이용하려면 **NHN Cloud Console**에 로그인하고, 서비스 목록에서 **Security > WEB Firewall**을 클릭합니다.
+WEB Firewall 서비스를 이용하려면 **NHN Cloud Console**에 로그인하고, 서비스 목록에서 **Security > WEB Firewall**을 클릭하여 서비스를 활성화합니다.
 
 ![webfirewall_console_guide_self_0_240322.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Penta/webfirewall_console_guide_self_0_240322.png)
 <br><br>
 
 ## 서비스 신청 및 해제
-
-![webfirewall_console_guide_self_1_240321.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Penta/webfirewall_console_guide_self_1_240321.png)
-<br><br>
-![webfirewall_console_guide_self_2_240322.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Penta/webfirewall_console_guide_self_2_240322.png)
-
+<br>
 
 ### 웹 방화벽 생성
 
-1. **WEB Firewall** 콘솔의 **Self 이용 신청**에서 **바로 가기**를 클릭해 인스턴스 생성 페이지로 이동합니다.
+![webfirewall_console_guide_self_1_240321.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Penta/webfirewall_console_guide_self_1_240321.png)
+![webfirewall_console_guide_self_2_240322.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Penta/webfirewall_console_guide_self_2_240322.png)
+
+1. **WEB Firewall** 콘솔의 **Self 이용 신청**에서 **바로 가기**를 클릭해 "Compute > Instance" 페이지로 이동합니다.
 2. **+ 인스턴스 생성**을 클릭하고 이미지 목록에서 PENTA WAF를 선택한 후 인스턴스 정보를 입력합니다. 자세한 방법은 아래 **웹 방화벽 인스턴스 생성 세부 절차**를 참고하십시오.
 
 > [참고]
 > * 인스턴스가 생성되는 즉시 이용 요금이 부과됩니다.
+> * WAPPLE SA(PENTA WAF)의 최소 권장 인스턴스 사양은 2vCore / Memory 4GB으로 권장 미만 사양의 인스턴스 사용 시 정상적으로 동작하지 않을 수 있습니다. 따라서 반드시 권장 사양 이상의 인스턴스 타입을 사용해야 합니다.
+
 <br>
 
 ### 웹 방화벽 해제
 
-웹 방화벽 인스턴스를 선택하고 삭제합니다.
+![webfirewall_console_guide_self_3_240528.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Penta/webfirewall_console_guide_self_3_240528.png)
+
+1. 인스턴스 목록에서 웹 방화벽 인스턴스를 선택합니다.
+2.  '…' 버튼을 클릭하여 **인스턴스 삭제**를 통한 절차에 따라 인스턴스를 삭제합니다.
 
 > [주의]
-> * 웹 방화벽 구성 시 트래픽이 웹 방화벽으로 경유되어 이용하는 도중에 인스턴스를 삭제할 경우 서비스 장애가 발생할 수 있습니다.<BR>
-> * 사용 중인 웹 서비스를 확인한 후 인스턴스를 삭제하시기 바랍니다.
+> * 웹 서비스가 웹 방화벽을 경유하여 서비스 되고 있을 때 인스턴스를 삭제할 경우 서비스 장애가 발생할 수 있습니다.
+> * 웹 방화벽 인스턴스 삭제 시 관련 서비스를 유의하여 삭제하시기 바랍니다.
+
 <br>
 
 ## 웹 방화벽 인스턴스 생성 세부 절차
-
-![webfirewall_console_guide_self_1_210625.png](https://static.toastoven.net/prod_web_firewall/webfirewall_console_guide_self_penta_230904.png)
+웹 방화벽 인스턴스 생성 시 참고할 수 있는 세부 절차를 가이드합니다.
 <br>
 
-※ 아래 예시와 같이 신뢰하는 IP 및 사용 포트에 대해서 보안 그룹(security group)을 설정합니다.
+### 1. 이미지
+ ![webfirewall_console_guide_self_4_240528.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Penta/webfirewall_console_guide_self_4_240528.png)
 
-| Direction | IP 프로토콜 | 포트 범위 | 원격 | 설명 |
-| :-------: | :-----: | :---: | :---: | :--- |
-| Ingress | TCP | 80 (HTTP) | 0.0.0.0/0 (CIDR) | WAF 웹 서비스 포트 |
-| Ingress | TCP | 443 (HTTPS) | 0.0.0.0/0 (CIDR) | WAF 웹 서비스 포트 |
-| Ingress | TCP | 5001 | x.x.x.x/32 (CIDR) | WAF 관리 도구(UI) 포트(관리자 IP만 허용) |
-| Ingress | TCP | 22 (SSH) | x.x.x.x/32 (CIDR) | WAF SSH 터미널 포트(관리자 IP만 허용) |
-| Ingress | TCP/HTTP | 5000 | WAF의 상단 LB의 IP<BR>x.x.x.x/32 (CIDR) | WAF(이중화)와 상단 LB간 헬스체크(health check) 포트 |
-| Egress | TCP | 443 (HTTPS) | 218.145.29.166/32 (CIDR) | WAF 라이선스 업데이트 서버 
-| Egress | TCP | 443 (HTTPS) | 218.145.29.101/32 (CIDR) | WAF 라이선스 업데이트 서버 |
-| Egress | TCP | 5001 | 218.145.29.168/32 (CIDR) | WAF 보안룰(custom rule) 업데이트 서버 |
+1. 공용 이미지 목록에서 "PENTA WAF" 이미지를 선택합니다.
+
+<br>
+
+### 2. 인스턴스 정보
+<img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Penta/webfirewall_console_guide_self_5_240528.png" width="1200" />
+
+
+1. 가용성 영역(Availablility Zone): 웹 방화벽 인스턴스가 위치할 가용성 영역을 설정합니다. 가용성 영역에 대한 자세한 설명은 [인스턴스 개요의 가용성 영역](https://docs.nhncloud.com/ko/Compute/Instance/ko/overview/#availability-zone)을 참고합니다.
+2. 인스턴스 이름: 웹 방화벽 인스턴스의 이름을 설정합니다.
+3. 인스턴스 타입: 가상 하드웨어의 성능을 설정합니다. 아래 웹 방화벽의 권장사양 표를 참고하여 인스턴스 타입을 설정합니다.
 
 > [참고]
-> * WAF 이중화(설정 동기화 기능 사용 시) 또는 Auto Scaling 사용 시 WAF 간 5984 포트 허용 필요
+> ※ WAPPLE SA(PENTA WAF)의 최소 권장 인스턴스 사양은 2vCore / Memory 4GB으로 **권장 사양 미만의 인스턴스 사용 시 정상적으로 동작하지 않을 수 있습니다.** 따라서 반드시 권장 사양 이상의 인스턴스 타입을 사용해야 합니다.
+
+| Throughput (Mbps) | 인스턴스 타입 | vCPU | Memory(GB) |
+| :-------: | :-----: | :---: | :---: |
+| 100 | m2.c2m4 | 2 | 4 | 
+| 300 | m2.c4m8 | 4 | 8 | 
+| 700 | m2.c8m16 | 8 | 16 |
+| 1,500 | m2.c16m32 | 16 | 32 |
+
+4. 인스턴스 수: 생성할 인스턴스의 수를 설정합니다.
+5. 키 페어: 인스턴스의 SSH 접속 수단으로 사용되는 키 쌍입니다. 기존 키페어를 사용하거나, 새로운 키페어를 생성하여 사용합니다.
+
+### 3. 루트 블록 스토리지
+<img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Penta/webfirewall_console_guide_self_6_240528.png" width="1100" />
+
+1. 블록 스토리지 타입: HDD, SSD, Encrypted HDD, Encrypted SSD를 선택할 수 있습니다. Encrypted HDD/SSD에 대한 정보는 [암호화 블록 스토리지](https://docs.nhncloud.com/ko/Storage/Block%20Storage/ko/console-guide/#_2)를 참고합니다.
+2. 블록 스토리지 크기(GB): 루트 블록 스토리지의 용량을 설정합니다. PENTA WAF의 최소 용량은 200GB입니다.
+
+### 4. 네트워크 설정
+<img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Penta/webfirewall_console_guide_self_7_240528.png" width="1200" />
+
+1. 네트워크 인터페이스 설정
+    - 네트워크 인터페이스 생성: 네트워크 서브넷을 선택하면 자동으로 인터페이스가 생성되는 방식입니다.
+    - 기존 네트워크 인터페이스 지정: 기존에 생성되어 있는 인터페이스를 설정하는 방식입니다. 아래의 "2. 네트워크"와 "3. 플로팅 IP" 설정은 기존 인터페이스에 설정되어 있기 때문에 생략됩니다.
+2. 네트워크: VPC에 정의된 서브넷 중에서 인스턴스에 연결할 서브넷을 선택합니다. **PENTA WAF는 아직 다수의 인터페이스 설정을 권장하지 않습니다.**
+3. 플로팅 IP: 인스턴스 생성 후 플로팅 IP 사용 여부를 지정합니다. 이때 웹 방화벽 인스턴스가 속한 VPC가 인터넷 게이트웨이와 연결되어 있어야 합니다. 지금 설정하지 않더라도 "Instance > 플로팅 IP 관리", "Network Interface > 플로팅 IP 관리" 등에서 설정할 수 있습니다.
+<br>
+
+<img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Penta/webfirewall_console_guide_self_8_240528.png" width="1200" />
+
+4. 보안그룹: 웹 방화벽 인스턴스에 적용할 보안그룹을 선택합니다. 보안 그룹은 아래 예시를 참고합니다.
+
+<br>
+
+| 방향 | IP 프로토콜 | 포트 | 원격 | 설명 |
+| :-------: | :-----: | :---: | :---: | :--- |
+| 수신 | TCP | 80 (HTTP) | 0.0.0.0/0 (CIDR) | WAF 웹 서비스 포트 |
+| 수신 | TCP | 443 (HTTPS) | 0.0.0.0/0 (CIDR) | WAF 웹 서비스 포트<br><span style="color:#e11d21;">*아래 주의사항 참고</span> |
+| 수신 | TCP | 5001 | 관리자 IP (CIDR) | WAF 관리 도구(UI) 포트(관리자 IP만 허용) |
+| 수신 | TCP | 22 (SSH) | 관리자 IP (CIDR) | WAF SSH 터미널 포트(관리자 IP만 허용) |
+| 수신 | TCP | 5000 | WAF의 상단 LB의 IP (CIDR) | 상단 LB의 헬스체크(health check) 포트 |
+| 송신 | TCP | 443 (HTTPS) | 218.145.29.166/32 (CIDR) | WAF 라이선스 업데이트 서버 |
+| 송신 | TCP | 443 (HTTPS) | 218.145.29.101/32 (CIDR) | WAF 라이선스 업데이트 서버 |
+| 송신 | TCP | 5001 | 218.145.29.168/32 (CIDR) | WAF 보안룰(custom rule) 업데이트 서버 |
+
+> [참고]
+> * 이중화(설정 동기화 기능 사용 시) 또는 Auto Scaling 사용 시 웹 방화벽 간 5984 포트 허용이 추가로 필요합니다.
+
+> [주의]
+> * 웹 방화벽에서 보호대상 서버 TCP 443(HTTPS) 정책을 설정 하지 않았을 경우, 웹 방화벽으로 TCP 443(HTTPS) 접속 시 관리 도구(UI)에 접근 가능합니다. 따라서 위 보안그룹 ACL 중 "수신 TCP 443" 규칙은 **웹 방화벽의 보호대상 서버 TCP 443 설정 후 보안그룹에서 허용**합니다.
 
 ## 웹 방화벽 초기 설정
 
