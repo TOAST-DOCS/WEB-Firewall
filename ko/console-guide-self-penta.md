@@ -101,6 +101,7 @@ WEB Firewall 서비스를 이용하려면 **NHN Cloud Console**에 로그인하�
 | 송신 | TCP | 443 (HTTPS) | 218.145.29.101/32 (CIDR) | WAF 라이선스 업데이트 서버 |
 | 송신 | TCP | 5001 | 218.145.29.168/32 (CIDR) | WAF 보안룰(custom rule) 업데이트 서버 |
 <center>[보안 그룹 설정 예시]</center>
+<br>
 
 > [참고]
 > * 이중화(설정 동기화 기능 사용 시) 또는 Auto Scaling 사용 시 웹 방화벽 간 5984 포트 허용이 추가로 필요합니다.
