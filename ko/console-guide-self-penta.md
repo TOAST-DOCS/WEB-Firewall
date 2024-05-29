@@ -69,6 +69,8 @@ WEB Firewall 서비스를 이용하려면 **NHN Cloud Console**에 로그인하�
 | 700 | m2.c8m16 | 8 | 16 |
 | 1,500 | m2.c16m32 | 16 | 32 |
 
+<center>[웹 방화벽(WAPPLES SA) 권장 인스턴스 타입 표]</center>
+
 ### 3. 루트 블록 스토리지
 <img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Penta/webfirewall_console_guide_self_6_240528.png" width="1100" />
 
