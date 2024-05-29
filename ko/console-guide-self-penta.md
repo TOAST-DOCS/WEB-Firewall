@@ -79,17 +79,14 @@ WEB Firewall 서비스를 이용하려면 **NHN Cloud Console**에 로그인하�
 
 ### 4. 네트워크 설정
 <img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Penta/webfirewall_console_guide_self_7_240528.png" width="1200" />
+<img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Penta/webfirewall_console_guide_self_8_240528.png" width="1200" />
 
 1. 네트워크 인터페이스 설정
     - 네트워크 인터페이스 생성: 네트워크 서브넷을 선택하면 자동으로 인터페이스가 생성되는 방식입니다.
     - 기존 네트워크 인터페이스 지정: 기존에 생성되어 있는 인터페이스를 설정하는 방식입니다. 아래의 "2. 네트워크"와 "3. 플로팅 IP" 설정은 기존 인터페이스에 설정되어 있기 때문에 생략됩니다.
 2. 네트워크: VPC에 정의된 서브넷 중에서 인스턴스에 연결할 서브넷을 선택합니다. **PENTA WAF는 아직 다수의 인터페이스 설정을 권장하지 않습니다.**
 3. 플로팅 IP: 인스턴스 생성 후 플로팅 IP 사용 여부를 지정합니다. 이때 웹 방화벽 인스턴스가 속한 VPC가 인터넷 게이트웨이와 연결되어 있어야 합니다. 지금 설정하지 않더라도 "Instance > 플로팅 IP 관리", "Network Interface > 플로팅 IP 관리" 등에서 설정할 수 있습니다.
-<br>
-
-<img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Penta/webfirewall_console_guide_self_8_240528.png" width="1200" />
-
-4. 보안그룹: 웹 방화벽 인스턴스에 적용할 보안그룹을 선택합니다. 보안 그룹은 아래 예시를 참고합니다.
+4. 보안그룹: 웹 방화벽 인스턴스에 적용할 보안그룹을 선택합니다. 보안 그룹은 아래 설정 예시를 참고합니다.
 
 <br>
 
@@ -103,6 +100,7 @@ WEB Firewall 서비스를 이용하려면 **NHN Cloud Console**에 로그인하�
 | 송신 | TCP | 443 (HTTPS) | 218.145.29.166/32 (CIDR) | WAF 라이선스 업데이트 서버 |
 | 송신 | TCP | 443 (HTTPS) | 218.145.29.101/32 (CIDR) | WAF 라이선스 업데이트 서버 |
 | 송신 | TCP | 5001 | 218.145.29.168/32 (CIDR) | WAF 보안룰(custom rule) 업데이트 서버 |
+<center>[보안 그룹 설정 예시]</center>
 
 > [참고]
 > * 이중화(설정 동기화 기능 사용 시) 또는 Auto Scaling 사용 시 웹 방화벽 간 5984 포트 허용이 추가로 필요합니다.
