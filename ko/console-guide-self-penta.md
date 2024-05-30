@@ -80,7 +80,6 @@ WEB Firewall 서비스를 이용하려면 **NHN Cloud Console**에 로그인하�
 
 ### 4. 네트워크 설정
 <img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Penta/webfirewall_console_guide_self_7_240528.png" width="1200" />
-<img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Penta/webfirewall_console_guide_self_8_240528.png" width="1200" />
 
 1. 네트워크 인터페이스 설정
     - 네트워크 인터페이스 생성: 네트워크 서브넷을 선택하면 자동으로 인터페이스가 생성되는 방식입니다.
