@@ -132,30 +132,29 @@ WEB Firewall 서비스를 이용하려면 **NHN Cloud Console**에 로그인하�
 
 ### WAF 최초 구동 후 초기 설정 하기
 1. 브라우저(크롬 권장)에서 웹방화벽 웹 관리 도구(UI) 접속
-    * https://WAF IP:5001
-    * 처음 로그인 접속 정보 : ct@pentasecurity.com 로 문의
-<img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Penta/webfirewall_WAF_Console_guide_self_1_240530.png" width="1000" />
-
+	* https://WAF IP:5001
+	* 처음 로그인 접속 정보 : ct@pentasecurity.com 로 문의
+		<img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Penta/webfirewall_WAF_Console_guide_self_1_240530.png" width="1000" />
 2. 환경설정 > 시스템 > 시간동기화 설정하기
-    * 시간 서버 각각 설정하기
-<img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Penta/webfirewall_WAF_Console_guide_self_2_240530.png" width="1000" />
-<img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Penta/webfirewall_WAF_Console_guide_self_3_240530.png" width="1000" />
-
-4. 네트워크 설정 > 프록시IP 설정하기
-    * NHN console 에서 확인한 네트워크 정보 입력(WAF IP, gateway, netmask)
-
-5. WAF 보호 대상 설정하기
+   * 시간 서버 각각 설정하기
+     <img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Penta/webfirewall_WAF_Console_guide_self_2_240530.png" width="1000" />
+	 <img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Penta/webfirewall_WAF_Console_guide_self_3_240530.png" width="1000" />
+3. 네트워크 설정 > 프록시IP 설정하기
+	* NHN console 에서 확인한 네트워크 정보 입력(WAF IP, gateway, netmask)
+ 		<img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Penta/webfirewall_WAF_Console_guide_self_4_240530.png" width="1000" />
+   		<img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Penta/webfirewall_WAF_Console_guide_self_5_240530.png" width="1000" />
+4. WAF 보호 대상 설정하기
     * 네트워크 설정 > 보호 대상 서버 설정하기
     * 서버 모드: Proxy 선택 및 port 입력
     * 웹 서버 IP(도메인)와 port 입력(인프라 구성에 따라 '단일' 또는 '다중' 선택 가능)
     * 헬스 체크 사용 안 함(웹 서버 도메인 입력 시에만 사용)
     * WAF가 HTTPS 서비스를 제공할 경우 SSL 인증서 지정(SSL 프로파일 메뉴에서 사전 설정 필요)
 
-6. 보호 정책 설정하기
+7. 보호 정책 설정하기
     * 보안 설정 > 정책 설정 > 신규 정책 추가(기반 정책: '탐지만 하고 차단 안 함' 선택)
     * 보안 설정 > 정책 설정 > 신규 웹사이트 추가(신규 정책에 적용)
 
-7. X-Forwarded-For IP 설정하기
+8. X-Forwarded-For IP 설정하기
     * 보안 설정 > 정책 부가 설정 > X-Forwarded-For 설정(Block & Detect 모두 설정)
 <br>
 
