@@ -70,7 +70,7 @@ WEB Firewall 서비스를 이용하려면 **NHN Cloud Console**에 로그인하�
 | 700 | m2.c8m16 | 8 | 16 |
 | 1,500 | m2.c16m32 | 16 | 32 |
 
-<center>[웹 방화벽(WAPPLES SA) 권장 인스턴스 타입 표]</center>
+**[표1. 웹 방화벽(WAPPLES SA) 권장 인스턴스 타입]**
 
 ### 3. 루트 블록 스토리지
 <img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Penta/webfirewall_console_guide_self_6_240528.png" width="1100" />
@@ -90,47 +90,68 @@ WEB Firewall 서비스를 이용하려면 **NHN Cloud Console**에 로그인하�
 
 <br>
 
-| 방향 | IP 프로토콜 | 포트 | 원격 | 설명 |
+| 방향 | IP 프로토콜 | 포트 | 원격(CIDR) | 설명 |
 | :-------: | :-----: | :---: | :---: | :--- |
-| 수신 | TCP | 80 (HTTP) | 0.0.0.0/0 (CIDR) | WAF 웹 서비스 포트 |
-| 수신 | TCP | 443 (HTTPS) | 0.0.0.0/0 (CIDR) | WAF 웹 서비스 포트<br><span style="color:#e11d21;">*아래 주의사항 참고</span> |
-| 수신 | TCP | 5001 | 관리자 IP (CIDR) | WAF 관리 도구(UI) 포트(관리자 IP만 허용) |
-| 수신 | TCP | 22 (SSH) | 관리자 IP (CIDR) | WAF SSH 터미널 포트(관리자 IP만 허용) |
-| 수신 | TCP | 5000 | WAF의 상단 LB의 IP (CIDR) | 상단 LB의 헬스체크(health check) 포트 |
-| 송신 | TCP | 443 (HTTPS) | 218.145.29.166/32 (CIDR) | WAF 라이선스 업데이트 서버 |
-| 송신 | TCP | 443 (HTTPS) | 218.145.29.101/32 (CIDR) | WAF 라이선스 업데이트 서버 |
-| 송신 | TCP | 5001 | 218.145.29.168/32 (CIDR) | WAF 보안룰(custom rule) 업데이트 서버 |
-<center>[보안 그룹 설정 예시]</center>
-<br>
+| 수신 | TCP | 80 (HTTP) | 0.0.0.0/0 | WAF 웹 서비스 포트 |
+| 수신 | TCP | 443 (HTTPS) | 0.0.0.0/0 | WAF 웹 서비스 포트<br><span style="color:#e11d21;">*아래 주의사항 참고</span> |
+| 수신 | TCP | 5001 | 관리자 IP | WAF 관리 도구(UI) 포트(관리자 IP만 허용) |
+| 수신 | TCP | 22 (SSH) | 관리자 IP | WAF SSH 터미널 포트(관리자 IP만 허용) |
+| 수신 | TCP | 5000 | WAF의 상단 LB의 IP | 상단 LB의 헬스체크(health check) 포트 |
+| *송신 | 임의 | - | 0.0.0.0/0 | WAF의 외부 라이선스, 시그니처 업데이트 등 통신 용도<br>(개별 설정 필요할 경우 [표3. WAF 송신 목록] 참고) |
+
+**[표2. 보안 그룹 설정 예시]**
+
+
+<br />
 
 > [참고]
 > * 이중화(설정 동기화 기능 사용 시) 또는 Auto Scaling 사용 시 웹 방화벽 간 5984 포트 허용이 추가로 필요합니다.
+
+<br>
+
+위 [표2. 보안그룹 설정 예시]의 WAF의 *송신 규칙은 예시와 같이 모든 외부 통신을 허용하는 것을 권장합니다. 송신 규칙을 개별로 허용이 필요한 경우 아래 [표3. WAF 송신 목록]을 참고합니다.
+
+<br>
+
+| 방향 | IP 프로토콜 | 포트 | 원격(CIDR) | 설명 |
+| :-------: | :-----: | :---: | :---: | :--- |
+| 송신 | TCP | 443 (HTTPS) | 218.145.29.166/32 | WAF 라이선스 업데이트 서버 |
+| 송신 | TCP | 443 (HTTPS) | 218.145.29.101/32 | WAF 라이선스 업데이트 서버 |
+| 송신 | TCP | 5001 | 218.145.29.168/32 | WAF 보안룰(custom rule) 업데이트 서버 |
+| 송신 | UDP | 123 | 218.145.29.166/32 | Penta 시간 서버 |
+| 송신 | UDP | 123 | 218.145.29.163/32 | Penta 시간 서버 |
+
+**[표3. WAF 송신 목록]**
+
+<br>
 
 > [주의]
 > * 웹 방화벽에서 보호대상 서버 TCP 443(HTTPS) 정책을 설정 하지 않았을 경우, 웹 방화벽으로 TCP 443(HTTPS) 접속 시 관리 도구(UI)에 접근 가능합니다. 따라서 위 보안그룹 ACL 중 "수신 TCP 443" 규칙은 **웹 방화벽의 보호대상 서버 TCP 443 설정 후 보안그룹에서 허용**합니다.
 
 ## 웹 방화벽 초기 설정
 
-* WAF 최초 구동 후 초기 설정 하기
-
+### WAF 최초 구동 후 초기 설정 하기
 1. 브라우저(크롬 권장)에서 웹방화벽 웹 관리 도구(UI) 접속
     * https://WAF IP:5001
-    * 로그인 접속 정보 : ct@pentasecurity.com 로 문의
+    * 처음 로그인 접속 정보 : ct@pentasecurity.com 로 문의
+<img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Penta/webfirewall_WAF_Console_guide_self_1_240530.png" width="1000" />
 
 2. 환경설정 > 시스템 > 시간동기화 설정하기
-    * 시간 서버 각각 Penta Server 1 &  Penta Server 2 설정하기
+    * 시간 서버 각각 설정하기
+<img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Penta/webfirewall_WAF_Console_guide_self_2_240530.png" width="1000" />
+<img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Penta/webfirewall_WAF_Console_guide_self_3_240530.png" width="1000" />
 
-3. 네트워크 설정 > 프록시IP 설정하기
+4. 네트워크 설정 > 프록시IP 설정하기
     * NHN console 에서 확인한 네트워크 정보 입력(WAF IP, gateway, netmask)
 
-4. WAF 보호 대상 설정하기
+5. WAF 보호 대상 설정하기
     * 네트워크 설정 > 보호 대상 서버 설정하기
     * 서버 모드: Proxy 선택 및 port 입력
     * 웹 서버 IP(도메인)와 port 입력(인프라 구성에 따라 '단일' 또는 '다중' 선택 가능)
     * 헬스 체크 사용 안 함(웹 서버 도메인 입력 시에만 사용)
     * WAF가 HTTPS 서비스를 제공할 경우 SSL 인증서 지정(SSL 프로파일 메뉴에서 사전 설정 필요)
 
-5. 보호 정책 설정하기
+6. 보호 정책 설정하기
     * 보안 설정 > 정책 설정 > 신규 정책 추가(기반 정책: '탐지만 하고 차단 안 함' 선택)
     * 보안 설정 > 정책 설정 > 신규 웹사이트 추가(신규 정책에 적용)
 
