@@ -136,26 +136,41 @@ WEB Firewall 서비스를 이용하려면 **NHN Cloud Console**에 로그인하�
 	* 처음 로그인 접속 정보 : ct@pentasecurity.com 로 문의
 		<img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Penta/webfirewall_WAF_Console_guide_self_1_240530.png" width="1000" />
 2. 환경설정 > 시스템 > 시간동기화 설정하기
-   * 시간 서버 각각 설정하기
-     <img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Penta/webfirewall_WAF_Console_guide_self_2_240530.png" width="1000" />
-	 <img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Penta/webfirewall_WAF_Console_guide_self_3_240530.png" width="1000" />
+   	* 시간 서버 각각 설정하기
+		<img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Penta/webfirewall_WAF_Console_guide_self_2_240530.png" width="1000" />
+		<img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Penta/webfirewall_WAF_Console_guide_self_3_240530.png" width="1000" />
 3. 네트워크 설정 > 프록시IP 설정하기
 	* NHN console 에서 확인한 네트워크 정보 입력(WAF IP, gateway, netmask)
  		<img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Penta/webfirewall_WAF_Console_guide_self_4_240530.png" width="1000" />
    		<img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Penta/webfirewall_WAF_Console_guide_self_5_240530.png" width="1000" />
+   		<img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Penta/webfirewall_WAF_Console_guide_self_6_240530.png" width="1000" />
 4. WAF 보호 대상 설정하기
-    * 네트워크 설정 > 보호 대상 서버 설정하기
-    * 서버 모드: Proxy 선택 및 port 입력
-    * 웹 서버 IP(도메인)와 port 입력(인프라 구성에 따라 '단일' 또는 '다중' 선택 가능)
-    * 헬스 체크 사용 안 함(웹 서버 도메인 입력 시에만 사용)
-    * WAF가 HTTPS 서비스를 제공할 경우 SSL 인증서 지정(SSL 프로파일 메뉴에서 사전 설정 필요)
+	* 네트워크 설정 > 보호 대상 서버 > 웹 서버 추가
+ 					<img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Penta/webfirewall_WAF_Console_guide_self_7_240530.png" width="1000" /> 
+	* 보호 대상 서버 등록하기
+ 		* 단일: 웹 호스트명에 따라 분기할 필요 없이 설정한 보호대상 웹 서버(혹은 하단 LB 등)의 IP 혹은 포트로 연결할 경우 사용합니다. ( 1:1 매칭)
+   		* 다중: 웹 호스트명에 따라 보호대상 웹 서버(혹은 하단 LB 등)의 IP 혹은 포트로 분기하여 연결할 경우 사용합니다. (1:N 매칭)
 
-7. 보호 정책 설정하기
-    * 보안 설정 > 정책 설정 > 신규 정책 추가(기반 정책: '탐지만 하고 차단 안 함' 선택)
-    * 보안 설정 > 정책 설정 > 신규 웹사이트 추가(신규 정책에 적용)
+		* 단일 설정
+			<img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Penta/webfirewall_WAF_Console_guide_self_8_240530.png" width="1000" />
+		* 다중 설정
+  			<img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Penta/webfirewall_WAF_Console_guide_self_9_240530.png" width="1000" />
+			<img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Penta/webfirewall_WAF_Console_guide_self_10_240530.png" width="1000" />
+			<img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Penta/webfirewall_WAF_Console_guide_self_11_240530.png" width="1000" />
+> [참고]
+> * WAF가 HTTPS 서비스를 제공해야 할 경우 [네트워크 설정 > SSL 프로파일 > 인증서 추가]를 진행한 후 각 보호대상 웹 서버 추가 시 SSL 설정을 진행할 수 있습니다.
+> * 자세한 사항은 아래 "웹 방화벽 운영" 항목에 기재된 위치의 사용자 매뉴얼을 참고합니다.
 
-8. X-Forwarded-For IP 설정하기
-    * 보안 설정 > 정책 부가 설정 > X-Forwarded-For 설정(Block & Detect 모두 설정)
+5. 보호 정책 설정하기
+	* 보안 설정 > 정책 설정 > 신규 정책 추가(기반 정책: '탐지만 하고 차단 안 함' 선택)
+		<img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Penta/webfirewall_WAF_Console_guide_self_12_240530.png" width="1000" />
+  		<img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Penta/webfirewall_WAF_Console_guide_self_13_240530.png" width="800" />
+	* 보안 설정 > 정책 설정 > 신규 웹사이트 추가(신규 정책에 적용)
+  		<img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Penta/webfirewall_WAF_Console_guide_self_14_240530.png" width="800" />
+    		<img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Penta/webfirewall_WAF_Console_guide_self_15_240530.png" width="1000" />
+6. X-Forwarded-For IP 설정하기
+	* 보안 설정 > 정책 부가 설정 > X-Forwarded-For 설정(Block & Detect 모두 설정)
+		<img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Penta/webfirewall_WAF_Console_guide_self_16_240530.png" width="1000" />
 <br>
 
 > [WAF 적용 시 참고 사항]
@@ -167,7 +182,7 @@ WEB Firewall 서비스를 이용하려면 **NHN Cloud Console**에 로그인하�
 
 * 웹 방화벽의 전반적인 사용자 매뉴얼 및 이용 방법은 웹 방화벽의 관리 도구(UI)에서 제공합니다.
 * 아래 화면의 사용자 매뉴얼 위치를 참고하여 웹 방화벽 운영 전반의 이용 방법을 참고하십시오.
-![wapples_manual.png](https://static.toastoven.net/prod_web_firewall/wapples_manual.png)
+<img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Penta/webfirewall_WAF_Console_guide_self_17_240530.png" width="1000" />
 
 > [참고]
 > * Self 서비스에서는 사용 가이드만 제공되며, Managed 서비스 이용 시 운영 대행 및 24시간 보안관제 서비스를 제공합니다.
