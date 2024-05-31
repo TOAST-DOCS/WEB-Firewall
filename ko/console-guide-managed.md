@@ -1,19 +1,24 @@
 ## Security > WEB Firewall > 콘솔 사용 가이드 > Managed
 
-WEB Firewall Managed 서비스는 운영 대행 서비스와 24시간 365일 보안관제 서비스를 제공합니다.
+WEB Firewall Managed 서비스는 운영 대행 서비스와 24시간 365일 보안관제 서비스를 제공합니다. <br>
+WEB Firewall 서비스를 이용하려면 **NHN Cloud Console**에 로그인하고, 서비스 목록에서 **Security > WEB Firewall**을 클릭하여 서비스를 활성화합니다.
 
-WEB Firewall 서비스를 이용하려면 **NHN Cloud Console**에 로그인하고, 서비스 목록에서 **Security > WEB Firewall**을 클릭합니다.
+![webfirewall_console_guide_self_0_240322.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Penta/webfirewall_console_guide_self_0_240322.png)
+<br><br>
 
 ## 서비스 신청 및 해제
+### 서비스 신청
 
-![webfirewall_console_guide_managed_210625.png](https://static.toastoven.net/prod_web_firewall/webfirewall_console_guide_managed_1_230905.png)
-![webfirewall_console_guide_managed_210625.png](https://static.toastoven.net/prod_web_firewall/webfirewall_console_guide_managed_2_230905.png)
-
-### 이용 신청
+![webfirewall_console_guide_managed_0_240531.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Penta/webfirewall_console_guide_managed_0_240531.png)
+![webfirewall_console_guide_managed_0_240531.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Penta/webfirewall_console_guide_managed_1_240531.png)
 
 1. **WEB Firewall** 콘솔의 **Managed 이용 신청**에서 **신청** 버튼을 클릭합니다.
 2. Managed 서비스 이용 팝업창에서 **제품 정보**를 선택합니다.
-3. 운영 대행 및 보안관제 서비스를 위해 전문 엔지니어가 고객에게 유선 연락합니다.
+3. Notice 내용 확인 후 Managed 서비스 이용에 동의합니다.
+4. 확인 버튼을 클릭합니다.
+
+> [참고]
+> * 운영 대행 및 보안관제 서비스를 위하여 전문 엔지니어가 고객에게 유선 연락합니다.
 
 ### 이용 해제
 
