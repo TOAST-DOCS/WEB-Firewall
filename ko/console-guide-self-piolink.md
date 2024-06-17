@@ -64,7 +64,7 @@ WEB Firewall 서비스를 이용하려면 **NHN Cloud Console**에 로그인하�
 | 500 | m2.c4m8 | 4 | 8 |
 | 1,000 | m2.c8m16 | 8 | 16 |
 
-**[표1. 웹 방화벽(WEBFRONT-KS) 권장 인스턴스 타입]**
+<p align="center">[표1. 웹 방화벽(WEBFRONT-KS) 권장 인스턴스 타입]</p>
 
 ### 3. 루트 블록 스토리지
 <img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Piolink/webfirewall_console_guide_self_6_240603.png" width="1100" />
@@ -93,7 +93,7 @@ WEB Firewall 서비스를 이용하려면 **NHN Cloud Console**에 로그인하�
 | 송신 | ICMP | - | 0.0.0.0/0 | 보호 대상 웹 서버 헬스체크 |
 | *송신 | 임의 | - | 0.0.0.0/0 | WAF의 외부 라이선스, 시그니처 업데이트 등 통신 용도 |
 
-**[표2. 보안 그룹 설정 예시]**
+<p align="center">[표2. 보안 그룹 설정 예시]</p>
 
 > [참고]
 > * 웹 방화벽의 기본 상태 확인(health check) 방식은 ICMP로 설정되어 있으며, 웹 서버와 상태 확인(health check) 실패 시 웹 서비스가 동작하지 않습니다.
