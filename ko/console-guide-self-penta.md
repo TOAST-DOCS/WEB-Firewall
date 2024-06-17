@@ -61,7 +61,7 @@ WEB Firewall 서비스를 이용하려면 **NHN Cloud Console**에 로그인하�
 
 > [참고]
 > ※ WAPPLE SA(PENTA WAF)의 최소 권장 인스턴스 사양은 2vCore / Memory 4GB으로 **권장 사양 미만의 인스턴스 사용 시 정상적으로 동작하지 않을 수 있습니다.**
-> 따라서 반드시 권장 사양 이상의 인스턴스 타입을 사용해야 합니다.
+> **따라서 반드시 권장 사양 이상의 인스턴스 타입을 사용해야 합니다.**
 
 | Throughput (Mbps) | 인스턴스 타입 | vCPU | Memory(GB) |
 | :-------: | :-----: | :---: | :---: |
@@ -70,7 +70,7 @@ WEB Firewall 서비스를 이용하려면 **NHN Cloud Console**에 로그인하�
 | 700 | m2.c8m16 | 8 | 16 |
 | 1,500 | m2.c16m32 | 16 | 32 |
 
-**[표1. 웹 방화벽(WAPPLES SA) 권장 인스턴스 타입]**
+<p align="center">[표1. 웹 방화벽(WAPPLES SA) 권장 인스턴스 타입]</p>
 
 ### 3. 루트 블록 스토리지
 <img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Penta/webfirewall_console_guide_self_6_240528.png" width="1100" />
@@ -99,7 +99,7 @@ WEB Firewall 서비스를 이용하려면 **NHN Cloud Console**에 로그인하�
 | 수신 | TCP | 5000 | WAF의 상단 LB의 IP | 상단 LB의 헬스체크(health check) 포트 |
 | *송신 | 임의 | - | 0.0.0.0/0 | WAF의 외부 라이선스, 시그니처 업데이트 등 통신 용도<br>(개별 설정 필요할 경우 [표3. WAF 송신 목록] 참고) |
 
-**[표2. 보안 그룹 설정 예시]**
+<p align="center"> [표2. 보안 그룹 설정 예시] </p>
 
 
 <br />
@@ -121,7 +121,7 @@ WEB Firewall 서비스를 이용하려면 **NHN Cloud Console**에 로그인하�
 | 송신 | UDP | 123 | 218.145.29.166/32 | Penta 시간 서버 |
 | 송신 | UDP | 123 | 218.145.29.163/32 | Penta 시간 서버 |
 
-**[표3. WAF 송신 목록]**
+<p align="center">[표3. WAF 송신 목록]</p>
 
 <br>
 
