@@ -97,6 +97,7 @@ WEB Firewall 서비스를 이용하려면 **NHN Cloud Console**에 로그인하�
 | 수신 | TCP | 5001 | 관리자 IP | WAF 관리 도구(UI) 포트(관리자 IP만 허용) |
 | 수신 | TCP | 22 (SSH) | 관리자 IP | WAF SSH 터미널 포트(관리자 IP만 허용) |
 | 수신 | TCP | 5000 | WAF의 상단 LB의 IP | 상단 LB의 헬스체크(health check) 포트 |
+| 수신 | TCP | 5984 | WAF의 보안그룹 혹은 WAF IP 대역대 | WAF 간 정책 동기화<br><span style="color:#e11d21;">*이중화 시 필요</span> | 
 | *송신 | 임의 | - | 0.0.0.0/0 | WAF의 외부 라이선스, 시그니처 업데이트 등 통신 용도<br>(개별 설정 필요할 경우 [표3. WAF 송신 목록] 참고) |
 
 <p align="center"> [표2. 보안 그룹 설정 예시] </p>
@@ -120,6 +121,7 @@ WEB Firewall 서비스를 이용하려면 **NHN Cloud Console**에 로그인하�
 | 송신 | TCP | 5001 | 218.145.29.168/32 | WAF 보안룰(custom rule) 업데이트 서버 |
 | 송신 | UDP | 123 | 218.145.29.166/32 | Penta 시간 서버 |
 | 송신 | UDP | 123 | 218.145.29.163/32 | Penta 시간 서버 |
+| *송신 | TCP | 5984 | WAF의 보안그룹 혹은 WAF IP 대역대 | WAF 간 정책 동기화<br><span style="color:#e11d21;">*이중화 시 필요</span> |
 
 <p align="center">[표3. WAF 송신 목록]</p>
 
