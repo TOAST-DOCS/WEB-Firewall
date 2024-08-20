@@ -8,7 +8,7 @@ WEB Firewall 서비스를 이용하려면 **NHN Cloud Console**에 로그인하�
 ![webfirewall_console_guide_gov_self_0_240820.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Piolink/gov/webfirewall_console_guide_gov_self_0_240820.png)
 <br><br>
 
-## 서비스 신청 및 해제
+## 서비스 신청 및 해지
 <br>
 
 ### 웹 방화벽 생성
@@ -24,7 +24,7 @@ WEB Firewall 서비스를 이용하려면 **NHN Cloud Console**에 로그인하�
 
 <br>
 
-### 웹 방화벽 해제
+### 웹 방화벽 해지
 
 ![webfirewall_console_guide_gov_self_3_240820.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Piolink/gov/webfirewall_console_guide_gov_self_3_240820.png)
 
