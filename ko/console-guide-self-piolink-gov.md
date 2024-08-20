@@ -5,7 +5,7 @@ WEB Firewall Self 서비스에서는 웹 서버를 보호할 수 있도록 웹 �
 
 WEB Firewall 서비스를 이용하려면 **NHN Cloud Console**에 로그인하고, 서비스 목록에서 **Security > WEB Firewall**을 클릭하여 서비스를 활성화합니다.
 
-![webfirewall_console_guide_self_0_240603.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Piolink/webfirewall_console_guide_self_0_240603.png)
+![webfirewall_console_guide_gov_self_0_240820.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Piolink/gov/webfirewall_console_guide_gov_self_0_240820.png)
 <br><br>
 
 ## 서비스 신청 및 해제
@@ -13,8 +13,8 @@ WEB Firewall 서비스를 이용하려면 **NHN Cloud Console**에 로그인하�
 
 ### 웹 방화벽 생성
 
-![webfirewall_console_guide_self_1_240603.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Piolink/webfirewall_console_guide_self_1_240603.png)
-![webfirewall_console_guide_self_2_240603.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Piolink/webfirewall_console_guide_self_2_240603.png)
+![webfirewall_console_guide_gov_self_1_240820.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Piolink/gov/webfirewall_console_guide_gov_self_1_240820.png)
+![webfirewall_console_guide_gov_self_2_240820.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Piolink/gov/webfirewall_console_guide_gov_self_2_240820.png)
 
 1. **WEB Firewall** 콘솔의 **Self 이용 신청**에서 **바로 가기**를 클릭해 "Compute > Instance" 페이지로 이동합니다.
 2. **+ 인스턴스 생성**을 클릭하고 이미지 목록에서 PLOS WAF를 선택한 후 인스턴스 정보를 입력합니다. 자세한 방법은 아래 **웹 방화벽 인스턴스 생성 세부 절차**를 참고하십시오.
@@ -26,7 +26,7 @@ WEB Firewall 서비스를 이용하려면 **NHN Cloud Console**에 로그인하�
 
 ### 웹 방화벽 해제
 
-![webfirewall_console_guide_self_3_240603.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Piolink/webfirewall_console_guide_self_3_240603.png)
+![webfirewall_console_guide_gov_self_3_240820.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Piolink/gov/webfirewall_console_guide_gov_self_3_240820.png)
 
 1. 인스턴스 목록에서 웹 방화벽 인스턴스를 선택합니다.
 2.  '…' 버튼을 클릭하여 **인스턴스 삭제**를 통한 절차에 따라 인스턴스를 삭제합니다.
