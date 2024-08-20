@@ -3,14 +3,14 @@
 WEB Firewall Managed 서비스는 운영 대행 서비스와 24시간 365일 보안관제 서비스를 제공합니다. <br>
 WEB Firewall 서비스를 이용하려면 **NHN Cloud Console**에 로그인하고, 서비스 목록에서 **Security > WEB Firewall**을 클릭하여 서비스를 활성화합니다.
 
-![webfirewall_console_guide_managed_0_240601.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Common/webfirewall_console_guide_managed_0_240601.png)
+![webfirewall_console_guide_managed_0_240601.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Common/public/webfirewall_console_guide_managed_0_240601.png)
 <br><br>
 
 ## 서비스 신청 및 해제
 ### 서비스 신청
 
-![webfirewall_console_guide_managed_1_240603.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Common/webfirewall_console_guide_managed_1_240603.png)
-![webfirewall_console_guide_managed_2_240603.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Common/webfirewall_console_guide_managed_2_240603.png)
+![webfirewall_console_guide_managed_1_240603.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Common/public/webfirewall_console_guide_managed_1_240603.png)
+![webfirewall_console_guide_managed_2_240603.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Common/public/webfirewall_console_guide_managed_2_240603.png)
 
 1. **WEB Firewall** 콘솔의 **Managed 이용 신청**에서 **신청** 버튼을 클릭합니다.
 2. Managed 서비스 이용 팝업창에서 **제품 정보**를 선택합니다.
