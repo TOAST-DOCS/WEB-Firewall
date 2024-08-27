@@ -6,7 +6,7 @@ WEB Firewall 서비스를 이용하려면 **NHN Cloud Console**에 로그인하�
 ![webfirewall_console_guide_managed_0_240601.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Common/webfirewall_console_guide_managed_0_240601.png)
 <br><br>
 
-## 서비스 신청 및 해제
+## 서비스 신청 및 해지
 ### 서비스 신청
 
 ![webfirewall_console_guide_managed_1_240603.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Common/webfirewall_console_guide_managed_1_240603.png)
@@ -20,9 +20,9 @@ WEB Firewall 서비스를 이용하려면 **NHN Cloud Console**에 로그인하�
 > [참고]
 > * 운영 대행 및 보안관제 서비스를 위하여 전문 엔지니어가 고객에게 유선 연락합니다.
 
-### 이용 해제
+### 이용 해지
 
-- 관제센터로 연락해 서비스 해제를 신청합니다.
+- 관제센터로 연락해 서비스 해지를 신청합니다.
 
 ## 웹 방화벽 생성 및 설정 절차
 
