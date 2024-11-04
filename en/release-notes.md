@@ -1,6 +1,6 @@
 ## Security > Web Firewall > Release Notes
 
-### 2024. 08. 27
+### August 27, 2024
 #### Bug Fixes
 * [Console] Improved to remove a WAF instance from the [Application Status - Security Monitoring Service Usage Status] when it is arbitrarily deleted without being removed from the monitoring targets.
 
