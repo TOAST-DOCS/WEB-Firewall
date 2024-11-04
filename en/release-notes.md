@@ -37,7 +37,7 @@
 
 ### May 14, 2019
 
-#### Updates
+#### Feature Updates
 * [API] Changes in the mail delivery processing 
 * [Console] Translation enabled into multiple languages 
 
