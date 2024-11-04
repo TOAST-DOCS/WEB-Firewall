@@ -42,35 +42,32 @@
 * [Console] Translation enabled into multiple languages 
 
 
-### 2019.02.26
+### February 26, 2019
 
-#### 기능 개선
-* [Console] 공통 리소스 상품별 관리 대응
-
-
-### 2018.12.27
-
-#### 기능 개선/변경
-* [Console] 유저 콘솔 연동
+#### Feature Updates
+* [Console] Management Response by Common Resource Product
 
 
-### 2018.11.27
+### December 27, 2018
 
-#### 기능 개선/변경
-* [API] 데이터 관리 정책 반영: 상품 비활성화 시 관련 데이터 삭제
+#### Feature Updates
+* [Console] User Console Integration
 
+### November 27, 2018
 
-### 2018.10.23
-
-#### 기능 개선/변경
-* [API] 그래프 데이터 취득 API 성능 개선
-
-#### 버그 수정
-* [Console] 개인정보동의 간헐적 버그 수정
+#### Feature Updates
+* [API] Reflect data management policy: Delete related data when a product is deactivated
 
 
-### 2018.06.18
+### October 23, 2018
 
-#### 신규 상품 출시
+#### Feature Updates
+* [API] Improve performance of the graph data retrieval API.
 
-* Web Firewall 서비스는 Self형 서비스와 Managed형 서비스를 제공하며, 고객 클라우드 영역에 웹 방화벽이 독립적으로 구성 되어 클라우드 보안 환경을 유연하게 운영할 수 있습니다.
+#### Bug Fixes
+* [Console] Fix intermittent bug related to privacy consent
+
+
+###  June 18, 2018
+#### Release of a New Service
+* WEB Firewall service released
