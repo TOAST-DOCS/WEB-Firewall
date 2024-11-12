@@ -29,7 +29,7 @@ To enable WEB Firewall, login to **NHN Cloud Console** and click **Security > WE
 
 * WEB Firewall is created and configured by professional engineers based on the consultation. 
 * All operational tasks, including requirements, security policy setting, and log integration with surveillance center, are supported. 
-* When the configuration is completed, a learning process continues for a week or two, to analyze traffic.  
+* When the configuration is completed, a learning process continues for 2~4 weeks, to analyze traffic.  
 
 ## Enable Service 
 
