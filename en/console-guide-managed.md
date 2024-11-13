@@ -3,14 +3,14 @@
 The WEB Firewall Managed service provides service operations and 24/7 security surveillance. <br>
 To enable WEB Firewall, login to **NHN Cloud Console** and click **Security > WEB Firewall** on the service list. 
 
-![webfirewall_public_en_console_guide_managed_01_241113.png](https://static.toastoven.net/prod_web_firewall/Common/public/en/webfirewall_public_en_console_guide_managed_01_241113.png)
+![webfirewall_public_en_console-guide-managed_01_241113.png](https://static.toastoven.net/prod_web_firewall/Common/public/en/webfirewall_public_en_console-guide-managed_01_241113.png)
 <br><br>
 
 ## Service Application and Release 
 ### Service Application
 
-![webfirewall_public_en_console_guide_managed_02_241113.png](https://static.toastoven.net/prod_web_firewall/Common/public/en/webfirewall_public_en_console_guide_managed_02_241113.png)
-![webfirewall_public_en_console_guide_managed_03_241113.png](https://static.toastoven.net/prod_web_firewall/Common/public/en/webfirewall_public_en_console_guide_managed_03_241113.png)
+![webfirewall_public_en_console-guide-managed_02_241113.png](https://static.toastoven.net/prod_web_firewall/Common/public/en/webfirewall_public_en_console-guide-managed_02_241113.png)
+![webfirewall_public_en_console-guide-managed_03_241113.png](https://static.toastoven.net/prod_web_firewall/Common/public/en/webfirewall_public_en_console-guide-managed_03_241113.png)
 
 1. Click the Apply button in the 'Apply for Managed' section of the WEB Firewall console.
 2. Select a product in the 'Use Managed Service' popup.
@@ -42,4 +42,4 @@ To enable WEB Firewall, login to **NHN Cloud Console** and click **Security > WE
     * Only data for the last 1 year can be searched from the event processing status list.
 * Regarding event processing status, you may be contacted by mail or phone for urgency. 
 
-![webfirewall_public_en_console_guide_managed_04_241113.png](https://static.toastoven.net/prod_web_firewall/Common/public/en/webfirewall_public_en_console_guide_managed_04_241113.png)
+![webfirewall_public_en_console-guide-managed_04_241113.png](https://static.toastoven.net/prod_web_firewall/Common/public/en/webfirewall_public_en_console-guide-managed_04_241113.png)
