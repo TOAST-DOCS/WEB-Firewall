@@ -31,4 +31,4 @@ You can use the web firewall service by selecting either Penta Security (WAPPLES
 ※ To prevent potential service failure, it is recommended to configure Active-Active web firewall by using load balancer. 
 ※ Service support from security surveillance center is available when Managed Service is applied.<BR>
 
-![webfirewall_overview01_en_210525.png](https://static.toastoven.net/prod_web_firewall/webfirewall_overview01_en_210525.png)
+![webfirewall_public_en_overview_01_241113.png](https://static.toastoven.net/prod_web_firewall/Common/public/en/webfirewall_public_en_overview_01_241113.png)
