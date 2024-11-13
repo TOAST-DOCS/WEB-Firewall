@@ -3,14 +3,14 @@
 WEB Firewall Managed 서비스는 운영 대행 서비스와 24시간 365일 보안관제 서비스를 제공합니다. <br>
 WEB Firewall 서비스를 이용하려면 **NHN Cloud Console**에 로그인하고, 서비스 목록에서 **Security > WEB Firewall**을 클릭하여 서비스를 활성화합니다.
 
-![webfirewall_public_kr_console_guide_managed_01_241113.png](https://static.toastoven.net/prod_web_firewall/Common/public/kr/webfirewall_public_kr_console_guide_managed_01_241113.png)
+![webfirewall_public_kr_console-guide-managed_01_241113.png](https://static.toastoven.net/prod_web_firewall/Common/public/kr/webfirewall_public_kr_console-guide-managed_01_241113.png)
 <br><br>
 
 ## 서비스 신청 및 해지
 ### 서비스 신청
 
-![webfirewall_public_kr_console_guide_managed_02_241113.png](https://static.toastoven.net/prod_web_firewall/Common/public/kr/webfirewall_public_kr_console_guide_managed_02_241113.png)
-![webfirewall_public_kr_console_guide_managed_03_241113.png](https://static.toastoven.net/prod_web_firewall/Common/public/kr/webfirewall_public_kr_console_guide_managed_03_241113.png)
+![webfirewall_public_kr_console-guide-managed_02_241113.png](https://static.toastoven.net/prod_web_firewall/Common/public/kr/webfirewall_public_kr_console-guide-managed_02_241113.png)
+![webfirewall_public_kr_console-guide-managed_03_241113.png](https://static.toastoven.net/prod_web_firewall/Common/public/kr/webfirewall_public_kr_console-guide-managed_03_241113.png)
 
 1. **WEB Firewall** 콘솔의 **Managed 이용 신청**에서 **신청** 버튼을 클릭합니다.
 2. Managed 서비스 이용 팝업창에서 **제품 정보**를 선택합니다.
@@ -42,4 +42,4 @@ WEB Firewall 서비스를 이용하려면 **NHN Cloud Console**에 로그인하�
   * 이벤트 처리 현황 목록은 최근 1년 데이터만 검색할 수 있습니다.
 * 이벤트 처리 현황에 대한 메일 수신 및 긴급 사항에 대해 유선으로 연락받을 수 있습니다.
 
-![webfirewall_public_kr_console_guide_managed_04_241113.png](https://static.toastoven.net/prod_web_firewall/Common/public/kr/webfirewall_public_kr_console_guide_managed_04_241113.png)
+![webfirewall_public_kr_console-guide-managed_04_241113.png](https://static.toastoven.net/prod_web_firewall/Common/public/kr/webfirewall_public_kr_console-guide-managed_04_241113.png)
