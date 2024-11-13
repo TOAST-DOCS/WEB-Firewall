@@ -31,4 +31,4 @@ Self 서비스를 선택하면 고객이 직접 웹 방화벽을 구축할 수 �
 ※ 서비스 장애를 대비하려면 로드 밸런서를 이용한 웹 방화벽 Active-Active 구성을 권장합니다. <BR>
 ※ 보안관제 센터의 서비스 지원은 Managed 서비스 신청 시 이용할 수 있습니다.
 
-![webfirewall_overview01_210525.png](https://static.toastoven.net/prod_web_firewall/webfirewall_overview01_210525.png)
+![webfirewall_gov_kr_overview-gov_01_241113.png](https://static.toastoven.net/prod_web_firewall/Common/gov/kr/webfirewall_gov_kr_overview-gov_01_241113.png)
