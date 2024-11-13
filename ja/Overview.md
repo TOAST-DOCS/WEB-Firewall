@@ -31,4 +31,4 @@ Webファイアウォールは、ペンタセキュリティ(WAPPLES SA)とパ�
 ※サービス障害に備えるには、ロードバランサーを利用したWebファイアウォールActive-Active構成を推奨します。<BR>
 ※セキュリティー監視センターのサービスサポートは、Managedサービス申請時に利用できます。
 
-![webfirewall_overview01_en_210525.png](https://static.toastoven.net/prod_web_firewall/webfirewall_overview01_en_210525.png)
+![webfirewall_public_ja_overview_01_241113.png](https://static.toastoven.net/prod_web_firewall/Common/public/ja/webfirewall_public_ja_overview_01_241113.png)
