@@ -3,14 +3,14 @@
 WEB Firewall Managedサービスは、運営代行サービスと24時間365日セキュリティー監視サービスを提供します。<br>
 WEB Firewallサービスのご利用は、**NHN Cloud Console**にログインし、サービスリストから**Security > WEB Firewall**をクリックします。
 
-![webfirewall_public_ja_console_guide_managed_01_241113.png](https://static.toastoven.net/prod_web_firewall/Common/public/ja/webfirewall_public_ja_console_guide_managed_01_241113.png)
+![webfirewall_public_ja_console-guide-managed_01_241113.png](https://static.toastoven.net/prod_web_firewall/Common/public/ja/webfirewall_public_ja_console-guide-managed_01_241113.png)
 <br><br>
 
 ## サービス申請および解除
 ### サービス申請
 
-![webfirewall_public_ja_console_guide_managed_02_241113.png](https://static.toastoven.net/prod_web_firewall/Common/public/ja/webfirewall_public_ja_console_guide_managed_02_241113.png)
-![webfirewall_public_ja_console_guide_managed_03_241113.png](https://static.toastoven.net/prod_web_firewall/Common/public/ja/webfirewall_public_ja_console_guide_managed_03_241113.png)
+![webfirewall_public_ja_console-guide-managed_02_241113.png](https://static.toastoven.net/prod_web_firewall/Common/public/ja/webfirewall_public_ja_console-guide-managed_02_241113.png)
+![webfirewall_public_ja_console-guide-managed_03_241113.png](https://static.toastoven.net/prod_web_firewall/Common/public/ja/webfirewall_public_ja_console-guide-managed_03_241113.png)
 
 1. WEB Firewallコンソールの「Managed利用申請」から「申請」ボタンをクリックします。
 2. Managedサービス利用'のポップアップウィンドウで製品を選択します。
@@ -42,4 +42,4 @@ WEB Firewallサービスのご利用は、**NHN Cloud Console**にログイン�
   * イベント処理状況リストは、過去1年間のデータのみ検索できます。  
 * イベント処理状況に対するメール受信および緊急事項について、電話で連絡を受けることができます。
 
-![webfirewall_public_ja_console_guide_managed_04_241113.png](https://static.toastoven.net/prod_web_firewall/Common/public/ja/webfirewall_public_ja_console_guide_managed_04_241113.png)
+![webfirewall_public_ja_console-guide-managed_04_241113.png](https://static.toastoven.net/prod_web_firewall/Common/public/ja/webfirewall_public_ja_console-guide-managed_04_241113.png)
