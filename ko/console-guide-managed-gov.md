@@ -3,14 +3,15 @@
 WEB Firewall Managed 서비스는 운영 대행 서비스와 24시간 365일 보안관제 서비스를 제공합니다. <br>
 WEB Firewall 서비스를 이용하려면 **NHN Cloud Console**에 로그인하고, 서비스 목록에서 **Security > WEB Firewall**을 클릭하여 서비스를 활성화합니다.
 
-![webfirewall_console_guide_gov_managed_0_240820.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Common/gov/webfirewall_console_guide_gov_managed_0_240820.png)
+![
+webfirewall_gov_kr_console-guide-managed-gov_01_241113.png](https://static.toastoven.net/prod_web_firewall/Common/gov/kr/webfirewall_gov_kr_console-guide-managed-gov_01_241113.png)
 <br><br>
 
 ## 서비스 신청 및 해지
 ### 서비스 신청
 
-![webfirewall_console_guide_gov_managed_1_240820.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Common/gov/webfirewall_console_guide_gov_managed_1_240820.png)
-![webfirewall_console_guide_gov_managed_2_240820.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_web_firewall/Common/gov/webfirewall_console_guide_gov_managed_2_240820.png)
+![webfirewall_gov_kr_console-guide-managed-gov_02_241113.png](https://static.toastoven.net/prod_web_firewall/Common/gov/kr/webfirewall_gov_kr_console-guide-managed-gov_02_241113.png)
+![webfirewall_gov_kr_console-guide-managed-gov_03_241113.png](https://static.toastoven.net/prod_web_firewall/Common/gov/kr/webfirewall_gov_kr_console-guide-managed-gov_03_241113.png)
 
 1. **WEB Firewall** 콘솔의 **Managed 이용 신청**에서 **신청** 버튼을 클릭합니다.
 2. Managed 서비스 이용 팝업창에서 **제품 정보**를 선택합니다.
@@ -42,4 +43,4 @@ WEB Firewall 서비스를 이용하려면 **NHN Cloud Console**에 로그인하�
   * 이벤트 처리 현황 목록은 최근 1년 데이터만 검색할 수 있습니다.
 * 이벤트 처리 현황에 대한 메일 수신 및 긴급 사항에 대해 유선으로 연락받을 수 있습니다.
 
-![webfirewall_console_guide_managed_210625_1.png](https://static.toastoven.net/prod_web_firewall/webfirewall_console_guide_managed_220627_1.png)
+![webfirewall_gov_kr_console-guide-managed-gov_04_241113.png](https://static.toastoven.net/prod_web_firewall/Common/gov/kr/webfirewall_gov_kr_console-guide-managed-gov_04_241113.png)
