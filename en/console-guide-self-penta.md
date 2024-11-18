@@ -88,37 +88,44 @@ This guide provides detailed procedures to reference when creating a web firewal
 | In | TCP | 443 (HTTPS) | 0.0.0.0/0 | WAF Web Service Port<br><span style="color:#e11d21;">*Refer to the note below</span> |
 | In | TCP | 5001 | Admin IP | WAF Management Console(UI) Port(Allow Only Admin IP) |
 | In | TCP | 22 (SSH) | Admin IP | WAF SSH Terminal Port(Allow Only Admin IP) |
-| In | TCP | 5000 | IP of the LB located at the top of the WAF | 상단 LB의 헬스체크(health check) 포트 |
+| In | TCP | 5000 | IP of the LB located at the top of the WAF | Health Check Port of the LB located at the top of the WAF |
 | In | TCP | 5984 | Security group of the WAF or WAF IP range | WAF policy synchronization<br><span style="color:#e11d21;">*Required for HA configuration</span> | 
 | *Out | ALL | - | 0.0.0.0/0 | Communication with external servers for purposes such as external licenses, signature updates, etc. of the WAF<br>(When individual configuration is required, refer to [Table 3. WAF Outbound List]) |
 
 <p align="center"> [Table 2. Security Group Configuration Example] </p>
 
+> [note]
+> * When configuring HA and using the configuration synchronization feature, allowing port 5984 between WAFs is additionally required.
 
+<br>
 
-※ Set up a security group for trusted IPs and ports to use, as shown in the example below.
+It is recommended to allow all outbound communication for the WAF *outbound rules as shown in [Table 2. Security Group Configuration Example]. If specific outbound rules need to be allowed, refer to [Table 3. WAF Outbound List] below."
 
-| Direction | IP Protocol | Port range | Remote | Description | 
-| :-------: | :-----: | :---: | :---: | :--- | 
-| Ingress | TCP | 80 (HTTP) | 0.0.0.0/0 (CIDR) | WAF web service port | 
-| Ingress | TCP | 443 (HTTPS) | 0.0.0.0/0 (CIDR) | WAF web service port | 
-| Ingress | TCP | 5001 | x.x.x.x/32 (CIDR) | WAF management tool(UI) pot (Only allow administrator IP) | 
-| Ingress | TCP | 22 (SSH) | x.x.x.x/32 (CIDR) | WAF SSH Terminal port (Only allow administrator IP) | 
-| Ingress | TCP/HTTP | 5000 | IP of top LB of WAF<BR>x.x.x.x/32 (CIDR) | health check port between WAF(redundancy) and Top LB | 
-| Egress | TCP | 443 (HTTPS) | 218.145.29.166/32 (CIDR) | WAF License Update server 
-| Egress | TCP | 443 (HTTPS) | 218.145.29.101/32 (CIDR) | WAF License Update server | 
-| Egress | TCP | 5001 | 218.145.29.168/32 (CIDR) | WAF Security rule(custom rule) Update server |
+<br>
 
-※ Note : When using WAF redundancy (when using the settings synchronization function) or Auto Scaling, ports 5984 and 6984 must be allowed between WAFs.
+| Direction | IP Protocol | Port | Remote(CIDR) | Description |
+| :-------: | :-----: | :---: | :---: | :--- |
+| Out | TCP | 443 (HTTPS) | 218.145.29.166/32 | WAF License Update Server |
+| Out | TCP | 443 (HTTPS) | 218.145.29.101/32 | WAF License Update Server |
+| Out | TCP | 5001 | 218.145.29.168/32 | WAF Security Rule(Custom Rule) Update Server |
+| Out | UDP | 123 | 218.145.29.166/32 | Penta Security Time Server |
+| Out | UDP | 123 | 218.145.29.163/32 | Penta Security Time Server |
+| *Out | TCP | 5984 | Security group of the WAF or WAF IP range | WAF policy synchronization<br><span style="color:#e11d21;">*Required for HA configuration</span> |
 
-## Initial Settings for Web Firewall
+<p align="center">[Table 3. WAF Outbound List]</p>
 
-* Initial setup after WAF initial run
+> [Caution]
+> * If the TCP 443 (HTTPS) policy for the protected server is not configured on the web firewall, access to the web firewall's management console (UI) is possible via TCP 443 (HTTPS). Therefore, the 'Inbound TCP 443' rule in the security group ACL should be allowed in the security group after configuring the TCP 443 setting for the protected server on the web firewall.
 
-1. Access Web Firewall Web Management Tool (UI) from a browser (chrome recommended)
-    * https://WAF IP:5001
-    * Login Access information : Contact ct@pentasecurity.com
+## Initial Setup for WEB Firewall
+### Initial Setup after WAF Initial Run
+1. Access the WEB Firewall's Management Console(UI) in a Browser (Chrome Recommended)
+   * https://WAF IP:5001
+   * Login Access information: Contact ct@pentasecurity.com
 
+      <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_01_241115.png" width="1000" />
+
+2. 환경설정 > 시스템 > 시간동기화 설정하기
 2. Settings > System > Set time synchronization
     * Set up time servers Penta Server 1 & Penta Server 2 respectively
 
