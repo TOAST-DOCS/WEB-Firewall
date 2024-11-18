@@ -136,45 +136,65 @@ webfirewall_public_kr_console-guide-self-penta_05_241113.png](https://static.toa
 
 ### WAF 최초 구동 후 초기 설정 하기
 1. 브라우저(크롬 권장)에서 웹방화벽 웹 관리 도구(UI) 접속
-	* https://WAF IP:5001
-	* 처음 로그인 접속 정보 : ct@pentasecurity.com 로 문의
-		<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/kr/webfirewall_public_kr_console-guide-self-penta_WAF_01_241113.png" width="1000" />
-2. 환경설정 > 시스템 > 시간동기화 설정하기
-   	* 시간 서버 각각 설정하기
-		<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/kr/webfirewall_public_kr_console-guide-self-penta_WAF_02_241113.png" width="1000" />
-		<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/kr/webfirewall_public_kr_console-guide-self-penta_WAF_03_241113.png" width="1000" />
-3. 네트워크 설정 > 프록시IP 설정하기
-	* NHN console 에서 확인한 네트워크 정보 입력(WAF IP, gateway, netmask)
- 		<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/kr/webfirewall_public_kr_console-guide-self-penta_WAF_04_241113.png" width="1000" />
-   		<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/kr/webfirewall_public_kr_console-guide-self-penta_WAF_05_241113.png" width="1000" />
-   		<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/kr/webfirewall_public_kr_console-guide-self-penta_WAF_06_241113.png" width="1000" />
-4. WAF 보호 대상 설정하기
-	* 네트워크 설정 > 보호 대상 서버 > 웹 서버 추가
- 					<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/kr/webfirewall_public_kr_console-guide-self-penta_WAF_07_241113.png" width="1000" /> 
-	* 보호 대상 서버 등록하기
- 		* 단일: 웹 호스트명에 따라 분기할 필요 없이 설정한 보호대상 웹 서버(혹은 하단 LB 등)의 IP 혹은 포트로 연결할 경우 사용합니다. ( 1:1 매칭)
-   		* 다중: 웹 호스트명에 따라 보호대상 웹 서버(혹은 하단 LB 등)의 IP 혹은 포트로 분기하여 연결할 경우 사용합니다. (1:N 매칭)
+   * https://WAF IP:5001
+   * 처음 로그인 접속 정보 : ct@pentasecurity.com 로 문의
 
-		* 단일 설정
-			<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/kr/webfirewall_public_kr_console-guide-self-penta_WAF_08_241113.png" width="1000" />
-		* 다중 설정
-  			<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/kr/webfirewall_public_kr_console-guide-self-penta_WAF_09_241113.png" width="1000" />
-			<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/kr/webfirewall_public_kr_console-guide-self-penta_WAF_10_241113.png" width="1000" />
-			<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/kr/webfirewall_public_kr_console-guide-self-penta_WAF_11_241113.png" width="1000" />
+      <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/kr/webfirewall_public_kr_console-guide-self-penta_WAF_01_241113.png" width="1000" />
+<br>
+
+2. 환경설정 > 시스템 > 시간동기화 설정하기
+   * 시간 서버 각각 설정하기
+
+      <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/kr/webfirewall_public_kr_console-guide-self-penta_WAF_02_241113.png" width="1000" />
+      <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/kr/webfirewall_public_kr_console-guide-self-penta_WAF_03_241113.png" width="1000" />
+<br>
+
+3. 네트워크 설정 > 프록시IP 설정하기
+   * NHN Cloud Console 에서 확인한 네트워크 정보 입력(WAF IP, gateway, netmask)
+      <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/kr/webfirewall_public_kr_console-guide-self-penta_WAF_04_241113.png" width="1000" />
+      <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/kr/webfirewall_public_kr_console-guide-self-penta_WAF_05_241113.png" width="1000" />
+      <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/kr/webfirewall_public_kr_console-guide-self-penta_WAF_06_241113.png" width="1000" />
+<br>
+
+4. WAF 보호 대상 설정하기
+   * 네트워크 설정 > 보호 대상 서버 > 웹 서버 추가
+      <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/kr/webfirewall_public_kr_console-guide-self-penta_WAF_07_241113.png" width="1000" />
+     <br>
+     
+      * 보호 대상 서버 등록하기
+         * 단일: 웹 호스트명에 따라 분기할 필요 없이 설정한 보호대상 웹 서버(혹은 하단 LB 등)의 IP 혹은 포트로 연결할 경우 사용합니다. ( 1:1 매칭)
+         * 다중: 웹 호스트명에 따라 보호대상 웹 서버(혹은 하단 LB 등)의 IP 혹은 포트로 분기하여 연결할 경우 사용합니다. (1:N 매칭)
+         <br>
+	 
+         * 단일 설정
+            <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/kr/webfirewall_public_kr_console-guide-self-penta_WAF_08_241113.png" width="1000" />
+         * 다중 설정
+            <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/kr/webfirewall_public_kr_console-guide-self-penta_WAF_09_241113.png" width="1000" />
+            <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/kr/webfirewall_public_kr_console-guide-self-penta_WAF_10_241113.png" width="1000" />
+      * 최종 적용
+         <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/kr/webfirewall_public_kr_console-guide-self-penta_WAF_11_241113.png" width="1000" />
+<br>
+
 > [참고]
 > * WAF가 HTTPS 서비스를 제공해야 할 경우 [네트워크 설정 > SSL 프로파일 > 인증서 추가]를 진행한 후 각 보호대상 웹 서버 추가 시 SSL 설정을 진행할 수 있습니다.
 > * 자세한 사항은 아래 "웹 방화벽 운영" 항목에 기재된 위치의 사용자 매뉴얼을 참고합니다.
+<br>
 
 5. 보호 정책 설정하기
-	* 보안 설정 > 정책 설정 > 신규 정책 추가(기반 정책: '탐지만 하고 차단 안 함' 선택)
-		<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/kr/webfirewall_public_kr_console-guide-self-penta_WAF_12_241113.png" width="1000" />
-  		<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/kr/webfirewall_public_kr_console-guide-self-penta_WAF_13_241113.png" width="800" />
-	* 보안 설정 > 정책 설정 > 신규 웹사이트 추가(신규 정책에 적용)
-  		<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/kr/webfirewall_public_kr_console-guide-self-penta_WAF_14_241113.png" width="800" />
-    		<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/kr/webfirewall_public_kr_console-guide-self-penta_WAF_15_241113.png" width="1000" />
+   * 보안 설정 > 정책 설정 > 신규 정책 추가(기반 정책: '탐지만 하고 차단 안 함' 선택)
+
+      <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/kr/webfirewall_public_kr_console-guide-self-penta_WAF_12_241113.png" width="1000" />
+      <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/kr/webfirewall_public_kr_console-guide-self-penta_WAF_13_241113.png" width="800" />
+
+   * 보안 설정 > 정책 설정 > 신규 웹사이트 추가(신규 정책에 적용)
+
+      <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/kr/webfirewall_public_kr_console-guide-self-penta_WAF_14_241113.png" width="800" />
+      <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/kr/webfirewall_public_kr_console-guide-self-penta_WAF_15_241113.png" width="1000" />
+<br>
+
 6. X-Forwarded-For IP 설정하기
-	* 보안 설정 > 정책 부가 설정 > X-Forwarded-For 설정(Block & Detect 모두 설정)
-		<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/kr/webfirewall_public_kr_console-guide-self-penta_WAF_16_241113.png" width="1000" />
+   * 보안 설정 > 정책 부가 설정 > X-Forwarded-For 설정(Block & Detect 모두 설정)
+      <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/kr/webfirewall_public_kr_console-guide-self-penta_WAF_16_241113.png" width="1000" />
 <br>
 
 > [WAF 적용 시 참고 사항]
