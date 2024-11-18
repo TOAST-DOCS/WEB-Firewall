@@ -9,9 +9,7 @@ WEB Firewall 서비스를 이용하려면 **NHN Cloud Console**에 로그인하�
 webfirewall_public_kr_console-guide-self-penta_01_241113.png](https://static.toastoven.net/prod_web_firewall/Penta/public/kr/webfirewall_public_kr_console-guide-self-penta_01_241113.png)
 <br><br>
 
-## 서비스 신청 및 해제
-<br>
-
+## 서비스 신청 및 해지
 ### 웹 방화벽 생성
 
 ![
@@ -28,7 +26,7 @@ webfirewall_public_kr_console-guide-self-penta_03_241113.png](https://static.toa
 
 <br>
 
-### 웹 방화벽 해제
+### 웹 방화벽 해지
 
 ![
 webfirewall_public_kr_console-guide-self-penta_04_241113.png](https://static.toastoven.net/prod_web_firewall/Penta/public/kr/webfirewall_public_kr_console-guide-self-penta_04_241113.png)
