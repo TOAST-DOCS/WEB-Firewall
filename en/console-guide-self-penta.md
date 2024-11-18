@@ -3,29 +3,55 @@
 WEB Firewall Self service provides guides to create and operate web firewall instances to help protect web servers. 
 This document introduces how to use the WEB Firewall Self service.
 
-To use the WEB Firewall service, log in to **NHN Cloud Console** and click on **Security>WEB Firewall** in the service list.
+To use the WEB Firewall service, log in to **NHN Cloud Console**, and activate the service by clicking **Security > WEB Firewall** in the service list.
 
-## Apply for and Cancel a Service
+![webfirewall_public_en_console-guide-self-penta_01_241115.png](https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_01_241115.png)
+<br><br>
 
-![webfirewall_console_guide_self_210625.png](https://static.toastoven.net/prod_web_firewall/webfirewall_console_guide_self_220613.png)
+## Use and Cancel a Service
+### Create WEB Firewall
 
-### Create Web Firewall
+![webfirewall_public_en_console-guide-self-penta_02_241115.png](https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_02_241115.png)
+![webfirewall_public_en_console-guide-self-penta_03_241115.png](https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_03_241115.png)
 
-1. On **WEB Firewall** console, click on **Shortcut** from **Apply for Self** to navigate to the Create Instance page.
-2. Click on **\+ Create Instance** and select PENTA WAF from the image list and enter the instance information. Refer to ** Detailed Procedure to create Web Firewall Instance ** below for more information.
+1. Click the **Go button** in the Apply to **Self section** of the **WEB Firewall** to navigate to the Compute > Instance page.
+2. Click **+ Create Instance**, select PENTA WAF from the image list, and enter the instance information. For detailed instructions, **please refer to the Detailed Procedure for Creating a Web Firewall Instance below.**
 
-※ Service fee will be charged as soon as the instance is created.
+> [note]
+> * Service fee will be charged as soon as the instance is created.
+> * The minimum recommended instance specifications for WAPPLE SA (PENTA WAF) are 2 vCores / 4GB of memory. Using an instance with lower specifications than recommended may cause malfunctions. Therefore, **you must use an instance type that meets or exceeds these specifications.**
 
-### Disable Web Firewall
+### Cancel a Service
 
-Select and delete a Web firewall instance.
+![webfirewall_public_en_console-guide-self-penta_04_241115.png](https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_04_241115.png)
 
-※ When configuring a web firewall, traffic goes through the web firewall, and service failure may occur if the instance is deleted while in use.<BR>
-※ Please delete instance after checking the web service you are using.
+1. Select the WEB Firewall instance from the instance list.
+2. Delete the instance by clicking the '...' button and selecting **'Delete Instance'**.
 
-## Detailed Procedure to Create Web Firewall Instance
+> [Caution]
+> * When configuring a web firewall, traffic goes through the web firewall, and service failure may occur if the instance is deleted while in use.
+> * Ensure associated services are carefully reviewed before deleting a WEB Firewall instance.
 
-![webfirewall_console_guide_self_1_210625.png](https://static.toastoven.net/prod_web_firewall/webfirewall_console_guide_self_penta_230904.png)
+## Detailed Procedure for Creating a Web Firewall Instance
+This guide provides detailed procedures to reference when creating a web firewall instance.
+<br>
+
+### 1. Image
+![webfirewall_public_en_console-guide-self-penta_05_241115.png](https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_05_241115.png)
+1. Select the **'PETNA WAF'** image from the public image list.
+
+<br>
+
+### 2. Instance Information
+<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_06_241115.png" width="1200" />
+1. Availability Zone: Configure the availability zone where the web firewall instance will be located. For more details on availability zones, refer to the availability zone section in the instance overview.
+2. Instance Name
+3. Flavor
+4. Number of Instances
+5. Key Pair
+
+
+
 
 ※ Set up a security group for trusted IPs and ports to use, as shown in the example below.
 
