@@ -22,7 +22,7 @@ To enable WEB Firewall, login to **NHN Cloud Console** and click **Security > WE
 
 ### Cancel a Service
 
-- To cancel the service, contact Surveillance Center.  
+- To cancel the service, contact Security Operations Center.  
 
 ## How to Create and Configure 
 
