@@ -32,7 +32,7 @@ webfirewall_public_kr_console-guide-self-penta_03_241113.png](https://static.toa
 webfirewall_public_kr_console-guide-self-penta_04_241113.png](https://static.toastoven.net/prod_web_firewall/Penta/public/kr/webfirewall_public_kr_console-guide-self-penta_04_241113.png)
 
 1. 인스턴스 목록에서 웹 방화벽 인스턴스를 선택합니다.
-2.  '…' 버튼을 클릭하여 **인스턴스 삭제**를 통한 절차에 따라 인스턴스를 삭제합니다.
+2.  '…' 버튼을 클릭하여 **인스턴스 삭제**를 클릭하여 인스턴스를 삭제합니다.
 
 > [주의]
 > * 웹 서비스가 웹 방화벽을 경유하여 서비스 되고 있을 때 인스턴스를 삭제할 경우 서비스 장애가 발생할 수 있습니다.
