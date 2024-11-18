@@ -44,12 +44,55 @@ This guide provides detailed procedures to reference when creating a web firewal
 
 ### 2. Instance Information
 <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_06_241115.png" width="1200" />
-1. Availability Zone: Configure the availability zone where the web firewall instance will be located. For more details on availability zones, refer to the availability zone section in the instance overview.
-2. Instance Name
-3. Flavor
-4. Number of Instances
-5. Key Pair
 
+1. Availability Zone: Configure the availability zone where the web firewall instance will be located. For more details on availability zones, refer to [the availability zone section in the instance overview.](https://docs.nhncloud.com/en/Compute/Instance/en/overview/#availability-zone)<br>
+2. Instance Name: Configure the instance Name.<br>
+3. Flavor: Configure the virtual hardware performance. Set the instance type by referring to the recommended specifications table for the web firewall below.<br>
+4. Number of Instances: Set the number of instances to be created.<br>
+5. Key Pair: Configure the key pair used for SSH access to the instance. You can either use an existing key pair or create a new one.<br>
+
+> [note]
+> * The minimum recommended specification is 2vCore/4GB, but make sure to use an instance type with a specification above the minimum specfication. **Otherwise, WEB Firewall may not function properly.**
+
+| Throughput (Mbps) | Instance type | vCPU | Memory(GB) |
+| :-------: | :-----: | :---: | :---: |
+| 100 | m2.c2m4 | 2 | 4 | 
+| 300 | m2.c4m8 | 4 | 8 | 
+| 700 | m2.c8m16 | 8 | 16 |
+| 1,500 | m2.c16m32 | 16 | 32 |
+
+<p align="center">[Talbe 1. WEB Firewall(WAPPLES SA) Recommended Instance Type]</p>
+
+
+### 3. Root Block Storage
+<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_07_241115.png" width="1200" />
+
+1. Block Storage Type: You can select HDD, SSD, Encrypted HDD, and Encrypted SSD. For information on Encrypted HDD/SSD, refer to [the encrypted block storage section.](https://docs.nhncloud.com/en/Storage/Block%20Storage/en/console-guide/#_2)<br>
+2. Block Storage Size(GB): Configure the capacity of the root block storage. the minimum capacity for PENTA WAF is 200GB.
+
+### 4. Network Settings
+<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_08_241115.png" width="1200" />
+
+1. Network Interface Settings
+   * Create network interface: It is a method where the interface is automatically created in the selected subnet.
+   * Specify existing network interface: This method involves selecting an already created interface. The settings for '2. Network' and '3. Floating IP' are omitted, as they follow the configuration of the existing interface.
+2. Network: Select the subnet from the ones defined in the VPC to connect to the instance. PENTA WAF does not support additional interface configurations.
+3. Floating IP: Specify whether to use a floating IP after the instance is created. At this time, the VPC to which the web firewall instance belongs must be connected to an internet gateway. Even if not configured now, it can be set later in 'Instance > Floating IP Management' or 'Network Interface > Floating IP Management', Etc.
+4. Security Group: Select the security group to apply to the web firewall instance. Refer to the example settings below for guidance on configuring the security group.
+
+<br>
+
+| Direction | IP Protocol | Port | Remote(CIDR) | Description |
+| :-------: | :-----: | :---: | :---: | :--- |
+| In | TCP | 80 (HTTP) | 0.0.0.0/0 | WAF Web Service Port |
+| In | TCP | 443 (HTTPS) | 0.0.0.0/0 | WAF Web Service Port<br><span style="color:#e11d21;">*Refer to the note below</span> |
+| In | TCP | 5001 | Admin IP | WAF Management Console(UI) Port(Allow Only Admin IP) |
+| In | TCP | 22 (SSH) | Admin IP | WAF SSH Terminal Port(Allow Only Admin IP) |
+| In | TCP | 5000 | IP of the LB located at the top of the WAF | 상단 LB의 헬스체크(health check) 포트 |
+| In | TCP | 5984 | Security group of the WAF or WAF IP range | WAF policy synchronization<br><span style="color:#e11d21;">*Required for HA configuration</span> | 
+| *Out | ALL | - | 0.0.0.0/0 | Communication with external servers for purposes such as external licenses, signature updates, etc. of the WAF<br>(When individual configuration is required, refer to [Table 3. WAF Outbound List]) |
+
+<p align="center"> [Table 2. Security Group Configuration Example] </p>
 
 
 
