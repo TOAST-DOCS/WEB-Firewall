@@ -84,7 +84,7 @@ webfirewall_public_kr_console-guide-self-penta_05_241113.png](https://static.toa
 <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/kr/webfirewall_public_kr_console-guide-self-penta_08_241113.png" width="1200" />
 
 1. 네트워크 인터페이스 설정
-    - 네트워크 인터페이스 생성: 네트워크 서브넷을 선택하면 자동으로 인터페이스가 생성되는 방식입니다.
+    - 네트워크 인터페이스 생성: 선택한 서브넷에 자동으로 인터페이스가 생성되는 방식입니다.
     - 기존 네트워크 인터페이스 지정: 기존에 생성되어 있는 인터페이스를 설정하는 방식입니다. 아래의 "2. 네트워크"와 "3. 플로팅 IP" 설정은 기존 인터페이스의 설정을 따르기에 생략됩니다.
 2. 네트워크: VPC에 정의된 서브넷 중에서 인스턴스에 연결할 서브넷을 선택합니다. **PENTA WAF는 추가 인터페이스 설정을 지원하지 않습니다.**
 3. 플로팅 IP: 인스턴스 생성 후 플로팅 IP 사용 여부를 지정합니다. 이때 웹 방화벽 인스턴스가 속한 VPC가 인터넷 게이트웨이와 연결되어 있어야 합니다. 지금 설정하지 않더라도 "Instance > 플로팅 IP 관리", "Network Interface > 플로팅 IP 관리" 등에서 설정할 수 있습니다.
