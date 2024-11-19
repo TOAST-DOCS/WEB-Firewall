@@ -28,7 +28,7 @@ WEB Firewall 서비스를 이용하려면 **NHN Cloud Console**에 로그인하�
 ![webfirewall_gov_kr_console-guide-self-penta-gov_04_241113.png](https://static.toastoven.net/prod_web_firewall/Penta/gov/kr/webfirewall_gov_kr_console-guide-self-penta-gov_04_241113.png)
 
 1. 인스턴스 목록에서 웹 방화벽 인스턴스를 선택합니다.
-2.  '…' 버튼을 클릭하여 **인스턴스 삭제**를 통한 절차에 따라 인스턴스를 삭제합니다.
+2.  '…' 버튼을 클릭하고 **인스턴스 삭제**를 선택하여 인스턴스를 삭제합니다.
 
 > [주의]
 > * 웹 서비스가 웹 방화벽을 경유하여 서비스 되고 있을 때 인스턴스를 삭제할 경우 서비스 장애가 발생할 수 있습니다.
@@ -135,43 +135,53 @@ WEB Firewall 서비스를 이용하려면 **NHN Cloud Console**에 로그인하�
 	* https://WAF IP:5001
 	* 처음 로그인 접속 정보 : ct@pentasecurity.com 로 문의
 		<img src="https://static.toastoven.net/prod_web_firewall/Penta/gov/kr/webfirewall_gov_kr_console-guide-self-penta-gov_WAF_01_241113.png" width="1000" />
+<br>
+
 2. 환경설정 > 시스템 > 시간동기화 설정하기
-   	* 시간 서버 각각 설정하기
+	* 시간 서버 각각 설정하기
 		<img src="https://static.toastoven.net/prod_web_firewall/Penta/gov/kr/webfirewall_gov_kr_console-guide-self-penta-gov_WAF_02_241113.png" width="1000" />
 		<img src="https://static.toastoven.net/prod_web_firewall/Penta/gov/kr/webfirewall_gov_kr_console-guide-self-penta-gov_WAF_03_241113.png" width="1000" />
+<br>
+
 3. 네트워크 설정 > 프록시IP 설정하기
 	* NHN console 에서 확인한 네트워크 정보 입력(WAF IP, gateway, netmask)
- 		<img src="https://static.toastoven.net/prod_web_firewall/Penta/gov/kr/webfirewall_gov_kr_console-guide-self-penta-gov_WAF_04_241113.png" width="1000" />
-   		<img src="https://static.toastoven.net/prod_web_firewall/Penta/gov/kr/webfirewall_gov_kr_console-guide-self-penta-gov_WAF_05_241113.png" width="1000" />
-   		<img src="https://static.toastoven.net/prod_web_firewall/Penta/gov/kr/webfirewall_gov_kr_console-guide-self-penta-gov_WAF_06_241113.png" width="1000" />
+		<img src="https://static.toastoven.net/prod_web_firewall/Penta/gov/kr/webfirewall_gov_kr_console-guide-self-penta-gov_WAF_04_241113.png" width="1000" />
+		<img src="https://static.toastoven.net/prod_web_firewall/Penta/gov/kr/webfirewall_gov_kr_console-guide-self-penta-gov_WAF_05_241113.png" width="1000" />
+		<img src="https://static.toastoven.net/prod_web_firewall/Penta/gov/kr/webfirewall_gov_kr_console-guide-self-penta-gov_WAF_06_241113.png" width="1000" />
+<br>
+
 4. WAF 보호 대상 설정하기
 	* 네트워크 설정 > 보호 대상 서버 > 웹 서버 추가
- 					<img src="https://static.toastoven.net/prod_web_firewall/Penta/gov/kr/webfirewall_gov_kr_console-guide-self-penta-gov_WAF_07_241113.png" width="1000" /> 
+		<img src="https://static.toastoven.net/prod_web_firewall/Penta/gov/kr/webfirewall_gov_kr_console-guide-self-penta-gov_WAF_07_241113.png" width="1000" /><br><br>
 	* 보호 대상 서버 등록하기
- 		* 단일: 웹 호스트명에 따라 분기할 필요 없이 설정한 보호대상 웹 서버(혹은 하단 LB 등)의 IP 혹은 포트로 연결할 경우 사용합니다. ( 1:1 매칭)
-   		* 다중: 웹 호스트명에 따라 보호대상 웹 서버(혹은 하단 LB 등)의 IP 혹은 포트로 분기하여 연결할 경우 사용합니다. (1:N 매칭)
-
+		* 단일: 웹 호스트명에 따라 분기할 필요 없이 설정한 보호대상 웹 서버(혹은 하단 LB 등)의 IP 혹은 포트로 연결할 경우 사용합니다. (1:1 매칭)
+		* 다중: 웹 호스트명에 따라 보호대상 웹 서버(혹은 하단 LB 등)의 IP 혹은 포트로 분기하여 연결할 경우 사용합니다. (1:N 매칭) <br><br>
 		* 단일 설정
-			<img src="https://static.toastoven.net/prod_web_firewall/Penta/gov/kr/webfirewall_gov_kr_console-guide-self-penta-gov_WAF_08_241113.png" width="1000" />
+			<img src="https://static.toastoven.net/prod_web_firewall/Penta/gov/kr/webfirewall_gov_kr_console-guide-self-penta-gov_WAF_08_241113.png" width="1000" /><br><br>
 		* 다중 설정
-  			<img src="https://static.toastoven.net/prod_web_firewall/Penta/gov/kr/webfirewall_gov_kr_console-guide-self-penta-gov_WAF_09_241113.png" width="1000" />
-			<img src="https://static.toastoven.net/prod_web_firewall/Penta/gov/kr/webfirewall_gov_kr_console-guide-self-penta-gov_WAF_10_241113.png" width="1000" />
-			<img src="https://static.toastoven.net/prod_web_firewall/Penta/gov/kr/webfirewall_gov_kr_console-guide-self-penta-gov_WAF_11_241113.png" width="1000" />
+			<img src="https://static.toastoven.net/prod_web_firewall/Penta/gov/kr/webfirewall_gov_kr_console-guide-self-penta-gov_WAF_09_241113.png" width="1000" />
+			<img src="https://static.toastoven.net/prod_web_firewall/Penta/gov/kr/webfirewall_gov_kr_console-guide-self-penta-gov_WAF_10_241113.png" width="1000" /><br><br>
+	* 최종 적용
+		<img src="https://static.toastoven.net/prod_web_firewall/Penta/gov/kr/webfirewall_gov_kr_console-guide-self-penta-gov_WAF_11_241113.png" width="1000" /><br><br>
+
 > [참고]
 > * WAF가 HTTPS 서비스를 제공해야 할 경우 [네트워크 설정 > SSL 프로파일 > 인증서 추가]를 진행한 후 각 보호대상 웹 서버 추가 시 SSL 설정을 진행할 수 있습니다.
 > * 자세한 사항은 아래 "웹 방화벽 운영" 항목에 기재된 위치의 사용자 매뉴얼을 참고합니다.
 
+<br>
+
 5. 보호 정책 설정하기
 	* 보안 설정 > 정책 설정 > 신규 정책 추가(기반 정책: '탐지만 하고 차단 안 함' 선택)
 		<img src="https://static.toastoven.net/prod_web_firewall/Penta/gov/kr/webfirewall_gov_kr_console-guide-self-penta-gov_WAF_12_241113.png" width="1000" />
-  		<img src="https://static.toastoven.net/prod_web_firewall/Penta/gov/kr/webfirewall_gov_kr_console-guide-self-penta-gov_WAF_13_241113.png" width="800" />
+		<img src="https://static.toastoven.net/prod_web_firewall/Penta/gov/kr/webfirewall_gov_kr_console-guide-self-penta-gov_WAF_13_241113.png" width="800" /><br><br>
 	* 보안 설정 > 정책 설정 > 신규 웹사이트 추가(신규 정책에 적용)
-  		<img src="https://static.toastoven.net/prod_web_firewall/Penta/gov/kr/webfirewall_gov_kr_console-guide-self-penta-gov_WAF_14_241113.png" width="800" />
-    		<img src="https://static.toastoven.net/prod_web_firewall/Penta/gov/kr/webfirewall_gov_kr_console-guide-self-penta-gov_WAF_15_241113.png" width="1000" />
+		<img src="https://static.toastoven.net/prod_web_firewall/Penta/gov/kr/webfirewall_gov_kr_console-guide-self-penta-gov_WAF_14_241113.png" width="800" />
+		<img src="https://static.toastoven.net/prod_web_firewall/Penta/gov/kr/webfirewall_gov_kr_console-guide-self-penta-gov_WAF_15_241113.png" width="1000" />
+<br>
+
 6. X-Forwarded-For IP 설정하기
 	* 보안 설정 > 정책 부가 설정 > X-Forwarded-For 설정(Block & Detect 모두 설정)
-		<img src="https://static.toastoven.net/prod_web_firewall/Penta/gov/kr/webfirewall_gov_kr_console-guide-self-penta-gov_WAF_16_241113.png" width="1000" />
-<br>
+		<img src="https://static.toastoven.net/prod_web_firewall/Penta/gov/kr/webfirewall_gov_kr_console-guide-self-penta-gov_WAF_16_241113.png" width="1000" /><br><br>
 
 > [WAF 적용 시 참고 사항]
 > * NHN Cloud 관리형 서비스 공급자(managed service provider, MSP)를 통해 고객 인프라 환경에 WAF 서비스가 적용되도록 네트워크 routing을 변경 구성합니다.
@@ -183,7 +193,7 @@ WEB Firewall 서비스를 이용하려면 **NHN Cloud Console**에 로그인하�
 
 * 웹 방화벽의 전반적인 사용자 매뉴얼 및 이용 방법은 웹 방화벽의 관리 도구(UI)에서 제공합니다.
 * 아래 화면의 사용자 매뉴얼 위치를 참고하여 웹 방화벽 운영 전반의 이용 방법을 참고하십시오.
-<img src="https://static.toastoven.net/prod_web_firewall/Penta/gov/kr/webfirewall_gov_kr_console-guide-self-penta-gov_WAF_17_241113.png" width="1000" />
+	<img src="https://static.toastoven.net/prod_web_firewall/Penta/gov/kr/webfirewall_gov_kr_console-guide-self-penta-gov_WAF_17_241113.png" width="1000" /><br><br>
 
 > [참고]
 > * Self 서비스에서는 사용 가이드만 제공되며, Managed 서비스 이용 시 운영 대행 및 24시간 보안관제 서비스를 제공합니다.
