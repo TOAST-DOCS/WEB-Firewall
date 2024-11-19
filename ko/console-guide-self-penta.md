@@ -140,7 +140,7 @@ webfirewall_public_kr_console-guide-self-penta_05_241113.png](https://static.toa
 	* https://WAF IP:5001
 	* 처음 로그인 접속 정보 : ct@pentasecurity.com 로 문의
 		<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/kr/webfirewall_public_kr_console-guide-self-penta_WAF_01_241113.png" width="1000" />
-  <br>
+<br>
   
 2. 환경설정 > 시스템 > 시간동기화 설정하기
 	* 시간 서버 각각 설정하기
@@ -159,7 +159,7 @@ webfirewall_public_kr_console-guide-self-penta_05_241113.png](https://static.toa
 	* 네트워크 설정 > 보호 대상 서버 > 웹 서버 추가
 		<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/kr/webfirewall_public_kr_console-guide-self-penta_WAF_07_241113.png" width="1000" /><br><br>
 	* 보호 대상 서버 등록하기
-		* 단일: 웹 호스트명에 따라 분기할 필요 없이 설정한 보호대상 웹 서버(혹은 하단 LB 등)의 IP 혹은 포트로 연결할 경우 사용합니다. ( 1:1 매칭)
+		* 단일: 웹 호스트명에 따라 분기할 필요 없이 설정한 보호대상 웹 서버(혹은 하단 LB 등)의 IP 혹은 포트로 연결할 경우 사용합니다. (1:1 매칭)
 		* 다중: 웹 호스트명에 따라 보호대상 웹 서버(혹은 하단 LB 등)의 IP 혹은 포트로 분기하여 연결할 경우 사용합니다. (1:N 매칭) <br><br>
 	 	* 단일 설정
 			<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/kr/webfirewall_public_kr_console-guide-self-penta_WAF_08_241113.png" width="1000" /><br><br>
