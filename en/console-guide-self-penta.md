@@ -120,56 +120,56 @@ It is recommended to allow all outbound communication for the WAF *outbound rule
 ## Initial Setup for Web Firewall
 ### Initial Setup after WAF Initial Run
 1. Access the Web Firewall's Management Console(UI) in a Browser (Chrome Recommended)
-   * https://WAF IP:5001
-   * Login Access information: Contact ct@pentasecurity.com
-      <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_01_241115.png" width="1000" />
+	* https://WAF IP:5001
+	* Login Access information: Contact ct@pentasecurity.com
+		<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_01_241115.png" width="1000" />
 <br>
 
 2. Configuration > System > Time Sync
-   * Configure each time server
-      <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_02_241115.png" width="1000" />
-      <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_03_241115.png" width="1000" />
+	* Configure each time server
+		<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_02_241115.png" width="1000" />
+		<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_03_241115.png" width="1000" />
 <br>
 
 3. Security Settings > Network Settings > Proxy IP
-   * Enter network information from NHN Cloud Console (WAF IP, gateway, netmask)
-      <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_04_241115.png" width="1000" />
-      <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_05_241115.png" width="1000" />
-      <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_06_241115.png" width="1000" />
+	* Enter network information from NHN Cloud Console (WAF IP, gateway, netmask)
+		<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_04_241115.png" width="1000" />
+		<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_05_241115.png" width="1000" />
+		<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_06_241115.png" width="1000" />
 <br>
 
 4. Configure WAF Protection Target Servers
-   * Security Settings > Network Settings > Destination Server > Add Servers
-      <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_07_241115.png" width="1000" /> 
+	* Security Settings > Network Settings > Destination Server > Add Servers
+		<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_07_241115.png" width="1000" /> 
 
-      * Register Destination Server
-         * Single: It is used when connecting to the IP or port of the destination web server (or LB located at the bottom of the WAF, etc.) without the need to branch based on the web host name. (1:1 Matching)
-         * Multiple: It is used when connecting to the IP or port of the destnation web server (or LB located at the bottom of the WAF, etc.) based on the configured web host name. (1:N Matching)
+	* Register Destination Server
+		* Single: It is used when connecting to the IP or port of the destination web server (or LB located at the bottom of the WAF, etc.) without the need to branch based on the web host name. (1:1 Matching)
+		* Multiple: It is used when connecting to the IP or port of the destnation web server (or LB located at the bottom of the WAF, etc.) based on the configured web host name. (1:N Matching)
 
-         * Configure Single
-            <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_08_241115.png" width="1000" />
-         * Configure Multiple
-            <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_09_241115.png" width="1000" />
-	   		   <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_10_241115.png" width="1000" />
-      * Save and apply
-         <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_11_241115.png" width="1000" />
+		* Configure Single
+			<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_08_241115.png" width="1000" />
+		* Configure Multiple
+			<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_09_241115.png" width="1000" />
+			<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_10_241115.png" width="1000" />
+	* Save and apply
+		<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_11_241115.png" width="1000" />
 
 > [note]
 > * If the WAF needs to provide HTTPS, you can proceed by adding a certificate under [Network Settings > SSL Profile > SSL Profile Settings], and then configure SSL settings when adding each destination web server.
 > * For more details, please refer to the user manual located under the 'WEB Firewall Operation' section below.
 
 5. Configure the Security Policy
-   * Security Settings > Policy Settings > Add Policy (the Base Policy: Select '1. Detect Without Blocking')
-      <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_12_241115.png" width="1000" />
-      <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_13_241115.png" width="800" />
-   * Security Settings > Policy Settings > Add Website (Apply to New Policy)
-      <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_14_241115.png" width="800" />
-      <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_15_241115.png" width="1000" />
+	* Security Settings > Policy Settings > Add Policy (the Base Policy: Select '1. Detect Without Blocking')
+		<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_12_241115.png" width="1000" />
+		<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_13_241115.png" width="800" />
+	* Security Settings > Policy Settings > Add Website (Apply to New Policy)
+		<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_14_241115.png" width="800" />
+		<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_15_241115.png" width="1000" />
 <br>
 
 6. Configure X-Forwarded-For IP
-   * Security Settings > Additional Policy Settings > X-Forwarded-For (Configure both 'Block & Detect')
-      <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_16_241115.png" width="1000" />
+	* Security Settings > Additional Policy Settings > X-Forwarded-For (Configure both 'Block & Detect')
+		<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_16_241115.png" width="1000" />
 <br>
 
 > [notes when applying WAF]
@@ -181,7 +181,7 @@ It is recommended to allow all outbound communication for the WAF *outbound rule
 
 * The comprehensive user manual and instructions for the web firewall are available in its Management Console (UI).
 * Refer to the location of the user manual in the screen below for detailed instructions on operating the web firewall.
-   <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_17_241115.png" width="1000" />
+	<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_17_241115.png" width="1000" />
 
 > [note]
 > * In the 'Self' service, only the user guide is provided, while the 'Managed' service offers operation management and 24/7 security monitoring.
