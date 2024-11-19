@@ -99,7 +99,7 @@ This guide provides detailed procedures to reference when creating a web firewal
 
 <br>
 
-It is recommended to allow all outbound communication for the WAF *outbound rules as shown in [Table 2. Security Group Configuration Example]. If specific outbound rules need to be allowed, refer to [Table 3. WAF Outbound List] below."
+It is recommended to allow all outbound communication for the WAF *outbound rules as shown in [Table 2. Security Group Configuration Example]. If specific outbound rules need to be allowed, refer to [Table 3. WAF Outbound List] below.
 
 <br>
 
