@@ -140,19 +140,19 @@ It is recommended to allow all outbound communication for the WAF *outbound rule
 
 4. Configure WAF Protection Target Servers
 	* Security Settings > Network Settings > Destination Server > Add Servers
-		<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_07_241115.png" width="1000" /> 
+		<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_07_241115.png" width="1000" /><br><br>
 
 	* Register Destination Server
 		* Single: It is used when connecting to the IP or port of the destination web server (or LB located at the bottom of the WAF, etc.) without the need to branch based on the web host name. (1:1 Matching)
-		* Multiple: It is used when connecting to the IP or port of the destnation web server (or LB located at the bottom of the WAF, etc.) based on the configured web host name. (1:N Matching)
+		* Multiple: It is used when connecting to the IP or port of the destnation web server (or LB located at the bottom of the WAF, etc.) based on the configured web host name. (1:N Matching) <br><br>
 
 		* Configure Single
-			<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_08_241115.png" width="1000" />
+			<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_08_241115.png" width="1000" /><br><br>
 		* Configure Multiple
 			<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_09_241115.png" width="1000" />
-			<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_10_241115.png" width="1000" />
+			<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_10_241115.png" width="1000" /><br><br>
 	* Save and apply
-		<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_11_241115.png" width="1000" />
+		<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_11_241115.png" width="1000" /><br><br>
 
 > [note]
 > * If the WAF needs to provide HTTPS, you can proceed by adding a certificate under [Network Settings > SSL Profile > SSL Profile Settings], and then configure SSL settings when adding each destination web server.
@@ -161,7 +161,7 @@ It is recommended to allow all outbound communication for the WAF *outbound rule
 5. Configure the Security Policy
 	* Security Settings > Policy Settings > Add Policy (the Base Policy: Select '1. Detect Without Blocking')
 		<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_12_241115.png" width="1000" />
-		<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_13_241115.png" width="800" />
+		<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_13_241115.png" width="800" /><br><br>
 	* Security Settings > Policy Settings > Add Website (Apply to New Policy)
 		<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_14_241115.png" width="800" />
 		<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_15_241115.png" width="1000" />
@@ -169,8 +169,7 @@ It is recommended to allow all outbound communication for the WAF *outbound rule
 
 6. Configure X-Forwarded-For IP
 	* Security Settings > Additional Policy Settings > X-Forwarded-For (Configure both 'Block & Detect')
-		<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_16_241115.png" width="1000" />
-<br>
+		<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_16_241115.png" width="1000" /><br><br>
 
 > [notes when applying WAF]
 > * Depending on the customer's infrastructure configuration, updating the DNS to the WAF floating IP or the load balancer floating IP above the WAF may be necessary.
@@ -181,7 +180,7 @@ It is recommended to allow all outbound communication for the WAF *outbound rule
 
 * The comprehensive user manual and instructions for the web firewall are available in its Management Console (UI).
 * Refer to the location of the user manual in the screen below for detailed instructions on operating the web firewall.
-	<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_17_241115.png" width="1000" />
+	<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_17_241115.png" width="1000" /><br><br>
 
 > [note]
 > * In the 'Self' service, only the user guide is provided, while the 'Managed' service offers operation management and 24/7 security monitoring.
