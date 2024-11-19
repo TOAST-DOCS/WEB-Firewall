@@ -71,8 +71,7 @@ This guide provides detailed procedures to reference when creating a web firewal
 2. Block Storage Size(GB): Configure the capacity of the root block storage. the minimum capacity for PENTA WAF is 200GB.
 
 ### 4. Network Settings
-<img src="https://static.toastoven.net/prod_web_firewall/Penta/pub
-  lic/en/webfirewall_public_en_console-guide-self-penta_08_241115.png" width="1200" />
+<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_08_241115.png" width="1200" />
 
 1. Network Interface Settings
    * Create network interface: It is a method where the interface is automatically created in the selected subnet.
