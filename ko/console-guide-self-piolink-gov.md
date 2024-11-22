@@ -107,7 +107,7 @@ WEB Firewall 서비스를 이용하려면 **NHN Cloud Console**에 로그인하�
 	* 웹 방화벽 IP로 접근하는 것을 테스트하여 웹 서비스 정상 여부를 확인합니다.
 	* 설정한 내용을 저장하고 백업합니다.
 
-[WEBFRONT-KS 초기 설정 가이드](https://static.toastoven.net/prod_web_firewall/Piolink/Manual/WEBFRONT-KS_KR_Initial_Setup_Guide.pdf)
+[WEBFRONT-KS 초기 설정 가이드](https://static.toastoven.net/prod_web_firewall/Piolink/Manual/WEBFRONT-KS_KR_Initial-Setup-Guide.pdf)
 
 * 초기 설정 완료 후, 보호 대상 도메인 트래픽이 웹 방화벽으로 경유하도록 웹 방화벽 플로팅 IP로 DNS를 변경해야 합니다.
 * 제조사에서 제공하는 릴리스 노트를 참고하여 웹 방화벽 PLOS 버전을 최신으로 업데이트해야 합니다.
@@ -121,6 +121,6 @@ WEB Firewall 서비스를 이용하려면 **NHN Cloud Console**에 로그인하�
 * 학습 기능을 활용하여 예외 처리 등 정책 최적화를 진행합니다.
 * 보안 로그를 모니터링합니다.
 
-[WEBFRONT-KS 애플리케이션 구성 설명서](https://static.toastoven.net/prod_web_firewall/Piolink/Manual/WEBFRONT-KS_KR_Application_Configuration_Guide.pdf) <br>
-[WEBFRONT-KS 시스템 구성 설명서](https://static.toastoven.net/prod_web_firewall/Piolink/Manual/WEBFRONT-KS_KR_System_Configuration_Guide.pdf) <br>
+[WEBFRONT-KS 애플리케이션 구성 설명서](https://static.toastoven.net/prod_web_firewall/Piolink/Manual/WEBFRONT-KS_KR_Application-Configuration-Guide.pdf) <br>
+[WEBFRONT-KS 시스템 구성 설명서](https://static.toastoven.net/prod_web_firewall/Piolink/Manual/WEBFRONT-KS_KR_System-Configuration-Guide.pdf) <br>
 ※ Self 서비스에서는 사용 가이드만 제공되며, Managed 서비스 이용 시 운영 대행 및 24시간 보안관제 서비스를 제공합니다.
