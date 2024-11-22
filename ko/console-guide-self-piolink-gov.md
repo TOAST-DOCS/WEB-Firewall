@@ -123,4 +123,6 @@ WEB Firewall 서비스를 이용하려면 **NHN Cloud Console**에 로그인하�
 
 [WEBFRONT-KS 애플리케이션 구성 설명서](https://static.toastoven.net/prod_web_firewall/Piolink/Manual/WEBFRONT-KS_KR_Application-Configuration-Guide.pdf) <br>
 [WEBFRONT-KS 시스템 구성 설명서](https://static.toastoven.net/prod_web_firewall/Piolink/Manual/WEBFRONT-KS_KR_System-Configuration-Guide.pdf) <br>
-※ Self 서비스에서는 사용 가이드만 제공되며, Managed 서비스 이용 시 운영 대행 및 24시간 보안관제 서비스를 제공합니다.
+
+> [참고]
+> * Self 서비스에서는 사용 가이드만 제공되며, Managed 서비스 이용 시 운영 대행 및 24시간 보안관제 서비스를 제공합니다.
