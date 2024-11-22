@@ -172,7 +172,7 @@ It is recommended to allow all outbound communication for the WAF *outbound rule
 		<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_16_241115.png" width="1000" /><br><br>
 
 > [notes when applying WAF]
-> * Network routing must be modified and configured to apply the WAF service to the customer's infrastructure environment.
+> * Network routing needs to be modified to apply the WAF service to the customer's infrastructure environment.
 > * Depending on the customer's infrastructure configuration, updating the DNS to the WAF floating IP or the load balancer floating IP above the WAF may be necessary.
 
 <br>
