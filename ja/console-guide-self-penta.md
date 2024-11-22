@@ -113,9 +113,9 @@ WAFインスタンスを作成する際の詳細な手順をガイドします�
 
 | 方向 | IPプロトコル | ポート | リモート(CIDR) | 説明 |
 | :-------: | :-----: | :---: | :---: | :--- |
-| 送信 | TCP | 443 (HTTPS) | 218.145.29.166/32 | WAFライセンス更新サーバ |
-| 送信 | TCP | 443 (HTTPS) | 218.145.29.101/32 | WAFライセンス更新サーバ |
-| 送信 | TCP | 5001 | 218.145.29.168/32 | WAFセキュリティルール(custom rule)更新サーバ |
+| 送信 | TCP | 443 (HTTPS) | 218.145.29.166/32 | WAFライセンス更新サーバー |
+| 送信 | TCP | 443 (HTTPS) | 218.145.29.101/32 | WAFライセンス更新サーバー |
+| 送信 | TCP | 5001 | 218.145.29.168/32 | WAFセキュリティルール(custom rule)更新サーバー |
 | 送信 | UDP | 123 | 218.145.29.166/32 | ペンタセキュリティの時間サーバー |
 | 送信 | UDP | 123 | 218.145.29.163/32 | ペンタセキュリティの時間サーバー |
 | *送信 | TCP | 5984 | WAFのセキュリティグループまたはWAFのIP範囲 | WAF間のポリシー同期<br><span style="color:#e11d21;">*HA構成時に必要</span> |
@@ -150,4 +150,48 @@ WAFインスタンスを作成する際の詳細な手順をガイドします�
 <br>
 
 4. WAFの保護対象を設定する
-  * 保護対象
+  * ネットワーク設定 > 保護対象サーバー > ウェブサーバー追加
+    <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_WAF_07_241119.png" width="1000" /><br><br>
+  * 保護対象サーバーを登録する
+    * シングル: ウェブホスト名で分岐する必要なく、設定した保護対象ウェブサーバー(またはWEBのLBなど)のIPまたはポートに接続する場合に使用します。(1:1マッチング)
+    * マルチ: ウェブホスト名に基づいて、保護対象ウェブサーバー(またはWEBのLBなど)のIPまたはポートに分岐して接続する場合に使用します。(1:Nマッチング) <br><br>
+    * シングル設定
+      <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_WAF_08_241119.png" width="1000" /><br><br>
+    * マルチ設定
+      <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_WAF_09_241119.png" width="1000" />
+      <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_WAF_10_241119.png" width="1000" /><br><br>
+  * 最終適用
+    <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_WAF_11_241119.png" width="1000" /><br><br>
+
+>[参考]
+> * WAFがHTTPSサービスを提供する必要がある場合、[ネットワーク設定 > SSLプロファイル > 証明書追加]を実行した後、各保護対象ウェブサーバーを追加する際にSSL設定を行うことができます。
+> * 詳細については、以下の「WAF運用」項目に記載されている場所のユーザーマニュアルを参照してください。
+
+<br>
+
+5. 保護ポリシーを設定する
+  * セキュリティ設定 > ポリシー設定 > 新規ポリシー追加(基盤ポリシ: 「検知のみ行い遮断はしない」選択)
+    <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_WAF_12_241119.png" width="1000" />
+    <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_WAF_13_241119.png" width="800" /><br><br>
+  * セキュリティ設定 > ポリシー設定 > 新規ウェブサイト追加(新規ポリシー適用)
+    <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_WAF_14_241119.png" width="800" />
+    <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_WAF_15_241119.png" width="1000" />
+
+<br>
+
+6. X-Forwarded-For IP 設定する
+  * セキュリティ設定 > ポリシー付加設定 > X-Forwarded-For設定 (Block、Detectすべて設定)
+    <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_WAF_16_241119.png" width="1000" /><br><br>
+
+>[WAFに適用する際の参考]
+> * 顧客インフラの構成に応じて、WAFのFloating IPへのDNS変更が必要な場合や、WAFのHA構成時に前段ロードバランサーIPへのDNS変更が必要な場合があります。
+
+<br>
+
+## WAF運用
+* WAFの全般的なユーザーマニュアルおよび利用方法は、WAFの管理コンソール(UI)で提供されます。
+* 下記の画面のユーザーマニュアルの位置を参考にして、WAF運用全般の利用方法をご確認ください。
+  <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_WAF_17_241119.png" width="1000" /><br><br>
+
+>[参考]
+>* Selfサービスでは使用ガイドのみが提供され、Managedサービスを利用する際には運用代行および24時間セキュリティ監視サービスが提供されます。
