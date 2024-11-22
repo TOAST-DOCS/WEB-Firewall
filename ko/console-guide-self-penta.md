@@ -190,7 +190,7 @@ webfirewall_public_kr_console-guide-self-penta_05_241113.png](https://static.toa
 		<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/kr/webfirewall_public_kr_console-guide-self-penta_WAF_16_241113.png" width="1000" /><br><br>
 
 > [WAF 적용 시 참고 사항]
-> * NHN Cloud 관리형 서비스 공급자(managed service provider, MSP)를 통해 고객 인프라 환경에 WAF 서비스가 적용되도록 네트워크 경로를 변경 구성합니다.
+> * 고객 인프라 환경에 WAF 서비스가 적용되도록 네트워크 경로 변경이 필요합니다.
 > * 고객 인프라 구성에 따라 WAF 플로팅 IP로 DNS 변경이 필요하거나, WAF 이중화 구성 시 상단 로드 밸런서 IP로 DNS 변경이 필요할 수 있습니다.
 
 <br>
