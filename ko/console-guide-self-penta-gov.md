@@ -51,7 +51,7 @@ WEB Firewall 서비스를 이용하려면 **NHN Cloud Console**에 로그인하�
 <img src="https://static.toastoven.net/prod_web_firewall/Penta/gov/kr/webfirewall_gov_kr_console-guide-self-penta-gov_06_241113.png" width="1200" />
 
 
-1. 가용성 영역(Availablility Zone): 웹 방화벽 인스턴스가 위치할 가용성 영역을 설정합니다. 가용성 영역에 대한 자세한 설명은 [인스턴스 개요의 가용성 영역](https://docs.nhncloud.com/ko/Compute/Instance/ko/overview/#availability-zone)을 참고합니다.
+1. 가용성 영역(Availablility Zone): 웹 방화벽 인스턴스가 위치할 가용성 영역을 설정합니다. 가용성 영역에 대한 자세한 설명은 [인스턴스 개요의 가용성 영역](https://docs.gov-nhncloud.com/ko/Compute/Instance/ko/overview-gov/#availability-zone)을 참고합니다.
 2. 인스턴스 이름: 웹 방화벽 인스턴스의 이름을 설정합니다.
 3. 인스턴스 타입: 가상 하드웨어의 성능을 설정합니다. 아래 웹 방화벽의 권장사양 표를 참고하여 인스턴스 타입을 설정합니다.
 4. 인스턴스 수: 생성할 인스턴스의 수를 설정합니다.
