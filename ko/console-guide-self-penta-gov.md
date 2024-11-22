@@ -73,7 +73,7 @@ WEB Firewall 서비스를 이용하려면 **NHN Cloud Console**에 로그인하�
 ### 3. 루트 블록 스토리지
 <img src="https://static.toastoven.net/prod_web_firewall/Penta/gov/kr/webfirewall_gov_kr_console-guide-self-penta-gov_07_241113.png" width="1100" />
 
-1. 블록 스토리지 타입: HDD, SSD, Encrypted HDD, Encrypted SSD를 선택할 수 있습니다. Encrypted HDD/SSD에 대한 정보는 [암호화 블록 스토리지](https://docs.nhncloud.com/ko/Storage/Block%20Storage/ko/console-guide/#_2)를 참고합니다.
+1. 블록 스토리지 타입: HDD, SSD를 선택할 수 있습니다.
 2. 블록 스토리지 크기(GB): 루트 블록 스토리지의 용량을 설정합니다. PENTA WAF의 최소 용량은 200GB입니다.
 
 ### 4. 네트워크 설정
