@@ -126,3 +126,28 @@ WAFインスタンスを作成する際の詳細な手順をガイドします�
 
 > [注意]
 > * WAFで保護対象サーバー「TCP 443(HTTPS)」ポリシーを設定しない場合、WAFに「TCP 443(HTTPS)」で接続し、管理コンソール(UI)にアクセスできます。したがって、上記のセキュリティグループACLの「受信TCP 443」ルールは、WAFの保護対象サーバーに設定後、セキュリティグループで許可する必要があります。
+
+## WAFの初期設定
+
+### WAF 最初の駆動後、初期設定をする
+1. ブラウザ(Chrome推奨)を使用して、WAFの管理コンソール(UI)にアクセスします。
+  * https://WAF IP:5001
+  * 初回ログインの接続情報については、ct@pentasecurity.comまでお問い合わせください。
+    <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_WAF_01_241119.png" width="1000" />
+<br>
+
+2. 環境設定 > システム > 時刻同期を設定する
+  * 各時刻サーバーを個別に設定する
+    <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_WAF_02_241119.png" width="1000" />
+    <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_WAF_03_241119.png" width="1000" />
+<br>
+
+3. ネットワーク設定 > プロキシIPを設定する
+  * NHN Cloud Consoleで確認したネットワーク情報を入力する(WAF IP、ネットマスク、ゲートウェイ)
+    <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_WAF_04_241119.png" width="1000" />
+    <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_WAF_05_241119.png" width="1000" />
+    <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_WAF_06_241119.png" width="1000" />
+<br>
+
+4. WAFの保護対象を設定する
+  * 保護対象
