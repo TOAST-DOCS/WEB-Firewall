@@ -28,7 +28,7 @@ WEB Firewall 서비스를 이용하려면 **NHN Cloud Console**에 로그인하�
 ![webfirewall_gov_kr_console-guide-self-piolink-gov_04_241122.png](https://static.toastoven.net/prod_web_firewall/Piolink/gov/kr/webfirewall_gov_kr_console-guide-self-piolink-gov_04_241122.png)
 
 1. 인스턴스 목록에서 웹 방화벽 인스턴스를 선택합니다.
-2.  '…' 버튼을 클릭하여 **인스턴스 삭제**를 통한 절차에 따라 인스턴스를 삭제합니다.
+2.  '…' 버튼을 클릭하고 **인스턴스 삭제**를 선택하여 인스턴스를 삭제합니다.
 
 > [주의]
 > * 웹 서비스가 웹 방화벽을 경유하여 서비스 되고 있을 때 인스턴스를 삭제할 경우 서비스 장애가 발생할 수 있습니다.
