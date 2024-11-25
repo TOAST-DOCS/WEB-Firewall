@@ -8,7 +8,7 @@ CC-certified WAPPLES SA is Web Application and API Protection (WAAP) solution th
 
 ## Main Features
 
-![image](https://static.toastoven.net/prod_web_firewall/wapples_sa_01.png)
+<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_products-penta_01_241125.png" width="900" />
 
 * Outstanding detection technology (Detection Engine)
     * No. 1 in domestic WAF market share for 15 years, high security based on intelligent logical analysis detection engine (COCEP)
@@ -31,11 +31,10 @@ CC-certified WAPPLES SA is Web Application and API Protection (WAAP) solution th
 * You can protect your web server by blocking external web application threat traffic and external information leaks. 
 * The web firewall operates in a proxy manner in front of the web server and inspects all web traffic for security.
 
-※ Network routing changes, such as DNS changes, are required to route traffic from the target domain to Web Firewall for protection
+> [note]
+> * Network routing changes, such as DNS changes, are required to route traffic from the target domain to Web Firewall for protection
+> * For WAF service high availability and safe security service, we recommend web firewall redundancy (Active-Active).
+> * Service support from the Security Control Center is available when applying for the Managed service.
+<br>
 
-※ For WAF service high availability and safe security service, we recommend web firewall redundancy (Active-Active).
-
-※ Service support from the Security Control Center is available when applying for the Managed service.
-<BR>
-
-![image](https://static.toastoven.net/prod_web_firewall/wapples_sa_02.png)
+<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_products-penta_02_241125.png" width="600" />
