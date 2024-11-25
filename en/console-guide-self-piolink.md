@@ -79,8 +79,8 @@ This guide provides detailed procedures to reference when creating a web firewal
 
 | Direction | IP Protocol | Port | Remote(CIDR) | Description |
 | :-------: | :-----: | :---: | :---: | :--- |
-| In | TCP | 80 (HTTP) | 0.0.0.0/0 (CIDR) | WAF Web Service Port |
-| In | TCP | 443 (HTTPS) | 0.0.0.0/0 (CIDR) | WAF Web Service Port |
+| In | TCP | 80 (HTTP) | 0.0.0.0/0 | WAF Web Service Port |
+| In | TCP | 443 (HTTPS) | 0.0.0.0/0 | WAF Web Service Port |
 | In | TCP | 8443 | Admin IP | WAF Management Console(UI) Port(Allow Only Admin IP) |
 | In | TCP | 22 (SSH) | Admin IP | WAF SSH Terminal Port(Allow Only Admin IP) |
 | Out | ICMP | - | 0.0.0.0/0 | Communication for health check between the web firewall and web server |
