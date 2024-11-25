@@ -14,7 +14,7 @@ WEB Firewallサービスを利用するには、**NHN Cloud Console**にログ�
 ![webfirewall_public_ja_console-guide-self-penta_03_241119.png](https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_03_241119.png)
 
 1. **WEB Firewall**コンソールの**Self利用申請**から**ショートカット**をクリックし、**「Compute > Instance」** ページに移動します。
-2. **「+ インスタンス作成」** をクリックし、イメージリストからPENTA WAFを選択した後、インスタンス情報を入力します。詳細な手順は**ウェブファイアウォールインスタンス作成の詳細手順**を参照してください。
+2. **「+ インスタンス作成」** をクリックし、イメージリストからPENTA WAFを選択した後、インスタンス情報を入力します。詳細な手順は**WAFインスタンス作成の詳細手順**を参照してください。
 
 > [参考]
 > - インスタンスが作成されると、すぐに利用料金が発生します。
