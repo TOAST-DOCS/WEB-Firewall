@@ -8,7 +8,7 @@ CC認証を取得したWAPPLES SAはクラウド環境で高い信頼性を保�
 
 ## 主な機能
 
-![image](https://static.toastoven.net/prod_web_firewall/wapples_sa_01.png)
+<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_products-penta_01_241125.png" width="900" />
 
 * 優れた検出技術(Detection Engine)
     * 15年間にわたり国内WAF市場シェア1位、知能型論理分析検出エンジン(COCEP)ベースの高いセキュリティ
@@ -31,11 +31,10 @@ CC認証を取得したWAPPLES SAはクラウド環境で高い信頼性を保�
 * 外部からのWebアプリケーション脅威トラフィックと外部情報流出をブロックすることで、Webサーバーを保護できます。 
 * Webファイアウォールは、Webサーバーの前面でProxy方式で動作し、すべてのWebトラフィックをセキュリティチェックします。
 
-※保護する対象ドメインのトラフィックをWebファイアウォールに経由させるには、DNS変更などのネットワークルーティングの変更が必要です。
+> [参考]
+> * 保護する対象ドメインのトラフィックをWebファイアウォールに経由させるには、DNS変更などのネットワークルーティングの変更が必要です。
+> * WAFサービスの高可用性および安全なセキュリティサービスのために、Webファイアウォールの冗長化(Active-Active)構成を推奨します。
+> * セキュリティ監視センターのサービスサポートはManagedサービスの申請時に利用できます。
+<br>
 
-※ WAFサービスの高可用性および安全なセキュリティサービスのために、Webファイアウォールの冗長化(Active-Active)構成を推奨します。
-
-※セキュリティ監視センターのサービスサポートはManagedサービスの申請時に利用できます。
-<BR>
-
-![image](https://static.toastoven.net/prod_web_firewall/wapples_sa_02.png)
+<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_products-penta_02_241125.png" width="600" />
