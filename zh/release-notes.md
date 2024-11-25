@@ -1,15 +1,28 @@
 ## Security > Web Firewall > Release Notes
 
-### September 26, 2023
+### August 27, 2024
+#### Bug Fixes
+* [Console] Improved to remove a WAF instance from the [Application Status - Security Monitoring Service Usage Status] when it is arbitrarily deleted without being removed from the monitoring targets.
 
+* [Console] Changed the columm item [Monitoring Status - Security Monitoring Response Status]
+	* in_out > Host
+	* URI > URL
+
+
+### April 23, 2024
+#### Released in a New Region
+* Release of WEB Firewall Service in KOREA (Gwangju) Region
+
+
+### September 26, 2023
 #### Added Products
 * Added the Penta Security (WAPPLES SA) product
 
 #### Feature Updates
 * [Console] Added a feature to select a product when applying for the Managed service
 
-### August 27, 2019
 
+### August 27, 2019
 #### Feature Updates 
 * [Console] Same fonts applied for multiple languages 
 * [Console] Logins processed for redirection 
@@ -24,53 +37,44 @@
 
 
 ### July 23, 2019
-
 #### Feature Updates 
 * [Console] UI updated, including the initialization feature of SelectBox 
 
 
 ### June 25, 2019
-
 #### Feature Updates
 * [Console] Put more emphasis on the phrases asking of user's consent 
 
 
 ### May 14, 2019
-
-#### Updates
+#### Feature Updates
 * [API] Changes in the mail delivery processing 
 * [Console] Translation enabled into multiple languages 
 
 
-### 2019.02.26
-
-#### 기능 개선
-* [Console] 공통 리소스 상품별 관리 대응
-
-
-### 2018.12.27
-
-#### 기능 개선/변경
-* [Console] 유저 콘솔 연동
+### February 26, 2019
+#### Feature Updates
+* [Console] Management Response by Common Resource Product
 
 
-### 2018.11.27
-
-#### 기능 개선/변경
-* [API] 데이터 관리 정책 반영: 상품 비활성화 시 관련 데이터 삭제
-
-
-### 2018.10.23
-
-#### 기능 개선/변경
-* [API] 그래프 데이터 취득 API 성능 개선
-
-#### 버그 수정
-* [Console] 개인정보동의 간헐적 버그 수정
+### December 27, 2018
+#### Feature Updates
+* [Console] User Console Integration
 
 
-### 2018.06.18
+### November 27, 2018
+#### Feature Updates
+* [API] Reflect data management policy: Delete related data when a product is deactivated
 
-#### 신규 상품 출시
 
-* Web Firewall 서비스는 Self형 서비스와 Managed형 서비스를 제공하며, 고객 클라우드 영역에 웹 방화벽이 독립적으로 구성 되어 클라우드 보안 환경을 유연하게 운영할 수 있습니다.
+### October 23, 2018
+#### Feature Updates
+* [API] Improve performance of the graph data retrieval API.
+
+#### Bug Fixes
+* [Console] Fix intermittent bug related to privacy consent
+
+
+###  June 18, 2018
+#### Release of a New Service
+* WEB Firewall service released
