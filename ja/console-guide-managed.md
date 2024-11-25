@@ -1,19 +1,24 @@
 ## Security > WEB Firewall > コンソール使用ガイド > Managed
 
-WEB Firewall Managedサービスは、運営代行サービスと24時間365日セキュリティー監視サービスを提供します。
-
+WEB Firewall Managedサービスは、運営代行サービスと24時間365日セキュリティー監視サービスを提供します。<br>
 WEB Firewallサービスのご利用は、**NHN Cloud Console**にログインし、サービスリストから**Security > WEB Firewall**をクリックします。
 
+![webfirewall_public_ja_console-guide-managed_01_241113.png](https://static.toastoven.net/prod_web_firewall/Common/public/ja/webfirewall_public_ja_console-guide-managed_01_241113.png)
+<br><br>
+
 ## サービス申請および解除
+### サービス申請
 
-![webfirewall_console_guide_managed_210625.png](https://static.toastoven.net/prod_web_firewall/webfirewall_console_guide_managed_1_230905.png)
-![webfirewall_console_guide_managed_210625.png](https://static.toastoven.net/prod_web_firewall/webfirewall_console_guide_managed_2_230905.png)
+![webfirewall_public_ja_console-guide-managed_02_241113.png](https://static.toastoven.net/prod_web_firewall/Common/public/ja/webfirewall_public_ja_console-guide-managed_02_241113.png)
+![webfirewall_public_ja_console-guide-managed_03_241113.png](https://static.toastoven.net/prod_web_firewall/Common/public/ja/webfirewall_public_ja_console-guide-managed_03_241113.png)
 
-### 利用申請
+1. WEB Firewallコンソールの「Managed利用申請」から「申請」ボタンをクリックします。
+2. Managedサービス利用'のポップアップウィンドウで製品を選択します。
+3. Notice内容を確認後、'Managedサービス利用'に同意します。
+4. 確認ボタンをクリックします。
 
-1. **WEB Firewall**コンソールの**利用料金**の下にある**Managed**行で**利用申請**ボタンをクリックします。
-2. Managedサービスの利用ポップアップウィンドウで**製品情報**を選択します。
-3. 運営代行およびセキュリティ監視サービスのために専門エンジニアがお客様にお電話します。
+> [参考]
+> * 「運営代行およびセキュリティ管制サービス」のために、専門エンジニアが顧客に有線で連絡します。
 
 ### 利用解除
 
@@ -29,7 +34,7 @@ WEB Firewallサービスのご利用は、**NHN Cloud Console**にログイン�
 
 *コンサルティング後、協議した内容で、専門エンジニアが直接Webファイアウォールを作成して構成します。
 *要望事項、セキュリティーポリシー設定、監視センターログの連動など、すべての運営業務をサポートします。
-* Webファイアウォール構成が完了したら、トラフィック分析のために約1～2週間、学習を進行します。
+* Webファイアウォール構成が完了したら、トラフィック分析のために約2~4週間、学習を進行します。
 
 ## Webファイアウォールサービスの利用
 
@@ -37,4 +42,4 @@ WEB Firewallサービスのご利用は、**NHN Cloud Console**にログイン�
   * イベント処理状況リストは、過去1年間のデータのみ検索できます。  
 * イベント処理状況に対するメール受信および緊急事項について、電話で連絡を受けることができます。
 
-![webfirewall_console_guide_managed_jp_210625_1.png](https://static.toastoven.net/prod_web_firewall/webfirewall_console_guide_managed_jp_220627_1.png)
+![webfirewall_public_ja_console-guide-managed_04_241113.png](https://static.toastoven.net/prod_web_firewall/Common/public/ja/webfirewall_public_ja_console-guide-managed_04_241113.png)
