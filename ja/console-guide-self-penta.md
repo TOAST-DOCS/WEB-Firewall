@@ -157,7 +157,7 @@ WAFインスタンスを作成する際の詳細な手順をガイドします�
 		* マルチ: ウェブホスト名に基づいて、保護対象ウェブサーバー(またはWEBのLBなど)のIPまたはポートに分岐して接続する場合に使用します。(1:Nマッチング) <br><br>
 		* シングル設定
 			<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_WAF_08_241119.png" width="1000" /><br><br>
-    		* マルチ設定
+		* マルチ設定
 			<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_WAF_09_241119.png" width="1000" />
 			<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_WAF_10_241119.png" width="1000" /><br><br>
 	* 最終適用
