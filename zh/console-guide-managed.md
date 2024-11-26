@@ -1,19 +1,24 @@
 ## Security > WEB Firewall > Console Guide > Managed Service
 
-The WEB Firewall Managed service provides service operations and 24/7 security surveillance.   
-
+The WEB Firewall Managed service provides service operations and 24/7 security surveillance. <br>
 To enable WEB Firewall, login to **NHN Cloud Console** and click **Security > WEB Firewall** on the service list. 
 
+![webfirewall_public_en_console-guide-managed_01_241113.png](https://static.toastoven.net/prod_web_firewall/Common/public/en/webfirewall_public_en_console-guide-managed_01_241113.png)
+<br><br>
+
 ## Service Application and Release 
+### Service Application
 
-![webfirewall_console_guide_managed_210625.png](https://static.toastoven.net/prod_web_firewall/webfirewall_console_guide_managed_1_230905.png)
-![webfirewall_console_guide_managed_210625.png](https://static.toastoven.net/prod_web_firewall/webfirewall_console_guide_managed_2_230905.png)
+![webfirewall_public_en_console-guide-managed_02_241113.png](https://static.toastoven.net/prod_web_firewall/Common/public/en/webfirewall_public_en_console-guide-managed_02_241113.png)
+![webfirewall_public_en_console-guide-managed_03_241113.png](https://static.toastoven.net/prod_web_firewall/Common/public/en/webfirewall_public_en_console-guide-managed_03_241113.png)
 
-### Apply for Service 
+1. Click the Apply button in the 'Apply for Managed' section of the WEB Firewall console.
+2. Select a product in the 'Use Managed Service' popup.
+3. Review the 'Notice' content and agree to the 'Use Managed Service'
+4. Click the 'Confirm' button.
 
-1. Go to **Managed** under **Pricing** on the **WEB Firewall **console, and click **Apply for Service**  
-2. Select **Product Information** from the the Managed service pop-up.
-3. Then, you will be contacted by a professional engineer who provides operations and security surveillance services.  
+> [Notes]
+> * A specialized engineer will contact the customer by phone regarding the 'Operational and Security Monitoring Services.'
 
 ### Release 
 
@@ -29,7 +34,7 @@ To enable WEB Firewall, login to **NHN Cloud Console** and click **Security > WE
 
 * WEB Firewall is created and configured by professional engineers based on the consultation. 
 * All operational tasks, including requirements, security policy setting, and log integration with surveillance center, are supported. 
-* When the configuration is completed, a learning process continues for a week or two, to analyze traffic.  
+* When the configuration is completed, a learning process continues for 2~4 weeks, to analyze traffic.  
 
 ## Enable Service 
 
@@ -37,4 +42,4 @@ To enable WEB Firewall, login to **NHN Cloud Console** and click **Security > WE
     * Only data for the last 1 year can be searched from the event processing status list.
 * Regarding event processing status, you may be contacted by mail or phone for urgency. 
 
-![webfirewall_console_guide_managed_en_210625_1.png](https://static.toastoven.net/prod_web_firewall/webfirewall_console_guide_managed_en_220627_1.png)
+![webfirewall_public_en_console-guide-managed_04_241113.png](https://static.toastoven.net/prod_web_firewall/Common/public/en/webfirewall_public_en_console-guide-managed_04_241113.png)

@@ -1,83 +1,187 @@
 ## Security > WEB Firewall > Console Usage Guide > Self > Penta Security (WAPPLES SA)
 
-WEB Firewall Self service provides guides to create and operate web firewall instances to help protect web servers. 
-This document introduces how to use the WEB Firewall Self service.
+Web Firewall Self service provides guides to create and operate web firewall instances to help protect web servers. 
+This document introduces how to use the Web Firewall Self service.
 
-To use the WEB Firewall service, log in to **NHN Cloud Console** and click on **Security>WEB Firewall** in the service list.
+To use the Web Firewall service, log in to **NHN Cloud Console**, and activate the service by clicking **Security > Web Firewall** in the service list.
 
-## Apply for and Cancel a Service
+![webfirewall_public_en_console-guide-self-penta_01_241115.png](https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_01_241115.png)
+<br><br>
 
-![webfirewall_console_guide_self_210625.png](https://static.toastoven.net/prod_web_firewall/webfirewall_console_guide_self_220613.png)
-
+## Use and Cancel a Service
 ### Create Web Firewall
 
-1. On **WEB Firewall** console, click on **Shortcut** from **Apply for Self** to navigate to the Create Instance page.
-2. Click on **\+ Create Instance** and select PENTA WAF from the image list and enter the instance information. Refer to ** Detailed Procedure to create Web Firewall Instance ** below for more information.
+![webfirewall_public_en_console-guide-self-penta_02_241115.png](https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_02_241115.png)
+![webfirewall_public_en_console-guide-self-penta_03_241115.png](https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_03_241115.png)
 
-※ Service fee will be charged as soon as the instance is created.
+1. Click the **Go button** in the Apply to **Self section** of the **Web Firewall** to navigate to the Compute > Instance page.
+2. Click **+ Create Instance**, select PENTA WAF from the image list, and enter the instance information. For detailed instructions, **please refer to the Detailed Procedure for Creating a Web Firewall Instance below.**
 
-### Disable Web Firewall
+> [note]
+> * Service fee will be charged as soon as the instance is created.
+> * The minimum recommended instance specifications for WAPPLE SA (PENTA WAF) are 2 vCores / 4GB of memory. Using an instance with lower specifications than recommended may cause malfunctions. Therefore, **you must use an instance type that meets or exceeds these specifications.**
 
-Select and delete a Web firewall instance.
+### Cancel a Service
 
-※ When configuring a web firewall, traffic goes through the web firewall, and service failure may occur if the instance is deleted while in use.<BR>
-※ Please delete instance after checking the web service you are using.
+![webfirewall_public_en_console-guide-self-penta_04_241115.png](https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_04_241115.png)
 
-## Detailed Procedure to Create Web Firewall Instance
+1. Select the Web Firewall instance from the instance list.
+2. Delete the instance by clicking the '...' button and selecting **'Delete Instance'**.
 
-![webfirewall_console_guide_self_1_210625.png](https://static.toastoven.net/prod_web_firewall/webfirewall_console_guide_self_penta_230904.png)
+> [Caution]
+> * When configuring a web firewall, traffic goes through the web firewall, and service failure may occur if the instance is deleted while in use.
+> * Ensure associated services are carefully reviewed before deleting a Web Firewall instance.
 
-※ Set up a security group for trusted IPs and ports to use, as shown in the example below.
+## Detailed Procedure for Creating a Web Firewall Instance
+This guide provides detailed procedures to reference when creating a web firewall instance.
+<br>
 
-| Direction | IP Protocol | Port range | Remote | Description | 
-| :-------: | :-----: | :---: | :---: | :--- | 
-| Ingress | TCP | 80 (HTTP) | 0.0.0.0/0 (CIDR) | WAF web service port | 
-| Ingress | TCP | 443 (HTTPS) | 0.0.0.0/0 (CIDR) | WAF web service port | 
-| Ingress | TCP | 5001 | x.x.x.x/32 (CIDR) | WAF management tool(UI) pot (Only allow administrator IP) | 
-| Ingress | TCP | 22 (SSH) | x.x.x.x/32 (CIDR) | WAF SSH Terminal port (Only allow administrator IP) | 
-| Ingress | TCP/HTTP | 5000 | IP of top LB of WAF<BR>x.x.x.x/32 (CIDR) | health check port between WAF(redundancy) and Top LB | 
-| Egress | TCP | 443 (HTTPS) | 218.145.29.166/32 (CIDR) | WAF License Update server 
-| Egress | TCP | 443 (HTTPS) | 218.145.29.101/32 (CIDR) | WAF License Update server | 
-| Egress | TCP | 5001 | 218.145.29.168/32 (CIDR) | WAF Security rule(custom rule) Update server |
+### 1. Image
+![webfirewall_public_en_console-guide-self-penta_05_241115.png](https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_05_241115.png)
+1. Select the **'PETNA WAF'** image from the public image list.
 
-※ Note : When using WAF redundancy (when using the settings synchronization function) or Auto Scaling, ports 5984 and 6984 must be allowed between WAFs.
+<br>
 
-## Initial Settings for Web Firewall
+### 2. Instance Information
+<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_06_241115.png" width="1200" />
 
-* Initial setup after WAF initial run
+1. Availability Zone: Configure the availability zone where the web firewall instance will be located. For more details on availability zones, refer to [the availability zone section in the instance overview.](https://docs.nhncloud.com/en/Compute/Instance/en/overview/#availability-zone)<br>
+2. Instance Name: Configure the instance Name.<br>
+3. Flavor: Configure the virtual hardware performance. Set the instance type by referring to the recommended specifications table for the web firewall below.<br>
+4. Number of Instances: Set the number of instances to be created.<br>
+5. Key Pair: Configure the key pair used for SSH access to the instance. You can either use an existing key pair or create a new one.<br>
 
-1. Access Web Firewall Web Management Tool (UI) from a browser (chrome recommended)
-    * https://WAF IP:5001
-    * Login Access information : Contact ct@pentasecurity.com
+> [note]
+> * The minimum recommended specification is 2vCore/4GB, but make sure to use an instance type with a specification above the minimum specfication. **Otherwise, Web Firewall may not function properly.**
 
-2. Settings > System > Set time synchronization
-    * Set up time servers Penta Server 1 & Penta Server 2 respectively
+| Throughput (Mbps) | Instance type | vCPU | Memory(GB) |
+| :-------: | :-----: | :---: | :---: |
+| 100 | m2.c2m4 | 2 | 4 | 
+| 300 | m2.c4m8 | 4 | 8 | 
+| 700 | m2.c8m16 | 8 | 16 |
+| 1,500 | m2.c16m32 | 16 | 32 |
 
-3. Network Settings > Proxy IP Settings
-    * Enter network information checked in NHN console (WAF IP, gateway, netmask)
+<p align="center">[Talbe 1. Web Firewall(WAPPLES SA) Recommended Instance Type]</p>
 
-4. Set WAF Protection Targets
-    * Network Settings > Setting up a protected server
-    * Server mode: Select proxy and enter port
-    * Enter web server IP (domain) and port (‘single’ or ‘multiple’ can be selected depending on infrastructure configuration)
-    * Disable health check (only when entering web server domain)
-    * Specify an SSL certificate if your WAF provides HTTPS services (requires pre-setup in the SSL Profile menu)
 
-5. Set Protection Policy
-    * Security Settings > Policy Settings > Add a new policy (default policy: Select 'Detect only and do not block')
-    * Security Settings > Policy Settings > Add new website (apply to new policy)
+### 3. Root Block Storage
+<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_07_241115.png" width="1200" />
 
-7. Set X-Forwarded-For IP
-    * Security Settings > Policy Additional Settings > X-Forwarded-For Settings (Both Block & Detect Settings)
+1. Block Storage Type: You can select HDD, SSD, Encrypted HDD, and Encrypted SSD. For information on Encrypted HDD/SSD, refer to [the encrypted block storage section.](https://docs.nhncloud.com/en/Storage/Block%20Storage/en/console-guide/#_2)<br>
+2. Block Storage Size(GB): Configure the capacity of the root block storage. the minimum capacity for PENTA WAF is 200GB.
 
-* Notes when applying WAF
-    * Change and configure network routing to apply WAF services to customer infrastructure environments through NHN Cloud Managed Service Provider (MSP).
-    * Depending on the customer infrastructure configuration, DNS changes to WAF floating IP may be required or DNS changes to top load balancer IP may be required when configuring WAF redundancy.
+### 4. Network Settings
+<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_08_241115.png" width="1200" />
 
-## Operate Web Firewall
+1. Network Interface Settings
+   * Create network interface: It is a method where the interface is automatically created in the selected subnet.
+   * Specify existing network interface: This method involves selecting an already created interface. The settings for '2. Network' and '3. Floating IP' are omitted, as they follow the configuration of the existing interface.
+2. Network: Select the subnet from the ones defined in the VPC to connect to the instance. PENTA WAF does not support additional interface configurations.
+3. Floating IP: Specify whether to use a floating IP after the instance is created. At this time, the VPC to which the web firewall instance belongs must be connected to an internet gateway. Even if not configured now, it can be set later in 'Instance > Floating IP Management' or 'Network Interface > Floating IP Management', Etc.
+4. Security Group: Select the security group to apply to the web firewall instance. Refer to the example settings below for guidance on configuring the security group.
 
-* Provide web firewall's overall user manual and how to use it in Web Firewall's Management Tools (UI).
-* Refer to the location of user manual on the screen below for instructions on how to use web firewall in general. 
-![wapples_manual.png](https://static.toastoven.net/prod_web_firewall/wapples_manual.png)
+<br>
 
-※ Self-service only provides the user guide and Managed Service provides operating agency service and 24-hour security control services.
+| Direction | IP Protocol | Port | Remote(CIDR) | Description |
+| :-------: | :-----: | :---: | :---: | :--- |
+| In | TCP | 80 (HTTP) | 0.0.0.0/0 | WAF Web Service Port |
+| In | TCP | 443 (HTTPS) | 0.0.0.0/0 | WAF Web Service Port<br><span style="color:#e11d21;">*Refer to the note below</span> |
+| In | TCP | 5001 | Admin IP | WAF Management Console(UI) Port(Allow Only Admin IP) |
+| In | TCP | 22 (SSH) | Admin IP | WAF SSH Terminal Port(Allow Only Admin IP) |
+| In | TCP | 5000 | IP of the LB located at the top of the WAF | Health Check Port of the LB located at the top of the WAF |
+| In | TCP | 5984 | Security group of the WAF or WAF IP range | WAF policy synchronization<br><span style="color:#e11d21;">*Required for HA configuration</span> | 
+| *Out | ALL | - | 0.0.0.0/0 | Communication with external servers for purposes such as external licenses, signature updates, etc. of the WAF<br>(When individual configuration is required, refer to [Table 3. WAF Outbound List]) |
+
+<p align="center"> [Table 2. Security Group Configuration Example] </p>
+
+> [note]
+> * When configuring HA and using the configuration synchronization feature, allowing port 5984 between WAFs is additionally required.
+
+<br>
+
+It is recommended to allow all outbound communication for the WAF *outbound rules as shown in [Table 2. Security Group Configuration Example]. If specific outbound rules need to be allowed, refer to [Table 3. WAF Outbound List] below.
+
+<br>
+
+| Direction | IP Protocol | Port | Remote(CIDR) | Description |
+| :-------: | :-----: | :---: | :---: | :--- |
+| Out | TCP | 443 (HTTPS) | 218.145.29.166/32 | WAF License Update Server |
+| Out | TCP | 443 (HTTPS) | 218.145.29.101/32 | WAF License Update Server |
+| Out | TCP | 5001 | 218.145.29.168/32 | WAF Security Rule(Custom Rule) Update Server |
+| Out | UDP | 123 | 218.145.29.166/32 | Penta Security Time Server |
+| Out | UDP | 123 | 218.145.29.163/32 | Penta Security Time Server |
+| *Out | TCP | 5984 | Security group of the WAF or WAF IP range | WAF policy synchronization<br><span style="color:#e11d21;">*Required for HA configuration</span> |
+
+<p align="center">[Table 3. WAF Outbound List]</p>
+
+> [Caution]
+> * If the TCP 443 (HTTPS) policy for the protected server is not configured on the web firewall, access to the web firewall's management console (UI) is possible via TCP 443 (HTTPS). Therefore, the 'Inbound TCP 443' rule in the security group ACL should be allowed in the security group after configuring the TCP 443 setting for the protected server on the web firewall.
+
+## Initial Setup for Web Firewall
+### Initial Setup after WAF Initial Run
+1. Access the Web Firewall's Management Console(UI) in a Browser (Chrome Recommended)
+	* https://WAF IP:5001
+	* Login Access information: Contact ct@pentasecurity.com
+		<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_01_241115.png" width="1000" />
+<br>
+
+2. Configuration > System > Time Sync
+	* Configure each time server
+		<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_02_241115.png" width="1000" />
+		<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_03_241115.png" width="1000" />
+<br>
+
+3. Security Settings > Network Settings > Proxy IP
+	* Enter network information from NHN Cloud Console (WAF IP, gateway, netmask)
+		<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_04_241115.png" width="1000" />
+		<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_05_241115.png" width="1000" />
+		<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_06_241115.png" width="1000" />
+<br>
+
+4. Configure WAF Protection Target Servers
+	* Security Settings > Network Settings > Destination Server > Add Servers
+		<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_07_241115.png" width="1000" /><br><br>
+
+	* Register Destination Server
+		* Single: It is used when connecting to the IP or port of the destination web server (or LB located at the bottom of the WAF, etc.) without the need to branch based on the web host name. (1:1 Matching)
+		* Multiple: It is used when connecting to the IP or port of the destnation web server (or LB located at the bottom of the WAF, etc.) based on the configured web host name. (1:N Matching) <br><br>
+
+		* Configure Single
+			<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_08_241115.png" width="1000" /><br><br>
+		* Configure Multiple
+			<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_09_241115.png" width="1000" />
+			<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_10_241115.png" width="1000" /><br><br>
+	* Save and apply
+		<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_11_241115.png" width="1000" /><br><br>
+
+> [note]
+> * If the WAF needs to provide HTTPS, you can proceed by adding a certificate under [Network Settings > SSL Profile > SSL Profile Settings], and then configure SSL settings when adding each destination web server.
+> * For more details, please refer to the user manual located under the 'WEB Firewall Operation' section below.
+
+5. Configure the Security Policy
+	* Security Settings > Policy Settings > Add Policy (the Base Policy: Select '1. Detect Without Blocking')
+		<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_12_241115.png" width="1000" />
+		<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_13_241115.png" width="800" /><br><br>
+	* Security Settings > Policy Settings > Add Website (Apply to New Policy)
+		<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_14_241115.png" width="800" />
+		<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_15_241115.png" width="1000" />
+<br>
+
+6. Configure X-Forwarded-For IP
+	* Security Settings > Additional Policy Settings > X-Forwarded-For (Configure both 'Block & Detect')
+		<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_16_241115.png" width="1000" /><br><br>
+
+> [notes when applying WAF]
+> * Network routing needs to be modified to apply the WAF service to the customer's infrastructure environment.
+> * Depending on the customer's infrastructure configuration, updating the DNS to the WAF floating IP or the load balancer floating IP above the WAF may be necessary.
+
+<br>
+
+## Web Firewall Operation
+
+* The comprehensive user manual and instructions for the web firewall are available in its Management Console (UI).
+* Refer to the location of the user manual in the screen below for detailed instructions on operating the web firewall.
+	<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_17_241115.png" width="1000" /><br><br>
+
+> [note]
+> * In the 'Self' service, only the user guide is provided, while the 'Managed' service offers operation management and 24/7 security monitoring.

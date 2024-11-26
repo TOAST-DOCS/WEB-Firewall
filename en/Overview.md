@@ -27,8 +27,9 @@ You can use the web firewall service by selecting either Penta Security (WAPPLES
 * External web application threatening traffic and external information leakage can be blocked to protect web servers. 
 * WEB Firewall operates in the proxy mode ahead of a web server to monitor all web traffic. 
 
-※ To lead domain traffic you want to protect to go through WEB Firewall, change your DNS settings into WEB Firewall IP.<BR>
-※ To prevent potential service failure, it is recommended to configure Active-Active web firewall by using load balancer. 
-※ Service support from security surveillance center is available when Managed Service is applied.<BR>
+> [note]
+> * To lead domain traffic you want to protect to go through WEB Firewall, change your DNS settings into WEB Firewall IP.<BR>
+> * To prevent potential service failure, it is recommended to configure Active-Active web firewall by using load balancer. 
+> * Service support from security surveillance center is available when Managed Service is applied.<BR>
 
-![webfirewall_overview01_en_210525.png](https://static.toastoven.net/prod_web_firewall/webfirewall_overview01_en_210525.png)
+![webfirewall_public_en_overview_01_241113.png](https://static.toastoven.net/prod_web_firewall/Common/public/en/webfirewall_public_en_overview_01_241113.png)
