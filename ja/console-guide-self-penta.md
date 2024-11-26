@@ -183,7 +183,7 @@ WAFインスタンスを作成する際の詳細な手順をガイドします�
 	* セキュリティ設定 > ポリシー付加設定 > X-Forwarded-For設定 (Block、Detectすべて設定)
 		<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_WAF_16_241119.png" width="1000" /><br><br>
 
->[WAFに適用する際の参考]
+> [WAFに適用する際の参考]
 > * 顧客のインフラ環境にWAFサービスが適用されるように、ネットワーク経路の変更が必要です。
 > * 顧客インフラの構成に応じて、WAFのFloating IPへのDNS変更が必要な場合や、WAFのHA構成時に前段ロードバランサーIPへのDNS変更が必要な場合があります。
 
