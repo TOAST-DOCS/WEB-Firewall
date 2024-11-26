@@ -131,37 +131,37 @@ WAFインスタンスを作成する際の詳細な手順をガイドします�
 
 ### WAF 最初の駆動後、初期設定をする
 1. ブラウザ(Chrome推奨)を使用して、WAFの管理コンソール(UI)にアクセスします。
-  * https://WAF IP:5001
-  * 初回ログインの接続情報については、ct@pentasecurity.comまでお問い合わせください。
-    <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_WAF_01_241119.png" width="1000" />
+	* https://WAF IP:5001
+	* 初回ログインの接続情報については、ct@pentasecurity.comまでお問い合わせください。
+		<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_WAF_01_241119.png" width="1000" />
 <br>
 
 2. 環境設定 > システム > 時刻同期を設定する
-  * 各時刻サーバーを個別に設定する
-    <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_WAF_02_241119.png" width="1000" />
-    <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_WAF_03_241119.png" width="1000" />
+	* 各時刻サーバーを個別に設定する
+		<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_WAF_02_241119.png" width="1000" />
+		<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_WAF_03_241119.png" width="1000" />
 <br>
 
 3. ネットワーク設定 > プロキシIPを設定する
-  * NHN Cloud Consoleで確認したネットワーク情報を入力する(WAF IP、ネットマスク、ゲートウェイ)
-    <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_WAF_04_241119.png" width="1000" />
-    <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_WAF_05_241119.png" width="1000" />
-    <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_WAF_06_241119.png" width="1000" />
+	* NHN Cloud Consoleで確認したネットワーク情報を入力する(WAF IP、ネットマスク、ゲートウェイ)
+		<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_WAF_04_241119.png" width="1000" />
+		<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_WAF_05_241119.png" width="1000" />
+		<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_WAF_06_241119.png" width="1000" />
 <br>
 
 4. WAFの保護対象を設定する
-  * ネットワーク設定 > 保護対象サーバー > ウェブサーバー追加
-    <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_WAF_07_241119.png" width="1000" /><br><br>
-  * 保護対象サーバーを登録する
-    * シングル: ウェブホスト名で分岐する必要なく、設定した保護対象ウェブサーバー(またはWEBのLBなど)のIPまたはポートに接続する場合に使用します。(1:1マッチング)
-    * マルチ: ウェブホスト名に基づいて、保護対象ウェブサーバー(またはWEBのLBなど)のIPまたはポートに分岐して接続する場合に使用します。(1:Nマッチング) <br><br>
-    * シングル設定
-      <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_WAF_08_241119.png" width="1000" /><br><br>
-    * マルチ設定
-      <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_WAF_09_241119.png" width="1000" />
-      <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_WAF_10_241119.png" width="1000" /><br><br>
-  * 最終適用
-    <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_WAF_11_241119.png" width="1000" /><br><br>
+	* ネットワーク設定 > 保護対象サーバー > ウェブサーバー追加
+		<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_WAF_07_241119.png" width="1000" /><br><br>
+	* 保護対象サーバーを登録する
+		* シングル: ウェブホスト名で分岐する必要なく、設定した保護対象ウェブサーバー(またはWEBのLBなど)のIPまたはポートに接続する場合に使用します。(1:1マッチング)
+		* マルチ: ウェブホスト名に基づいて、保護対象ウェブサーバー(またはWEBのLBなど)のIPまたはポートに分岐して接続する場合に使用します。(1:Nマッチング) <br><br>
+		* シングル設定
+			<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_WAF_08_241119.png" width="1000" /><br><br>
+		* マルチ設定
+			<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_WAF_09_241119.png" width="1000" />
+			<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_WAF_10_241119.png" width="1000" /><br><br>
+	* 最終適用
+		<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_WAF_11_241119.png" width="1000" /><br><br>
 
 >[参考]
 > * WAFがHTTPSサービスを提供する必要がある場合、[ネットワーク設定 > SSLプロファイル > 証明書追加]を実行した後、各保護対象ウェブサーバーを追加する際にSSL設定を行うことができます。
@@ -170,20 +170,20 @@ WAFインスタンスを作成する際の詳細な手順をガイドします�
 <br>
 
 5. 保護ポリシーを設定する
-  * セキュリティ設定 > ポリシー設定 > 新規ポリシー追加(基盤ポリシ: 「検知のみ行い遮断はしない」選択)
-    <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_WAF_12_241119.png" width="1000" />
-    <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_WAF_13_241119.png" width="800" /><br><br>
-  * セキュリティ設定 > ポリシー設定 > 新規ウェブサイト追加(新規ポリシー適用)
-    <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_WAF_14_241119.png" width="800" />
-    <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_WAF_15_241119.png" width="1000" />
+	* セキュリティ設定 > ポリシー設定 > 新規ポリシー追加(基盤ポリシ: 「検知のみ行い遮断はしない」選択)
+		<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_WAF_12_241119.png" width="1000" />
+		<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_WAF_13_241119.png" width="800" /><br><br>
+	* セキュリティ設定 > ポリシー設定 > 新規ウェブサイト追加(新規ポリシー適用)
+		<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_WAF_14_241119.png" width="800" />
+		<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_WAF_15_241119.png" width="1000" />
 
 <br>
 
 6. X-Forwarded-For IP 設定する
-  * セキュリティ設定 > ポリシー付加設定 > X-Forwarded-For設定 (Block、Detectすべて設定)
-    <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_WAF_16_241119.png" width="1000" /><br><br>
+	* セキュリティ設定 > ポリシー付加設定 > X-Forwarded-For設定 (Block、Detectすべて設定)
+		<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_WAF_16_241119.png" width="1000" /><br><br>
 
->[WAFに適用する際の参考]
+> [WAFに適用する際の参考]
 > * 顧客のインフラ環境にWAFサービスが適用されるように、ネットワーク経路の変更が必要です。
 > * 顧客インフラの構成に応じて、WAFのFloating IPへのDNS変更が必要な場合や、WAFのHA構成時に前段ロードバランサーIPへのDNS変更が必要な場合があります。
 
@@ -192,7 +192,7 @@ WAFインスタンスを作成する際の詳細な手順をガイドします�
 ## WAF運用
 * WAFの全般的なユーザーマニュアルおよび利用方法は、WAFの管理コンソール(UI)で提供されます。
 * 下記の画面のユーザーマニュアルの位置を参考にして、WAF運用全般の利用方法をご確認ください。
-  <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_WAF_17_241119.png" width="1000" /><br><br>
+	<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_WAF_17_241119.png" width="1000" /><br><br>
 
->[参考]
->* Selfサービスでは使用ガイドのみが提供され、Managedサービスを利用する際には運用代行および24時間セキュリティ監視サービスが提供されます。
+> [参考]
+> * Selfサービスでは使用ガイドのみが提供され、Managedサービスを利用する際には運用代行および24時間セキュリティ監視サービスが提供されます。
