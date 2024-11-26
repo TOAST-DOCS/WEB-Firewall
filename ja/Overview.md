@@ -28,8 +28,8 @@ Webファイアウォールは、ペンタセキュリティ(WAPPLES SA)とパ�
 * Webファイアウォールは、Webサーバーの前でプロキシ方式で動作し、すべてのWebトラフィックを検査します。
 
 > [参考]
-> * 保護する対象ドメインのトラフィックをWebファイアウォールに経由させるには、DNSをWebファイアウォールIPに変更する必要があります。<BR>
-> * サービス障害に備えるには、ロードバランサーを利用したWebファイアウォールActive-Active構成を推奨します。<BR>
+> * 保護する対象ドメインのトラフィックをWebファイアウォールに経由させるには、DNSをWebファイアウォールIPに変更する必要があります。
+> * サービス障害に備えるには、ロードバランサーを利用したWebファイアウォールActive-Active構成を推奨します。
 > * セキュリティー監視センターのサービスサポートは、Managedサービス申請時に利用できます。
 
 ![webfirewall_public_ja_overview_01_241113.png](https://static.toastoven.net/prod_web_firewall/Common/public/ja/webfirewall_public_ja_overview_01_241113.png)
