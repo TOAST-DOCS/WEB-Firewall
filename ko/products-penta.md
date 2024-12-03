@@ -36,5 +36,4 @@ CC인증을 획득한 WAPPLES SA는 클라우드 환경에서 높은 신뢰성�
 > * WAF 서비스 고가용성 및 안전한 보안 서비스를 위해 웹 방화벽 이중화(Active-Active) 구성을 권장합니다.
 > * 보안관제 센터의 서비스 지원은 Managed 서비스 신청 시 이용할 수 있습니다.
 
-<br>
 <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/kr/webfirewall_public_kr_products-penta_02_241125.png" width="600" />
