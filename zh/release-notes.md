@@ -1,5 +1,9 @@
 ## Security > Web Firewall > Release Notes
 
+### December 24, 2024
+#### Feature Updates
+* [Alert] Improvement and revision of email content for each scenario, such as applying for Managed Service, adding a monitoring target, and releasing a target from monitoring.
+
 ### August 27, 2024
 #### Bug Fixes
 * [Console] Improved to remove a WAF instance from the [Application Status - Security Monitoring Service Usage Status] when it is arbitrarily deleted without being removed from the monitoring targets.
