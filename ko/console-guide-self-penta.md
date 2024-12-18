@@ -121,8 +121,10 @@ webfirewall_public_kr_console-guide-self-penta_05_241113.png](https://static.toa
 | 송신 | TCP | 443 (HTTPS) | 218.145.29.166/32 | WAF 라이선스 업데이트 서버 |
 | 송신 | TCP | 443 (HTTPS) | 218.145.29.101/32 | WAF 라이선스 업데이트 서버 |
 | 송신 | TCP | 5001 | 218.145.29.168/32 | WAF 보안룰(custom rule) 업데이트 서버 |
-| 송신 | UDP | 123 | 218.145.29.166/32 | Penta 시간 서버 |
-| 송신 | UDP | 123 | 218.145.29.163/32 | Penta 시간 서버 |
+| 송신 | UDP | 123 | 218.145.29.166/32 | Penta 시간 서버 (변경 가능) |
+| 송신 | UDP | 123 | 218.145.29.163/32 | Penta 시간 서버 (변경 가능) |
+| 송신 | UDP,TCP | 53 | 164.124.101.2/32 | DNS 서버 - LG U+ (변경 가능) |
+| 송신 | UDP,TCP | 53 | 8.8.8.8/32 | DNS 서버 - Google (변경 가능) |
 | *송신 | TCP | 5984 | WAF의 보안그룹 혹은 WAF IP 대역대 | WAF 간 정책 동기화<br><span style="color:#e11d21;">*이중화 시 필요</span> |
 
 <p align="center">[표3. WAF 송신 목록]</p>
