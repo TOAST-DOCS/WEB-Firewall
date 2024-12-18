@@ -108,8 +108,10 @@ It is recommended to allow all outbound communication for the WAF *outbound rule
 | Out | TCP | 443 (HTTPS) | 218.145.29.166/32 | WAF License Update Server |
 | Out | TCP | 443 (HTTPS) | 218.145.29.101/32 | WAF License Update Server |
 | Out | TCP | 5001 | 218.145.29.168/32 | WAF Security Rule(Custom Rule) Update Server |
-| Out | UDP | 123 | 218.145.29.166/32 | Penta Security Time Server |
-| Out | UDP | 123 | 218.145.29.163/32 | Penta Security Time Server |
+| Out | UDP | 123 | 218.145.29.166/32 | Penta Security Time Server (Changeable) |
+| Out | UDP | 123 | 218.145.29.163/32 | Penta Security Time Server (changeable) |
+| Out | UDP,TCP | 53 | 164.124.101.2/32 | DNS Server - LG U+ (changeable) |
+| Out | UDP,TCP | 53 | 8.8.8.8/32 | DNS Server - Google (changeable) |
 | *Out | TCP | 5984 | Security group of the WAF or WAF IP range | WAF policy synchronization<br><span style="color:#e11d21;">*Required for HA configuration</span> |
 
 <p align="center">[Table 3. WAF Outbound List]</p>
