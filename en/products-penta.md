@@ -35,6 +35,5 @@ CC-certified WAPPLES SA is Web Application and API Protection (WAAP) solution th
 > * Network routing changes, such as DNS changes, are required to route traffic from the target domain to Web Firewall for protection
 > * For WAF service high availability and safe security service, we recommend web firewall redundancy (Active-Active).
 > * Service support from the Security Control Center is available when applying for the Managed service.
-<br>
 
 <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_products-penta_02_241125.png" width="600" />

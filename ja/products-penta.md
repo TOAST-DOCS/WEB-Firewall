@@ -35,6 +35,5 @@ CC認証を取得したWAPPLES SAはクラウド環境で高い信頼性を保�
 > * 保護する対象ドメインのトラフィックをWebファイアウォールに経由させるには、DNS変更などのネットワークルーティングの変更が必要です。
 > * WAFサービスの高可用性および安全なセキュリティサービスのために、Webファイアウォールの冗長化(Active-Active)構成を推奨します。
 > * セキュリティ監視センターのサービスサポートはManagedサービスの申請時に利用できます。
-<br>
 
 <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_products-penta_02_241125.png" width="600" />

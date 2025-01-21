@@ -35,6 +35,5 @@ CC인증을 획득한 WAPPLES SA는 클라우드 환경에서 높은 신뢰성�
 > * 보호할 대상 도메인의 트래픽을 웹 방화벽으로 경유하게 하려면 DNS 변경 등 네트워크 라우팅 변경이 필요합니다.
 > * WAF 서비스 고가용성 및 안전한 보안 서비스를 위해 웹 방화벽 이중화(Active-Active) 구성을 권장합니다.
 > * 보안관제 센터의 서비스 지원은 Managed 서비스 신청 시 이용할 수 있습니다.
-<br>
 
 <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/kr/webfirewall_public_kr_products-penta_02_241125.png" width="600" />

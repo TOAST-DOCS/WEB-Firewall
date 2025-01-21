@@ -108,8 +108,10 @@ It is recommended to allow all outbound communication for the WAF *outbound rule
 | Out | TCP | 443 (HTTPS) | 218.145.29.166/32 | WAF License Update Server |
 | Out | TCP | 443 (HTTPS) | 218.145.29.101/32 | WAF License Update Server |
 | Out | TCP | 5001 | 218.145.29.168/32 | WAF Security Rule(Custom Rule) Update Server |
-| Out | UDP | 123 | 218.145.29.166/32 | Penta Security Time Server |
-| Out | UDP | 123 | 218.145.29.163/32 | Penta Security Time Server |
+| Out | UDP | 123 | 218.145.29.166/32 | Penta Security Time Server (Changeable) |
+| Out | UDP | 123 | 218.145.29.163/32 | Penta Security Time Server (changeable) |
+| Out | UDP,TCP | 53 | 164.124.101.2/32 | DNS Server - LG U+ (changeable) |
+| Out | UDP,TCP | 53 | 8.8.8.8/32 | DNS Server - Google (changeable) |
 | *Out | TCP | 5984 | Security group of the WAF or WAF IP range | WAF policy synchronization<br><span style="color:#e11d21;">*Required for HA configuration</span> |
 
 <p align="center">[Table 3. WAF Outbound List]</p>
@@ -141,11 +143,9 @@ It is recommended to allow all outbound communication for the WAF *outbound rule
 4. Configure WAF Protection Target Servers
 	* Security Settings > Network Settings > Destination Server > Add Servers
 		<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_07_241115.png" width="1000" /><br><br>
-
 	* Register Destination Server
 		* Single: It is used when connecting to the IP or port of the destination web server (or LB located at the bottom of the WAF, etc.) without the need to branch based on the web host name. (1:1 Matching)
 		* Multiple: It is used when connecting to the IP or port of the destnation web server (or LB located at the bottom of the WAF, etc.) based on the configured web host name. (1:N Matching) <br><br>
-
 		* Configure Single
 			<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_08_241115.png" width="1000" /><br><br>
 		* Configure Multiple
@@ -158,6 +158,8 @@ It is recommended to allow all outbound communication for the WAF *outbound rule
 > * If the WAF needs to provide HTTPS, you can proceed by adding a certificate under [Network Settings > SSL Profile > SSL Profile Settings], and then configure SSL settings when adding each destination web server.
 > * For more details, please refer to the user manual located under the 'WEB Firewall Operation' section below.
 
+<br>
+
 5. Configure the Security Policy
 	* Security Settings > Policy Settings > Add Policy (the Base Policy: Select '1. Detect Without Blocking')
 		<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_12_241115.png" width="1000" />
@@ -165,6 +167,7 @@ It is recommended to allow all outbound communication for the WAF *outbound rule
 	* Security Settings > Policy Settings > Add Website (Apply to New Policy)
 		<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_14_241115.png" width="800" />
 		<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_WAF_15_241115.png" width="1000" />
+
 <br>
 
 6. Configure X-Forwarded-For IP
