@@ -1,12 +1,17 @@
-## Security > WEB Firewall > 製品紹介 > ペンタセキュリティ(WAPPLES SA)
+<!-- pre-align:aligned sig=98254bdf44b8 -->
 
-## 概要
+<a id="security-web-firewall-product-introduction-penta-security-wapples-sa"></a>
+## Security > WEB Firewall > 製品紹介 > ペンタセキュリティ(WAPPLES SA) { #security-web-firewall-product-introduction-penta-security-wapples-sa }
+
+<a id="overview"></a>
+## 概要 { #overview }
 
 アジア太平洋1位のWebファイアウォールであるWAPPLESのセキュリティ技術を基に開発されたクラウドWebファイアウォール製品で、さまざまなprivateおよびpublicクラウド環境で最適化されたWebセキュリティサービスを提供します。
 CC認証を取得したWAPPLES SAはクラウド環境で高い信頼性を保障し、一般的なWeb攻撃だけでなくAPIセキュリティ、Bot対応、DDoSセキュリティまで提供するWAAP(Web Application & API Protection)ソリューションです。
 
 
-## 主な機能
+<a id="main-features"></a>
+## 主な機能 { #main-features }
 
 <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_products-penta_01_241125.png" width="900" />
 
@@ -26,7 +31,8 @@ CC認証を取得したWAPPLES SAはクラウド環境で高い信頼性を保�
     * Webトラフィックの増加およびWAF負荷時にも中断のないWAFオートスケーリングを提供(WAF zero-downtime autoscaling)
 
 
-## サービス構成図
+<a id="service-configuration-diagram"></a>
+## サービス構成図 { #service-configuration-diagram }
 
 * 外部からのWebアプリケーション脅威トラフィックと外部情報流出をブロックすることで、Webサーバーを保護できます。 
 * Webファイアウォールは、Webサーバーの前面でProxy方式で動作し、すべてのWebトラフィックをセキュリティチェックします。

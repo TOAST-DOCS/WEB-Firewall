@@ -1,4 +1,7 @@
-## Security > WEB Firewall > Overview
+<!-- pre-align:aligned sig=6bb67be47f46 -->
+
+<a id="security-web-firewall-overview"></a>
+## Security > WEB Firewall > Overview { #security-web-firewall-overview }
 
 WEB Firewall is comprised of Self-Service and Managed Service.  
 With Self-Service, users can implement WEB Firewall on their own; Managed Service supports professional engineers in the operation of WEB Firewall and security surveillance. 
@@ -6,7 +9,8 @@ The WEB Firewall service is configured in the user's cloud environment, as a sta
 <BR>
 You can use the web firewall service by selecting either Penta Security (WAPPLES SA) or PIOLINK (WEBFRONT-KS).
 
-## Main Features 
+<a id="main-features"></a>
+## Main Features { #main-features }
 
 * Self-Service 
     * Provides WEB Firewall images and operating guides for customers to implement and operate on their own.   
@@ -22,7 +26,8 @@ You can use the web firewall service by selecting either Penta Security (WAPPLES
     * Protects from various types of threats with near-perfect solutions to OWASP TOP 10 and 8 vulnerabilities of National Intelligence Service.    
     * Ensures product stability, in compliance with regulations including GS Certificate, PCI-DSS Certificate, and CC Certificate.
 
-## WEB Firewall Service Configuration 
+<a id="web-firewall-service-configuration"></a>
+## WEB Firewall Service Configuration { #web-firewall-service-configuration }
 
 * External web application threatening traffic and external information leakage can be blocked to protect web servers. 
 * WEB Firewall operates in the proxy mode ahead of a web server to monitor all web traffic. 
