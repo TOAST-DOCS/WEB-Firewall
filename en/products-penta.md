@@ -1,12 +1,17 @@
-## Security > WEB Firewall > Product Introduction > Penta Security (WAPPLES SA)
+<!-- pre-align:aligned sig=98254bdf44b8 -->
 
-## Overview
+<a id="security-web-firewall-product-introduction-penta-security-wapples-sa"></a>
+## Security > WEB Firewall > Product Introduction > Penta Security (WAPPLES SA) { #security-web-firewall-product-introduction-penta-security-wapples-sa }
+
+<a id="overview"></a>
+## Overview { #overview }
 
 A cloud web firewall product developed based on the security technology of WAPPLES, Asia Pacific's No. 1 web firewall, which provides optimized web security services in a variety of private and public cloud environments. 
 CC-certified WAPPLES SA is Web Application and API Protection (WAAP) solution that ensures high reliability in cloud environments and provides API security, Bot response and DDoS security as well as common web attacks.
 
 
-## Main Features
+<a id="main-features"></a>
+## Main Features { #main-features }
 
 <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_products-penta_01_241125.png" width="900" />
 
@@ -26,7 +31,8 @@ CC-certified WAPPLES SA is Web Application and API Protection (WAAP) solution th
     * WAF zero-downtime autoscaling for increased web traffic and WAF load
 
 
-## Service Configuration Diagram
+<a id="service-configuration-diagram"></a>
+## Service Configuration Diagram { #service-configuration-diagram }
 
 * You can protect your web server by blocking external web application threat traffic and external information leaks. 
 * The web firewall operates in a proxy manner in front of the web server and inspects all web traffic for security.
