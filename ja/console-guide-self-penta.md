@@ -1,4 +1,7 @@
-## Security > WEB Firewall > コンソール使用ガイド > Self > ペンタセキュリティ(WAPPLES SA)
+<!-- pre-align:aligned sig=3be0d774e68c -->
+
+<a id="security-web-firewall-console-usage-guide-self-penta-security-wapples-sa"></a>
+## Security > WEB Firewall > コンソール使用ガイド > Self > ペンタセキュリティ(WAPPLES SA) { #security-web-firewall-console-usage-guide-self-penta-security-wapples-sa }
 
 WEB Firewall Selfサービスでは、Webサーバーを保護できるようにWebファイアウォールインスタンスを作成し、運営できるガイドを提供します。
 ここではWEB Firewall Selfサービスの使い方を紹介します。
@@ -8,7 +11,8 @@ WEB Firewallサービスを利用するには、**NHN Cloud Console**にログ�
 ![webfirewall_public_ja_console-guide-self-penta_01_241119.png](https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_01_241119.png)
 <br><br>
 
-## サービス利用および解約
+<a id="use-and-cancel-a-service"></a>
+## サービス利用および解約 { #use-and-cancel-a-service }
 
 ![webfirewall_public_ja_console-guide-self-penta_02_241119.png](https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_02_241119.png)
 ![webfirewall_public_ja_console-guide-self-penta_03_241119.png](https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_03_241119.png)
@@ -22,7 +26,8 @@ WEB Firewallサービスを利用するには、**NHN Cloud Console**にログ�
 
 <br>
 
-### Webファイアウォール作成
+<a id="create-web-firewall"></a>
+### Webファイアウォール作成 { #create-web-firewall }
 
 ![webfirewall_public_ja_console-guide-self-penta_04_241119.png](https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_04_241119.png)
 
@@ -35,18 +40,26 @@ WEB Firewallサービスを利用するには、**NHN Cloud Console**にログ�
 
 <br>
 
-## WAFインスタンス作成の詳細手順
+<a id="cancel-a-service"></a>
+### Webファイアウォール解除 { #cancel-a-service }
+
+<!-- TODO: translate body -->
+
+<a id="detailed-procedure-for-creating-a-web-firewall-instance"></a>
+## WAFインスタンス作成の詳細手順 { #detailed-procedure-for-creating-a-web-firewall-instance }
 WAFインスタンスを作成する際の詳細な手順をガイドします。
 <br>
 
-### 1. イメージ
+<a id="image"></a>
+### 1. イメージ { #image }
 ![webfirewall_public_ja_console-guide-self-penta_05_241119.png](https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_05_241119.png)
 
 1. パブリックイメージリストから「PENTA WAF」イメージを選択します。
 
 <br>
 
-### 2. インスタンス情報
+<a id="instance-information"></a>
+### 2. インスタンス情報 { #instance-information }
 <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_06_241119.png" width="1200" />
 
 
@@ -70,13 +83,15 @@ WAFインスタンスを作成する際の詳細な手順をガイドします�
 
 <p align="center">[表1. WAF(WAPPLES SA)推奨インスタンスタイプ]</p>
 
-### 3. ルートブロックストレージ
+<a id="root-block-storage"></a>
+### 3. ルートブロックストレージ { #root-block-storage }
 <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_07_241119.png" width="1200" />
 
 1. ブロックストレージタイプ: HDD、SSD、Encrypted HDD、Encrypted SSDから選択できます。Encrypted HDD/SSDについては[「暗号化ブロックストレージ」](https://docs.nhncloud.com/ja/Storage/Block%20Storage/ja/console-guide/#_2)を参照してください。
 2. ブロックストレージサイズ(GB): ルートブロックストレージの容量を設定します。PENTA WAFの最小容量は200GBです。
 
-### 4. ネットワーク設定
+<a id="network-settings"></a>
+### 4. ネットワーク設定 { #network-settings }
 <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_08_241119.png" width="1200" />
 
 1. ネットワークインターフェース設定
@@ -129,9 +144,11 @@ WAFインスタンスを作成する際の詳細な手順をガイドします�
 > [注意]
 > * WAFで保護対象サーバー「TCP 443(HTTPS)」ポリシーを設定しない場合、WAFに「TCP 443(HTTPS)」で接続し、管理コンソール(UI)にアクセスできます。したがって、上記のセキュリティグループACLの「受信TCP 443」ルールは、WAFの保護対象サーバーに設定後、セキュリティグループで許可する必要があります。
 
-## WAFの初期設定
+<a id="initial-setup-for-web-firewall"></a>
+## WAFの初期設定 { #initial-setup-for-web-firewall }
 
-### WAF 最初の駆動後、初期設定をする
+<a id="initial-setup-after-waf-initial-run"></a>
+### WAF 最初の駆動後、初期設定をする { #initial-setup-after-waf-initial-run }
 1. ブラウザ(Chrome推奨)を使用して、WAFの管理コンソール(UI)にアクセスします。
 	* https://WAF IP:5001
 	* 初回ログインの接続情報については、ct@pentasecurity.comまでお問い合わせください。
@@ -191,7 +208,8 @@ WAFインスタンスを作成する際の詳細な手順をガイドします�
 
 <br>
 
-## WAF運用
+<a id="web-firewall-operation"></a>
+## WAF運用 { #web-firewall-operation }
 * WAFの全般的なユーザーマニュアルおよび利用方法は、WAFの管理コンソール(UI)で提供されます。
 * 下記の画面のユーザーマニュアルの位置を参考にして、WAF運用全般の利用方法をご確認ください。
 	<img src="https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_WAF_17_241119.png" width="1000" /><br><br>
