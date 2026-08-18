@@ -46,7 +46,6 @@ This guide provides detailed procedures to reference when creating a web firewal
 <br>
 
 <a id="image"></a>
-
 ### 1. Image { #image }
 ![webfirewall_public_en_console-guide-self-penta_05_241115.png](https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_05_241115.png)
 1. Select the **'PETNA WAF'** image from the public image list.
@@ -56,7 +55,6 @@ This guide provides detailed procedures to reference when creating a web firewal
 <br>
 
 <a id="instance-information"></a>
-
 ### 2. Instance Information { #instance-information }
 <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_06_241115.png" width="1200" />
 
