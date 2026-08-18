@@ -56,7 +56,7 @@ webfirewall_public_kr_console-guide-self-penta_04_241113.png](https://static.toa
  ![
 webfirewall_public_kr_console-guide-self-penta_05_241113.png](https://static.toastoven.net/prod_web_firewall/Penta/public/kr/webfirewall_public_kr_console-guide-self-penta_05_241113.png)
 
-1. 공용 이미지 목록에서 "PENTA WAF" 이미지를 선택합니다.
+1. 공용 이미지 목록에서 "PENTA WAF" 이미지를 선택합니다. 표시되는 WAF 버전은 다를 수 있습니다.
 
 <br>
 
@@ -77,7 +77,7 @@ webfirewall_public_kr_console-guide-self-penta_05_241113.png](https://static.toa
 
 | Throughput (Mbps) | 인스턴스 타입 | vCPU | Memory(GB) |
 | :-------: | :-----: | :---: | :---: |
-| 100 | m2.c2m4 | 2 | 4 | 
+| 100 | r2.c2m8 | 2 | 8 | 
 | 300 | m2.c4m8 | 4 | 8 | 
 | 700 | m2.c8m16 | 8 | 16 |
 | 1,500 | m2.c16m32 | 16 | 32 |
