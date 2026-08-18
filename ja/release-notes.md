@@ -1,9 +1,18 @@
+<!-- machine_translated: true -->
+
 <!-- pre-align:aligned sig=e18bb3675006 -->
 
 <a id="security-web-firewall-release-notes"></a>
 ## Security > Web Firewall > リリースノート { #security-web-firewall-release-notes }
 
 <a id="december-24-2024"></a>
+
+### 2026. 08. 25.
+#### 製品バージョン変更
+* ペンタセキュリティ (WAPPLES SA) 7 バージョン WAF を提供
+
+<a id="december-24-2024"></a>
+
 ### 2024. 12. 24. { #december-24-2024 }
 <a id="december-24-2024-feature-updates"></a>
 #### 機能改善
