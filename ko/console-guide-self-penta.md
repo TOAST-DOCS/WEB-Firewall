@@ -77,7 +77,7 @@ webfirewall_public_kr_console-guide-self-penta_05_241113.png](https://static.toa
 
 | Throughput (Mbps) | 인스턴스 타입 | vCPU | Memory(GB) |
 | :-------: | :-----: | :---: | :---: |
-| 100 | m2.c2m4 | 2 | 4 | 
+| 100 | r2.c2m8 | 2 | 8 | 
 | 300 | m2.c4m8 | 4 | 8 | 
 | 700 | m2.c8m16 | 8 | 16 |
 | 1,500 | m2.c16m32 | 16 | 32 |
