@@ -56,7 +56,7 @@ webfirewall_public_kr_console-guide-self-penta_04_241113.png](https://static.toa
  ![
 webfirewall_public_kr_console-guide-self-penta_05_241113.png](https://static.toastoven.net/prod_web_firewall/Penta/public/kr/webfirewall_public_kr_console-guide-self-penta_05_241113.png)
 
-1. 공용 이미지 목록에서 "PENTA WAF" 이미지를 선택합니다.(표시되는 WAF 버전은 다를 수 있습니다.)
+1. 공용 이미지 목록에서 "PENTA WAF" 이미지를 선택합니다. 표시되는 WAF 버전은 다를 수 있습니다.
 
 <br>
 
