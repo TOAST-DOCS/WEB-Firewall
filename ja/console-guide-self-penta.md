@@ -1,3 +1,5 @@
+<!-- machine_translated: true -->
+
 <!-- pre-align:aligned sig=3be0d774e68c -->
 
 <a id="security-web-firewall-console-usage-guide-self-penta-security-wapples-sa"></a>
@@ -51,14 +53,16 @@ WAFインスタンスを作成する際の詳細な手順をガイドします�
 <br>
 
 <a id="image"></a>
+
 ### 1. イメージ { #image }
 ![webfirewall_public_ja_console-guide-self-penta_05_241119.png](https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_05_241119.png)
 
-1. パブリックイメージリストから「PENTA WAF」イメージを選択します。
+1. 公用イメージ一覧から「PENTA WAF」イメージを選択します。表示される WAF バージョンは異なる場合があります。
 
 <br>
 
 <a id="instance-information"></a>
+
 ### 2. インスタンス情報 { #instance-information }
 <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_06_241119.png" width="1200" />
 
@@ -76,7 +80,7 @@ WAFインスタンスを作成する際の詳細な手順をガイドします�
 
 | Throughput (Mbps) | インスタンスタイプ | vCPU | Memory(GB) |
 | :-------: | :-----: | :---: | :---: |
-| 100 | m2.c2m4 | 2 | 4 | 
+| 100 | r2.c2m8 | 2 | 8 |
 | 300 | m2.c4m8 | 4 | 8 | 
 | 700 | m2.c8m16 | 8 | 16 |
 | 1,500 | m2.c16m32 | 16 | 32 |
