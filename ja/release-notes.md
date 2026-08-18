@@ -1,6 +1,6 @@
 <!-- machine_translated: true -->
 
-<!-- pre-align:aligned sig=e18bb3675006 -->
+<!-- pre-align:aligned sig=a8e086983730 -->
 
 <a id="security-web-firewall-release-notes"></a>
 ## Security > Web Firewall > リリースノート { #security-web-firewall-release-notes }
