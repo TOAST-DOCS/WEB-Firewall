@@ -3,7 +3,7 @@
 <a id="security-web-firewall-release-notes"></a>
 ## Security > Web Firewall > 릴리스 노트 { #security-web-firewall-release-notes }
 
-### 2026. 8. 25.
+### 2026. 08. 25.
 #### 제품 버전 변경
 * 펜타시큐리티(WAPPLES SA) v7 WAF 제공
 
