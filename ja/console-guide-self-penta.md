@@ -1,3 +1,5 @@
+<!-- machine_translated: true -->
+
 <!-- pre-align:aligned sig=3be0d774e68c -->
 
 <a id="security-web-firewall-console-usage-guide-self-penta-security-wapples-sa"></a>
@@ -22,7 +24,7 @@ WEB Firewallサービスを利用するには、**NHN Cloud Console**にログ�
 
 > [参考]
 > * インスタンスが作成されると、すぐに利用料金が発生します。
-> * WAPPLE SA(PENTA WAF)の最小推奨インスタンス仕様は2vCore / Memory 4GBであり、推奨仕様未満のインスタンスを使用すると正常に動作しない可能性があります。**そのため、必ず推奨仕様以上のインスタンスタイプを使用する**必要があります。
+> * WAPPLE SA(PENTA WAF)の最小推奨インスタンス仕様は2vCore / Memory 8GBであり、推奨仕様未満のインスタンスを使用すると正常に動作しない可能性があります。**そのため、必ず推奨仕様以上のインスタンスタイプを使用する**必要があります。
 
 <br>
 
@@ -54,7 +56,7 @@ WAFインスタンスを作成する際の詳細な手順をガイドします�
 ### 1. イメージ { #image }
 ![webfirewall_public_ja_console-guide-self-penta_05_241119.png](https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_05_241119.png)
 
-1. パブリックイメージリストから「PENTA WAF」イメージを選択します。
+1. 公用イメージ一覧から「PENTA WAF」イメージを選択します。表示される WAF バージョンは異なる場合があります。
 
 <br>
 
@@ -71,12 +73,12 @@ WAFインスタンスを作成する際の詳細な手順をガイドします�
 
 > [参考]
 > 
-> ※ WAPPLE SA(PENTA WAF)の最小推奨インスタンス仕様は2vCore / Memory 4GBであり、推奨仕様未満のインスタンスを使用すると正常に動作しない可能性があります
+> ※ WAPPLE SA(PENTA WAF)の最小推奨インスタンス仕様は2vCore / Memory 8GBであり、推奨仕様未満のインスタンスを使用すると正常に動作しない可能性があります
 > **そのため、必ず推奨仕様以上のインスタンスタイプを使用する必要があります。**
 
 | Throughput (Mbps) | インスタンスタイプ | vCPU | Memory(GB) |
 | :-------: | :-----: | :---: | :---: |
-| 100 | m2.c2m4 | 2 | 4 | 
+| 100 | r2.c2m8 | 2 | 8 |
 | 300 | m2.c4m8 | 4 | 8 | 
 | 700 | m2.c8m16 | 8 | 16 |
 | 1,500 | m2.c16m32 | 16 | 32 |

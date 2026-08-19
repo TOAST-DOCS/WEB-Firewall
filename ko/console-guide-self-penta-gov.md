@@ -19,7 +19,7 @@ WEB Firewall 서비스를 이용하려면 **NHN Cloud Console**에 로그인하�
 
 > [참고]
 > * 인스턴스가 생성되는 즉시 이용 요금이 부과됩니다.
-> * WAPPLE SA(PENTA WAF)의 최소 권장 인스턴스 사양은 2vCore / Memory 4GB으로 권장 미만 사양의 인스턴스 사용 시 정상적으로 동작하지 않을 수 있습니다. **따라서 반드시 권장 사양 이상의 인스턴스 타입을 사용**해야 합니다.
+> * WAPPLE SA(PENTA WAF)의 최소 권장 인스턴스 사양은 2vCore / Memory 8GB으로 권장 미만 사양의 인스턴스 사용 시 정상적으로 동작하지 않을 수 있습니다. **따라서 반드시 권장 사양 이상의 인스턴스 타입을 사용**해야 합니다.
 
 <br>
 
@@ -43,7 +43,7 @@ WEB Firewall 서비스를 이용하려면 **NHN Cloud Console**에 로그인하�
 ### 1. 이미지
 ![webfirewall_gov_kr_console-guide-self-penta-gov_05_241113.png](https://static.toastoven.net/prod_web_firewall/Penta/gov/kr/webfirewall_gov_kr_console-guide-self-penta-gov_05_241113.png)
 
-1. 공용 이미지 목록에서 "PENTA WAF" 이미지를 선택합니다.
+1. 공용 이미지 목록에서 "PENTA WAF" 이미지를 선택합니다. 표시되는 WAF 버전은 다를 수 있습니다.
 
 <br>
 
@@ -58,12 +58,12 @@ WEB Firewall 서비스를 이용하려면 **NHN Cloud Console**에 로그인하�
 5. 키 페어: 인스턴스의 SSH 접속 수단으로 사용되는 키 쌍입니다. 기존 키페어를 사용하거나, 새로운 키페어를 생성하여 사용합니다.
 
 > [참고]
-> ※ WAPPLE SA(PENTA WAF)의 최소 권장 인스턴스 사양은 2vCore / Memory 4GB으로 **권장 사양 미만의 인스턴스 사용 시 정상적으로 동작하지 않을 수 있습니다.**
+> ※ WAPPLE SA(PENTA WAF)의 최소 권장 인스턴스 사양은 2vCore / Memory 8GB으로 **권장 사양 미만의 인스턴스 사용 시 정상적으로 동작하지 않을 수 있습니다.**
 > **따라서 반드시 권장 사양 이상의 인스턴스 타입을 사용해야 합니다.**
 
 | Throughput (Mbps) | 인스턴스 타입 | vCPU | Memory(GB) |
 | :-------: | :-----: | :---: | :---: |
-| 100 | m2.c2m4 | 2 | 4 | 
+| 100 | r2.c2m8 | 2 | 8 | 
 | 300 | m2.c4m8 | 4 | 8 | 
 | 700 | m2.c8m16 | 8 | 16 |
 | 1,500 | m2.c16m32 | 16 | 32 |
