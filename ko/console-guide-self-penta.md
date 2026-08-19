@@ -27,7 +27,7 @@ webfirewall_public_kr_console-guide-self-penta_03_241113.png](https://static.toa
 
 > [참고]
 > * 인스턴스가 생성되는 즉시 이용 요금이 부과됩니다.
-> * WAPPLE SA(PENTA WAF)의 최소 권장 인스턴스 사양은 2vCore / Memory 4GB으로 권장 미만 사양의 인스턴스 사용 시 정상적으로 동작하지 않을 수 있습니다. **따라서 반드시 권장 사양 이상의 인스턴스 타입을 사용**해야 합니다.
+> * WAPPLE SA(PENTA WAF)의 최소 권장 인스턴스 사양은 2vCore / Memory 8GB으로 권장 미만 사양의 인스턴스 사용 시 정상적으로 동작하지 않을 수 있습니다. **따라서 반드시 권장 사양 이상의 인스턴스 타입을 사용**해야 합니다.
 
 <br>
 
@@ -72,7 +72,7 @@ webfirewall_public_kr_console-guide-self-penta_05_241113.png](https://static.toa
 5. 키 페어: 인스턴스의 SSH 접속 수단으로 사용되는 키 쌍입니다. 기존 키페어를 사용하거나, 새로운 키페어를 생성하여 사용합니다.
 
 > [참고]
-> ※ WAPPLE SA(PENTA WAF)의 최소 권장 인스턴스 사양은 2vCore / Memory 4GB으로 **권장 사양 미만의 인스턴스 사용 시 정상적으로 동작하지 않을 수 있습니다.**
+> ※ WAPPLE SA(PENTA WAF)의 최소 권장 인스턴스 사양은 2vCore / Memory 8GB으로 **권장 사양 미만의 인스턴스 사용 시 정상적으로 동작하지 않을 수 있습니다.**
 > **따라서 반드시 권장 사양 이상의 인스턴스 타입을 사용해야 합니다.**
 
 | Throughput (Mbps) | 인스턴스 타입 | vCPU | Memory(GB) |
