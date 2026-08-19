@@ -1,4 +1,7 @@
-## Security > WEB Firewall > 콘솔 사용 가이드 > Self > 파이오링크(WEBFRONT-KS)
+<!-- pre-align:aligned sig=c33b50bdff6c -->
+
+<a id="security-web-firewall-console-usage-guide-self-piolink-webfront-ks"></a>
+## Security > WEB Firewall > 콘솔 사용 가이드 > Self > 파이오링크(WEBFRONT-KS) { #security-web-firewall-console-usage-guide-self-piolink-webfront-ks }
 
 WEB Firewall Self 서비스에서는 웹 서버를 보호할 수 있도록 웹 방화벽 인스턴스를 생성하고 운영할 수 있는 가이드를 제공합니다.
 여기에서는 WEB Firewall Self 서비스 사용 방법을 소개합니다.
@@ -7,10 +10,12 @@ WEB Firewall 서비스를 이용하려면 **NHN Cloud Console**에 로그인하�
 
 ![webfirewall_public_kr_console-guide-self-piolink_01_241122.png](https://static.toastoven.net/prod_web_firewall/Piolink/public/kr/webfirewall_public_kr_console-guide-self-piolink_01_241122.png)<br><br>
 
-## 서비스 신청 및 해지
+<a id="use-and-cancel-a-service"></a>
+## 서비스 신청 및 해지 { #use-and-cancel-a-service }
 <br>
 
-### 웹 방화벽 생성
+<a id="create-web-firewall"></a>
+### 웹 방화벽 생성 { #create-web-firewall }
 
 ![webfirewall_public_kr_console-guide-self-piolink_02_241122.png](https://static.toastoven.net/prod_web_firewall/Piolink/public/kr/webfirewall_public_kr_console-guide-self-piolink_02_241122.png)
 ![webfirewall_public_kr_console-guide-self-piolink_03_241122.png](https://static.toastoven.net/prod_web_firewall/Piolink/public/kr/webfirewall_public_kr_console-guide-self-piolink_03_241122.png)
@@ -23,7 +28,8 @@ WEB Firewall 서비스를 이용하려면 **NHN Cloud Console**에 로그인하�
 
 <br>
 
-### 웹 방화벽 해지
+<a id="cancel-a-service"></a>
+### 웹 방화벽 해지 { #cancel-a-service }
 
 ![webfirewall_public_kr_console-guide-self-piolink_04_241122.png](https://static.toastoven.net/prod_web_firewall/Piolink/public/kr/webfirewall_public_kr_console-guide-self-piolink_04_241122.png)
 
@@ -36,18 +42,21 @@ WEB Firewall 서비스를 이용하려면 **NHN Cloud Console**에 로그인하�
 
 <br>
 
-## 웹 방화벽 인스턴스 생성 세부 절차
+<a id="detailed-procedure-for-creating-a-web-firewall-instance"></a>
+## 웹 방화벽 인스턴스 생성 세부 절차 { #detailed-procedure-for-creating-a-web-firewall-instance }
 웹 방화벽 인스턴스 생성 시 참고할 수 있는 세부 절차를 가이드합니다.
 <br>
 
-### 1. 이미지
+<a id="image"></a>
+### 1. 이미지 { #image }
 ![webfirewall_public_kr_console-guide-self-piolink_05_241122.png](https://static.toastoven.net/prod_web_firewall/Piolink/public/kr/webfirewall_public_kr_console-guide-self-piolink_05_241122.png)
 
 1. 공용 이미지 목록에서 "PLOS WAF" 이미지를 선택합니다.
 
 <br>
 
-### 2. 인스턴스 정보
+<a id="instance-information"></a>
+### 2. 인스턴스 정보 { #instance-information }
 <img src="https://static.toastoven.net/prod_web_firewall/Piolink/public/kr/webfirewall_public_kr_console-guide-self-piolink_06_241122.png" width="1200" />
 
 1. 가용성 영역(Availablility Zone): 웹 방화벽 인스턴스가 위치할 가용성 영역을 설정합니다. 가용성 영역에 대한 자세한 설명은 [인스턴스 개요의 가용성 영역](https://docs.nhncloud.com/ko/Compute/Instance/ko/overview/#availability-zone)을 참고합니다.
@@ -65,13 +74,15 @@ WEB Firewall 서비스를 이용하려면 **NHN Cloud Console**에 로그인하�
 
 <p align="center">[표1. 웹 방화벽(WEBFRONT-KS) 권장 인스턴스 타입]</p>
 
-### 3. 루트 블록 스토리지
+<a id="root-block-storage"></a>
+### 3. 루트 블록 스토리지 { #root-block-storage }
 <img src="https://static.toastoven.net/prod_web_firewall/Piolink/public/kr/webfirewall_public_kr_console-guide-self-piolink_07_241122.png" width="1100" />
 
 1. 블록 스토리지 타입: HDD, SSD, Encrypted HDD, Encrypted SSD를 선택할 수 있습니다. Encrypted HDD/SSD에 대한 정보는 [암호화 블록 스토리지](https://docs.nhncloud.com/ko/Storage/Block%20Storage/ko/console-guide/#_2)를 참고합니다.
 2. 블록 스토리지 크기(GB): 루트 블록 스토리지의 용량을 설정합니다.
 
-### 4. 네트워크 설정
+<a id="network-settings"></a>
+### 4. 네트워크 설정 { #network-settings }
 <img src="https://static.toastoven.net/prod_web_firewall/Piolink/public/kr/webfirewall_public_kr_console-guide-self-piolink_08_241122.png" width="1200" />
 
 1. 네트워크 인터페이스 설정
@@ -98,7 +109,8 @@ WEB Firewall 서비스를 이용하려면 **NHN Cloud Console**에 로그인하�
 > * 웹 방화벽의 기본 상태 확인(health check) 방식은 ICMP로 설정되어 있으며, 웹 서버와 상태 확인(health check) 실패 시 웹 서비스가 동작하지 않습니다.
 > * 위 [표2. 보안그룹 설정 예시]의 WAF의 *송신 규칙은 예시와 같이 모든 외부 통신을 허용하는 것을 권장합니다.
 
-## 웹 방화벽 초기 설정
+<a id="initial-setup-for-web-firewall"></a>
+## 웹 방화벽 초기 설정 { #initial-setup-for-web-firewall }
 
 * 웹 방화벽 초기 설정 가이드를 참고하여 초기 설정을 진행하며, 주요 내용은 다음과 같습니다.
 	* 애플리케이션을 설정합니다.
@@ -113,7 +125,8 @@ WEB Firewall 서비스를 이용하려면 **NHN Cloud Console**에 로그인하�
 * 제조사에서 제공하는 릴리스 노트를 참고하여 웹 방화벽 PLOS 버전을 최신으로 업데이트해야 합니다.
 	* 릴리스 노트 다운로드 방법: 웹 방화벽 접속 > SYSTEM > 일반 설정 > PLOS 관리 > 다운로드 PLOS > 다운로드
 
-## 웹 방화벽 운영
+<a id="operate-web-firewall"></a>
+## 웹 방화벽 운영 { #operate-web-firewall }
 
 웹 방화벽 구성 설명서를 참고하여 장비를 운영하며, 주요 내용은 다음과 같습니다.
 

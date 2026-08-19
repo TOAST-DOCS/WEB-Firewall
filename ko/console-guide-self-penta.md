@@ -1,4 +1,7 @@
-## Security > WEB Firewall > 콘솔 사용 가이드 > Self > 펜타시큐리티(WAPPLES SA)
+<!-- pre-align:aligned sig=3be0d774e68c -->
+
+<a id="security-web-firewall-console-usage-guide-self-penta-security-wapples-sa"></a>
+## Security > WEB Firewall > 콘솔 사용 가이드 > Self > 펜타시큐리티(WAPPLES SA) { #security-web-firewall-console-usage-guide-self-penta-security-wapples-sa }
 
 WEB Firewall Self 서비스에서는 웹 서버를 보호할 수 있도록 웹 방화벽 인스턴스를 생성하고 운영할 수 있는 가이드를 제공합니다.
 여기에서는 WEB Firewall Self 서비스 사용 방법을 소개합니다.
@@ -9,8 +12,10 @@ WEB Firewall 서비스를 이용하려면 **NHN Cloud Console**에 로그인하�
 webfirewall_public_kr_console-guide-self-penta_01_241113.png](https://static.toastoven.net/prod_web_firewall/Penta/public/kr/webfirewall_public_kr_console-guide-self-penta_01_241113.png)
 <br><br>
 
-## 서비스 이용 및 해지
-### 웹 방화벽 생성
+<a id="use-and-cancel-a-service"></a>
+## 서비스 이용 및 해지 { #use-and-cancel-a-service }
+<a id="create-web-firewall"></a>
+### 웹 방화벽 생성 { #create-web-firewall }
 
 ![
 webfirewall_public_kr_console-guide-self-penta_02_241113.png](https://static.toastoven.net/prod_web_firewall/Penta/public/kr/webfirewall_public_kr_console-guide-self-penta_02_241113.png)
@@ -22,11 +27,12 @@ webfirewall_public_kr_console-guide-self-penta_03_241113.png](https://static.toa
 
 > [참고]
 > * 인스턴스가 생성되는 즉시 이용 요금이 부과됩니다.
-> * WAPPLE SA(PENTA WAF)의 최소 권장 인스턴스 사양은 2vCore / Memory 4GB으로 권장 미만 사양의 인스턴스 사용 시 정상적으로 동작하지 않을 수 있습니다. **따라서 반드시 권장 사양 이상의 인스턴스 타입을 사용**해야 합니다.
+> * WAPPLE SA(PENTA WAF)의 최소 권장 인스턴스 사양은 2vCore / Memory 8GB으로 권장 미만 사양의 인스턴스 사용 시 정상적으로 동작하지 않을 수 있습니다. **따라서 반드시 권장 사양 이상의 인스턴스 타입을 사용**해야 합니다.
 
 <br>
 
-### 웹 방화벽 해지
+<a id="cancel-a-service"></a>
+### 웹 방화벽 해지 { #cancel-a-service }
 
 ![
 webfirewall_public_kr_console-guide-self-penta_04_241113.png](https://static.toastoven.net/prod_web_firewall/Penta/public/kr/webfirewall_public_kr_console-guide-self-penta_04_241113.png)
@@ -40,19 +46,22 @@ webfirewall_public_kr_console-guide-self-penta_04_241113.png](https://static.toa
 
 <br>
 
-## 웹 방화벽 인스턴스 생성 세부 절차
+<a id="detailed-procedure-for-creating-a-web-firewall-instance"></a>
+## 웹 방화벽 인스턴스 생성 세부 절차 { #detailed-procedure-for-creating-a-web-firewall-instance }
 웹 방화벽 인스턴스 생성 시 참고할 수 있는 세부 절차를 가이드합니다.
 <br>
 
-### 1. 이미지
+<a id="image"></a>
+### 1. 이미지 { #image }
  ![
 webfirewall_public_kr_console-guide-self-penta_05_241113.png](https://static.toastoven.net/prod_web_firewall/Penta/public/kr/webfirewall_public_kr_console-guide-self-penta_05_241113.png)
 
-1. 공용 이미지 목록에서 "PENTA WAF" 이미지를 선택합니다.
+1. 공용 이미지 목록에서 "PENTA WAF" 이미지를 선택합니다. 표시되는 WAF 버전은 다를 수 있습니다.
 
 <br>
 
-### 2. 인스턴스 정보
+<a id="instance-information"></a>
+### 2. 인스턴스 정보 { #instance-information }
 <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/kr/webfirewall_public_kr_console-guide-self-penta_06_241113.png" width="1200" />
 
 
@@ -63,25 +72,27 @@ webfirewall_public_kr_console-guide-self-penta_05_241113.png](https://static.toa
 5. 키 페어: 인스턴스의 SSH 접속 수단으로 사용되는 키 쌍입니다. 기존 키페어를 사용하거나, 새로운 키페어를 생성하여 사용합니다.
 
 > [참고]
-> ※ WAPPLE SA(PENTA WAF)의 최소 권장 인스턴스 사양은 2vCore / Memory 4GB으로 **권장 사양 미만의 인스턴스 사용 시 정상적으로 동작하지 않을 수 있습니다.**
+> ※ WAPPLE SA(PENTA WAF)의 최소 권장 인스턴스 사양은 2vCore / Memory 8GB으로 **권장 사양 미만의 인스턴스 사용 시 정상적으로 동작하지 않을 수 있습니다.**
 > **따라서 반드시 권장 사양 이상의 인스턴스 타입을 사용해야 합니다.**
 
 | Throughput (Mbps) | 인스턴스 타입 | vCPU | Memory(GB) |
 | :-------: | :-----: | :---: | :---: |
-| 100 | m2.c2m4 | 2 | 4 | 
+| 100 | r2.c2m8 | 2 | 8 | 
 | 300 | m2.c4m8 | 4 | 8 | 
 | 700 | m2.c8m16 | 8 | 16 |
 | 1,500 | m2.c16m32 | 16 | 32 |
 
 <p align="center">[표1. 웹 방화벽(WAPPLES SA) 권장 인스턴스 타입]</p>
 
-### 3. 루트 블록 스토리지
+<a id="root-block-storage"></a>
+### 3. 루트 블록 스토리지 { #root-block-storage }
 <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/kr/webfirewall_public_kr_console-guide-self-penta_07_241113.png" width="1100" />
 
 1. 블록 스토리지 타입: HDD, SSD, Encrypted HDD, Encrypted SSD를 선택할 수 있습니다. Encrypted HDD/SSD에 대한 정보는 [암호화 블록 스토리지](https://docs.nhncloud.com/ko/Storage/Block%20Storage/ko/console-guide/#_2)를 참고합니다.
 2. 블록 스토리지 크기(GB): 루트 블록 스토리지의 용량을 설정합니다. PENTA WAF의 최소 용량은 200GB입니다.
 
-### 4. 네트워크 설정
+<a id="network-settings"></a>
+### 4. 네트워크 설정 { #network-settings }
 <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/kr/webfirewall_public_kr_console-guide-self-penta_08_241113.png" width="1200" />
 
 1. 네트워크 인터페이스 설정
@@ -135,9 +146,11 @@ webfirewall_public_kr_console-guide-self-penta_05_241113.png](https://static.toa
 > [주의]
 > * 웹 방화벽에서 보호대상 서버 TCP 443(HTTPS) 정책을 설정 하지 않았을 경우, 웹 방화벽으로 TCP 443(HTTPS) 접속 시 관리 도구(UI)에 접근 가능합니다. 따라서 위 보안그룹 ACL 중 "수신 TCP 443" 규칙은 **웹 방화벽의 보호대상 서버 TCP 443 설정 후 보안그룹에서 허용**합니다.
 
-## 웹 방화벽 초기 설정
+<a id="initial-setup-for-web-firewall"></a>
+## 웹 방화벽 초기 설정 { #initial-setup-for-web-firewall }
 
-### WAF 최초 구동 후 초기 설정 하기
+<a id="initial-setup-after-waf-initial-run"></a>
+### WAF 최초 구동 후 초기 설정 하기 { #initial-setup-after-waf-initial-run }
 1. 브라우저(크롬 권장)에서 웹방화벽 웹 관리 도구(UI) 접속
 	* https://WAF IP:5001
 	* 처음 로그인 접속 정보 : ct@pentasecurity.com 로 문의
@@ -197,7 +210,8 @@ webfirewall_public_kr_console-guide-self-penta_05_241113.png](https://static.toa
 
 <br>
 
-## 웹 방화벽 운영
+<a id="web-firewall-operation"></a>
+## 웹 방화벽 운영 { #web-firewall-operation }
 
 * 웹 방화벽의 전반적인 사용자 매뉴얼 및 이용 방법은 웹 방화벽의 관리 도구(UI)에서 제공합니다.
 * 아래 화면의 사용자 매뉴얼 위치를 참고하여 웹 방화벽 운영 전반의 이용 방법을 참고하십시오.

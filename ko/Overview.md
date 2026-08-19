@@ -1,4 +1,7 @@
-## Security > WEB Firewall > 개요
+<!-- pre-align:aligned sig=6bb67be47f46 -->
+
+<a id="security-web-firewall-overview"></a>
+## Security > WEB Firewall > 개요 { #security-web-firewall-overview }
 
 WEB Firewall 서비스에는 Self 서비스와 Managed 서비스가 있습니다. 
 Self 서비스를 선택하면 고객이 직접 웹 방화벽을 구축할 수 있고, Managed 서비스를 선택하면 전문 엔지니어가 웹 방화벽 운영 및 보안관제 서비스를 제공합니다. 
@@ -6,7 +9,8 @@ Self 서비스를 선택하면 고객이 직접 웹 방화벽을 구축할 수 �
 <BR>
 웹 방화벽은 펜타시큐리티(WAPPLES SA)와 파이오링크(WEBFRONT-KS) 제품 중 선택하여 이용할 수 있습니다.
 
-## WEB Firewall 주요 기능
+<a id="main-features"></a>
+## WEB Firewall 주요 기능 { #main-features }
 
 * Self 서비스
     * 고객이 직접 웹 방화벽을 구축하고 운영할 수 있도록 웹 방화벽 이미지 및 운영 가이드를 제공합니다.
@@ -22,7 +26,8 @@ Self 서비스를 선택하면 고객이 직접 웹 방화벽을 구축할 수 �
     * OWASP TOP 10, 국정원 8대 취약점에 완벽하게 대응해 다양한 유형의 위협으로부터 보호합니다.
     * CC 인증, GS 인증, PCI-DSS 인증 등 주요 규제를 준수하여 제품 안정성을 보장합니다.
 
-## WEB Firewall 서비스 구성도
+<a id="web-firewall-service-configuration"></a>
+## WEB Firewall 서비스 구성도 { #web-firewall-service-configuration }
 
 * 외부에서 들어오는 웹 애플리케이션 위협 트래픽과 외부 정보 유출을 차단하여 웹 서버를 보호할 수 있습니다.
 * 웹 방화벽은 웹 서버 앞단에서 프락시 방식으로 동작하여 모든 웹 트래픽을 검사합니다.

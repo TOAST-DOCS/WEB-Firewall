@@ -1,10 +1,15 @@
-## Security > WEB Firewall > 제품 소개 > 파이오링크(WEBFRONT-KS)
+<!-- pre-align:aligned sig=031590172345 -->
 
-## 개요
+<a id="security-web-firewall-product-introduction-piolink-webfront-ks"></a>
+## Security > WEB Firewall > 제품 소개 > 파이오링크(WEBFRONT-KS) { #security-web-firewall-product-introduction-piolink-webfront-ks }
+
+<a id="overview"></a>
+## 개요 { #overview }
 
 WEBFRONT-KS는 PIOLINK에서 개발한 웹 보안 솔루션으로, 지능적이고 고도화되어가는 웹 공격에 대응할 수 있도록 다양한 탐지 기법을 적용한 보안 솔루션 서비스입니다.
 
-## 주요 기능
+<a id="main-features"></a>
+## 주요 기능 { #main-features }
 
 * 웹 트래픽 보호 기능
     * 웹 서비스 요청 트래픽을 검사하여 악의적인 요청을 차단합니다.

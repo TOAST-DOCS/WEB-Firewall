@@ -1,4 +1,7 @@
-## Security > WEB Firewall > 콘솔 사용 가이드 > Managed
+<!-- pre-align:aligned sig=2b24eaf3d6be -->
+
+<a id="security-web-firewall-console-guide-managed-service"></a>
+## Security > WEB Firewall > 콘솔 사용 가이드 > Managed { #security-web-firewall-console-guide-managed-service }
 
 WEB Firewall Managed 서비스는 운영 대행 서비스와 24시간 365일 보안관제 서비스를 제공합니다. <br>
 WEB Firewall 서비스를 이용하려면 **NHN Cloud Console**에 로그인하고, 서비스 목록에서 **Security > WEB Firewall**을 클릭하여 서비스를 활성화합니다.
@@ -6,8 +9,10 @@ WEB Firewall 서비스를 이용하려면 **NHN Cloud Console**에 로그인하�
 ![webfirewall_public_kr_console-guide-managed_01_241113.png](https://static.toastoven.net/prod_web_firewall/Common/public/kr/webfirewall_public_kr_console-guide-managed_01_241113.png)
 <br><br>
 
-## 서비스 신청 및 해지
-### 서비스 신청
+<a id="apply-for-and-cancel-a-service"></a>
+## 서비스 신청 및 해지 { #apply-for-and-cancel-a-service }
+<a id="apply-for-a-service"></a>
+### 서비스 신청 { #apply-for-a-service }
 
 ![webfirewall_public_kr_console-guide-managed_02_241113.png](https://static.toastoven.net/prod_web_firewall/Common/public/kr/webfirewall_public_kr_console-guide-managed_02_241113.png)
 ![webfirewall_public_kr_console-guide-managed_03_241113.png](https://static.toastoven.net/prod_web_firewall/Common/public/kr/webfirewall_public_kr_console-guide-managed_03_241113.png)
@@ -20,11 +25,13 @@ WEB Firewall 서비스를 이용하려면 **NHN Cloud Console**에 로그인하�
 > [참고]
 > * 운영 대행 및 보안관제 서비스를 위하여 전문 엔지니어가 고객에게 유선 연락합니다.
 
-### 이용 해지
+<a id="cancel-a-service"></a>
+### 이용 해지 { #cancel-a-service }
 
 - 관제센터로 연락해 서비스 해지를 신청합니다.
 
-## 웹 방화벽 생성 및 설정 절차
+<a id="how-to-create-and-configure"></a>
+## 웹 방화벽 생성 및 설정 절차 { #how-to-create-and-configure }
 
 1\. 보안 컨설팅
 
@@ -36,7 +43,8 @@ WEB Firewall 서비스를 이용하려면 **NHN Cloud Console**에 로그인하�
 * 요구 사항, 보안 정책 설정, 관제센터 로그 연동 등 모든 운영 업무를 지원합니다.
 * 웹 방화벽 구성이 완료되면 트래픽 분석을 위해 약 2~4주 동안 학습이 진행됩니다.
 
-## 웹 방화벽 서비스 이용
+<a id="enable-service"></a>
+## 웹 방화벽 서비스 이용 { #enable-service }
 
 * WEB Firewall 현황 페이지에서 발생한 이벤트 및 처리 현황을 확인할 수 있습니다.
   * 이벤트 처리 현황 목록은 최근 1년 데이터만 검색할 수 있습니다.

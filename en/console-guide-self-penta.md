@@ -1,4 +1,9 @@
-## Security > WEB Firewall > Console Usage Guide > Self > Penta Security (WAPPLES SA)
+<!-- machine_translated: true -->
+
+<!-- pre-align:aligned sig=3be0d774e68c -->
+
+<a id="security-web-firewall-console-usage-guide-self-penta-security-wapples-sa"></a>
+## Security > WEB Firewall > Console Usage Guide > Self > Penta Security (WAPPLES SA) { #security-web-firewall-console-usage-guide-self-penta-security-wapples-sa }
 
 Web Firewall Self service provides guides to create and operate web firewall instances to help protect web servers. 
 This document introduces how to use the Web Firewall Self service.
@@ -8,8 +13,10 @@ To use the Web Firewall service, log in to **NHN Cloud Console**, and activate t
 ![webfirewall_public_en_console-guide-self-penta_01_241115.png](https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_01_241115.png)
 <br><br>
 
-## Use and Cancel a Service
-### Create Web Firewall
+<a id="use-and-cancel-a-service"></a>
+## Use and Cancel a Service { #use-and-cancel-a-service }
+<a id="create-web-firewall"></a>
+### Create Web Firewall { #create-web-firewall }
 
 ![webfirewall_public_en_console-guide-self-penta_02_241115.png](https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_02_241115.png)
 ![webfirewall_public_en_console-guide-self-penta_03_241115.png](https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_03_241115.png)
@@ -19,9 +26,10 @@ To use the Web Firewall service, log in to **NHN Cloud Console**, and activate t
 
 > [note]
 > * Service fee will be charged as soon as the instance is created.
-> * The minimum recommended instance specifications for WAPPLE SA (PENTA WAF) are 2 vCores / 4GB of memory. Using an instance with lower specifications than recommended may cause malfunctions. Therefore, **you must use an instance type that meets or exceeds these specifications.**
+> * The minimum recommended instance specifications for WAPPLE SA (PENTA WAF) are 2 vCores / 8GB of memory. Using an instance with lower specifications than recommended may cause malfunctions. Therefore, **you must use an instance type that meets or exceeds these specifications.**
 
-### Cancel a Service
+<a id="cancel-a-service"></a>
+### Cancel a Service { #cancel-a-service }
 
 ![webfirewall_public_en_console-guide-self-penta_04_241115.png](https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_04_241115.png)
 
@@ -32,17 +40,22 @@ To use the Web Firewall service, log in to **NHN Cloud Console**, and activate t
 > * When configuring a web firewall, traffic goes through the web firewall, and service failure may occur if the instance is deleted while in use.
 > * Ensure associated services are carefully reviewed before deleting a Web Firewall instance.
 
-## Detailed Procedure for Creating a Web Firewall Instance
+<a id="detailed-procedure-for-creating-a-web-firewall-instance"></a>
+## Detailed Procedure for Creating a Web Firewall Instance { #detailed-procedure-for-creating-a-web-firewall-instance }
 This guide provides detailed procedures to reference when creating a web firewall instance.
 <br>
 
-### 1. Image
+<a id="image"></a>
+### 1. Image { #image }
 ![webfirewall_public_en_console-guide-self-penta_05_241115.png](https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_05_241115.png)
 1. Select the **'PETNA WAF'** image from the public image list.
 
+1. Select the "PENTA WAF" image from the Public Image list. The WAF version displayed may vary.
+
 <br>
 
-### 2. Instance Information
+<a id="instance-information"></a>
+### 2. Instance Information { #instance-information }
 <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_06_241115.png" width="1200" />
 
 1. Availability Zone: Configure the availability zone where the web firewall instance will be located. For more details on availability zones, refer to [the availability zone section in the instance overview.](https://docs.nhncloud.com/en/Compute/Instance/en/overview/#availability-zone)<br>
@@ -52,11 +65,11 @@ This guide provides detailed procedures to reference when creating a web firewal
 5. Key Pair: Configure the key pair used for SSH access to the instance. You can either use an existing key pair or create a new one.<br>
 
 > [note]
-> * The minimum recommended specification is 2vCore/4GB, but make sure to use an instance type with a specification above the minimum specfication. **Otherwise, Web Firewall may not function properly.**
+> * The minimum recommended specification is 2vCore/8GB, but make sure to use an instance type with a specification above the minimum specfication. **Otherwise, Web Firewall may not function properly.**
 
 | Throughput (Mbps) | Instance type | vCPU | Memory(GB) |
 | :-------: | :-----: | :---: | :---: |
-| 100 | m2.c2m4 | 2 | 4 | 
+| 100 | r2.c2m8 | 2 | 8 |
 | 300 | m2.c4m8 | 4 | 8 | 
 | 700 | m2.c8m16 | 8 | 16 |
 | 1,500 | m2.c16m32 | 16 | 32 |
@@ -64,13 +77,15 @@ This guide provides detailed procedures to reference when creating a web firewal
 <p align="center">[Talbe 1. Web Firewall(WAPPLES SA) Recommended Instance Type]</p>
 
 
-### 3. Root Block Storage
+<a id="root-block-storage"></a>
+### 3. Root Block Storage { #root-block-storage }
 <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_07_241115.png" width="1200" />
 
 1. Block Storage Type: You can select HDD, SSD, Encrypted HDD, and Encrypted SSD. For information on Encrypted HDD/SSD, refer to [the encrypted block storage section.](https://docs.nhncloud.com/en/Storage/Block%20Storage/en/console-guide/#_2)<br>
 2. Block Storage Size(GB): Configure the capacity of the root block storage. the minimum capacity for PENTA WAF is 200GB.
 
-### 4. Network Settings
+<a id="network-settings"></a>
+### 4. Network Settings { #network-settings }
 <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_08_241115.png" width="1200" />
 
 1. Network Interface Settings
@@ -119,8 +134,10 @@ It is recommended to allow all outbound communication for the WAF *outbound rule
 > [Caution]
 > * If the TCP 443 (HTTPS) policy for the protected server is not configured on the web firewall, access to the web firewall's management console (UI) is possible via TCP 443 (HTTPS). Therefore, the 'Inbound TCP 443' rule in the security group ACL should be allowed in the security group after configuring the TCP 443 setting for the protected server on the web firewall.
 
-## Initial Setup for Web Firewall
-### Initial Setup after WAF Initial Run
+<a id="initial-setup-for-web-firewall"></a>
+## Initial Setup for Web Firewall { #initial-setup-for-web-firewall }
+<a id="initial-setup-after-waf-initial-run"></a>
+### Initial Setup after WAF Initial Run { #initial-setup-after-waf-initial-run }
 1. Access the Web Firewall's Management Console(UI) in a Browser (Chrome Recommended)
 	* https://WAF IP:5001
 	* Login Access information: Contact ct@pentasecurity.com
@@ -180,7 +197,8 @@ It is recommended to allow all outbound communication for the WAF *outbound rule
 
 <br>
 
-## Web Firewall Operation
+<a id="web-firewall-operation"></a>
+## Web Firewall Operation { #web-firewall-operation }
 
 * The comprehensive user manual and instructions for the web firewall are available in its Management Console (UI).
 * Refer to the location of the user manual in the screen below for detailed instructions on operating the web firewall.
