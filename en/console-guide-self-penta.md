@@ -1,3 +1,5 @@
+<!-- machine_translated: true -->
+
 <!-- pre-align:aligned sig=3be0d774e68c -->
 
 <a id="security-web-firewall-console-usage-guide-self-penta-security-wapples-sa"></a>
@@ -48,6 +50,8 @@ This guide provides detailed procedures to reference when creating a web firewal
 ![webfirewall_public_en_console-guide-self-penta_05_241115.png](https://static.toastoven.net/prod_web_firewall/Penta/public/en/webfirewall_public_en_console-guide-self-penta_05_241115.png)
 1. Select the **'PETNA WAF'** image from the public image list.
 
+1. Select the "PENTA WAF" image from the Public Image list. The WAF version displayed may vary.
+
 <br>
 
 <a id="instance-information"></a>
@@ -65,7 +69,7 @@ This guide provides detailed procedures to reference when creating a web firewal
 
 | Throughput (Mbps) | Instance type | vCPU | Memory(GB) |
 | :-------: | :-----: | :---: | :---: |
-| 100 | m2.c2m4 | 2 | 4 | 
+| 100 | r2.c2m8 | 2 | 8 |
 | 300 | m2.c4m8 | 4 | 8 | 
 | 700 | m2.c8m16 | 8 | 16 |
 | 1,500 | m2.c16m32 | 16 | 32 |
