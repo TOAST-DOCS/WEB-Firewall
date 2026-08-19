@@ -26,7 +26,7 @@ To use the Web Firewall service, log in to **NHN Cloud Console**, and activate t
 
 > [note]
 > * Service fee will be charged as soon as the instance is created.
-> * The minimum recommended instance specifications for WAPPLE SA (PENTA WAF) are 2 vCores / 4GB of memory. Using an instance with lower specifications than recommended may cause malfunctions. Therefore, **you must use an instance type that meets or exceeds these specifications.**
+> * The minimum recommended instance specifications for WAPPLE SA (PENTA WAF) are 2 vCores / 8GB of memory. Using an instance with lower specifications than recommended may cause malfunctions. Therefore, **you must use an instance type that meets or exceeds these specifications.**
 
 <a id="cancel-a-service"></a>
 ### Cancel a Service { #cancel-a-service }
@@ -65,7 +65,7 @@ This guide provides detailed procedures to reference when creating a web firewal
 5. Key Pair: Configure the key pair used for SSH access to the instance. You can either use an existing key pair or create a new one.<br>
 
 > [note]
-> * The minimum recommended specification is 2vCore/4GB, but make sure to use an instance type with a specification above the minimum specfication. **Otherwise, Web Firewall may not function properly.**
+> * The minimum recommended specification is 2vCore/8GB, but make sure to use an instance type with a specification above the minimum specfication. **Otherwise, Web Firewall may not function properly.**
 
 | Throughput (Mbps) | Instance type | vCPU | Memory(GB) |
 | :-------: | :-----: | :---: | :---: |
