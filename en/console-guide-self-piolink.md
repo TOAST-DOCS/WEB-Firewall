@@ -1,4 +1,7 @@
-## Security > WEB Firewall > Console Usage Guide > Self > PIOLINK (WEBFRONT-KS)
+<!-- pre-align:aligned sig=c33b50bdff6c -->
+
+<a id="security-web-firewall-console-usage-guide-self-piolink-webfront-ks"></a>
+## Security > WEB Firewall > Console Usage Guide > Self > PIOLINK (WEBFRONT-KS) { #security-web-firewall-console-usage-guide-self-piolink-webfront-ks }
 
 Web Firewall Self service provides guides to create and operate web firewall instances to help protect web servers. 
 This document introduces how to use the Web Firewall Self service.
@@ -8,8 +11,10 @@ To use the Web Firewall service, log in to **NHN Cloud Console**, and activate t
 ![webfirewall_public_en_console-guide-self-piolink_01_241122.png](https://static.toastoven.net/prod_web_firewall/Piolink/public/en/webfirewall_public_en_console-guide-self-piolink_01_241122.png)
 <br><br>
 
-## Use and Cancel a Service
-### Create Web Firewall
+<a id="use-and-cancel-a-service"></a>
+## Use and Cancel a Service { #use-and-cancel-a-service }
+<a id="create-web-firewall"></a>
+### Create Web Firewall { #create-web-firewall }
 
 ![webfirewall_public_en_console-guide-self-piolink_02_241122.png](https://static.toastoven.net/prod_web_firewall/Piolink/public/en/webfirewall_public_en_console-guide-self-piolink_02_241122.png)
 ![webfirewall_public_en_console-guide-self-piolink_03_241122.png](https://static.toastoven.net/prod_web_firewall/Piolink/public/en/webfirewall_public_en_console-guide-self-piolink_03_241122.png)
@@ -20,7 +25,8 @@ To use the Web Firewall service, log in to **NHN Cloud Console**, and activate t
 > [note]
 > * Service fee will be charged as soon as the instance is created.
 
-### Cancel a Service
+<a id="cancel-a-service"></a>
+### Cancel a Service { #cancel-a-service }
 
 ![webfirewall_public_en_console-guide-self-piolink_04_241122.png](https://static.toastoven.net/prod_web_firewall/Piolink/public/en/webfirewall_public_en_console-guide-self-piolink_04_241122.png)
 
@@ -31,17 +37,20 @@ To use the Web Firewall service, log in to **NHN Cloud Console**, and activate t
 > * When configuring a web firewall, traffic goes through the web firewall, and service failure may occur if the instance is deleted while in use.
 > * Ensure associated services are carefully reviewed before deleting a Web Firewall instance.
 
-## Detailed Procedure for Creating a Web Firewall Instance
+<a id="detailed-procedure-for-creating-a-web-firewall-instance"></a>
+## Detailed Procedure for Creating a Web Firewall Instance { #detailed-procedure-for-creating-a-web-firewall-instance }
 This guide provides detailed procedures to reference when creating a web firewall instance.
 <br>
 
-### 1. Image
+<a id="image"></a>
+### 1. Image { #image }
 ![webfirewall_public_en_console-guide-self-piolink_05_241122.png](https://static.toastoven.net/prod_web_firewall/Piolink/public/en/webfirewall_public_en_console-guide-self-piolink_05_241122.png)
 1. Select the **'PLOS WAF'** image from the public image list.
 
 <br>
 
-### 2. Instance Information
+<a id="instance-information"></a>
+### 2. Instance Information { #instance-information }
 <img src="https://static.toastoven.net/prod_web_firewall/Piolink/public/en/webfirewall_public_en_console-guide-self-piolink_06_241122.png" width="1200" />
 
 1. Availability Zone: Configure the availability zone where the web firewall instance will be located. For more details on availability zones, refer to [the availability zone section in the instance overview.](https://docs.nhncloud.com/en/Compute/Instance/en/overview/#availability-zone)<br>
@@ -59,13 +68,15 @@ This guide provides detailed procedures to reference when creating a web firewal
 
 <p align="center">[Talbe 1. Web Firewall(WEBFRONT-KS) Recommended Instance Type]</p>
 
-### 3. Root Block Storage
+<a id="root-block-storage"></a>
+### 3. Root Block Storage { #root-block-storage }
 <img src="https://static.toastoven.net/prod_web_firewall/Piolink/public/en/webfirewall_public_en_console-guide-self-piolink_07_241122.png" width="1200" />
 
 1. Block Storage Type: You can select HDD, SSD, Encrypted HDD, and Encrypted SSD. For information on Encrypted HDD/SSD, refer to [the encrypted block storage section.](https://docs.nhncloud.com/en/Storage/Block%20Storage/en/console-guide/#_2)<br>
 2. Block Storage Size(GB): Configure the capacity of the root block storage.
 
-### 4. Network Settings
+<a id="network-settings"></a>
+### 4. Network Settings { #network-settings }
 <img src="https://static.toastoven.net/prod_web_firewall/Piolink/public/en/webfirewall_public_en_console-guide-self-piolink_08_241122.png" width="1200" />
 
 1. Network Interface Settings
@@ -92,7 +103,8 @@ This guide provides detailed procedures to reference when creating a web firewal
 > * Web firewall's default health check method is set to ICMP, and web service does not work when the web server and health check fail.
 > * It is recommended to allow all outbound communication for the WAF *outbound rules as shown in [Table 2. Security Group Configuration Example].
 
-## Initial Setup for Web Firewall
+<a id="initial-setup-for-web-firewall"></a>
+## Initial Setup for Web Firewall { #initial-setup-for-web-firewall }
 
 * Refer to Web Firewall Initial Setup Guide to proceed with initial setup, which includes the following information.
  * Set up application.
@@ -106,7 +118,8 @@ This guide provides detailed procedures to reference when creating a web firewal
 * You should update Web Firewall PLOS version to the latest, referring to the release notes provided by the manufacturer. 
  * How to download release notes: Web Firewall Access > SYSTEM > General Settings > PLOS Management > Download PLOS > Download
 
-## Operate Web Firewall
+<a id="operate-web-firewall"></a>
+## Operate Web Firewall { #operate-web-firewall }
 
 * Operate the equipment by referring to web firewall configuration manual, which includes the following information.
  * Enable security policy you want to use.

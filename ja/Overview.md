@@ -1,4 +1,7 @@
-## Security > WEB Firewall > 概要
+<!-- pre-align:aligned sig=6bb67be47f46 -->
+
+<a id="security-web-firewall-overview"></a>
+## Security > WEB Firewall > 概要 { #security-web-firewall-overview }
 
 WEB FirewallサービスにはSelfサービスとManagedサービスがあります。
 Selfサービスを選択すると、顧客が直接Webファイアウォールを構築でき、Managedサービスを選択すると、専門エンジニアがWebファイアウォールの運営およびセキュリティ監視サービスを提供します。 
@@ -6,7 +9,8 @@ Selfサービスを選択すると、顧客が直接Webファイアウォール�
 <BR>
 Webファイアウォールは、ペンタセキュリティ(WAPPLES SA)とパイオリンク(WEBFRONT-KS)製品の中から選択して利用できます。
 
-## WEB Firewallの主な機能
+<a id="main-features"></a>
+## WEB Firewallの主な機能 { #main-features }
 
 * Selfサービス
    * お客様が直接Webファイアウォールを構築して運用できるように、Webファイアウォールイメージおよび運用ガイドを提供します。
@@ -22,7 +26,8 @@ Webファイアウォールは、ペンタセキュリティ(WAPPLES SA)とパ�
    * OWASP TOP 10、大韓民国国家情報院8大脆弱性に完璧に対応し、多様なタイプの脅威から保護します。
    * CC認証、GS認証、PCI-DSS認証などの主要規制を遵守して製品の安定性を保障します。
 
-## WEB Firewallサービス構成図
+<a id="web-firewall-service-configuration"></a>
+## WEB Firewallサービス構成図 { #web-firewall-service-configuration }
 
 * 外部から入るWebアプリケーション脅威トラフィックと外部情報の流出を防ぎ、Webサーバーを保護できます。
 * Webファイアウォールは、Webサーバーの前でプロキシ方式で動作し、すべてのWebトラフィックを検査します。

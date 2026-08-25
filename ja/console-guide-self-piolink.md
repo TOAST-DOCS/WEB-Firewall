@@ -1,4 +1,7 @@
-## Security > WEB Firewall > コンソール使用ガイド > Self > パイオリンク(WEBFRONT-KS)
+<!-- pre-align:aligned sig=c33b50bdff6c -->
+
+<a id="security-web-firewall-console-usage-guide-self-piolink-webfront-ks"></a>
+## Security > WEB Firewall > コンソール使用ガイド > Self > パイオリンク(WEBFRONT-KS) { #security-web-firewall-console-usage-guide-self-piolink-webfront-ks }
 
 WEB Firewall Selfサービスでは、Webサーバーを保護できるようにWebファイアウォールインスタンスを作成し、運営できるガイドを提供します。
 ここではWEB Firewall Selfサービスの使い方を紹介します。
@@ -8,7 +11,8 @@ WEB Firewallサービスを利用するには、**NHN Cloud Console**にログ�
 ![webfirewall_public_ja_console-guide-self-piolink_01_241125.png](https://static.toastoven.net/prod_web_firewall/Piolink/public/ja/webfirewall_public_ja_console-guide-self-piolink_01_241125.png)
 <br><br>
 
-## サービス利用および解約
+<a id="use-and-cancel-a-service"></a>
+## サービス利用および解約 { #use-and-cancel-a-service }
 
 ![webfirewall_public_ja_console-guide-self-piolink_02_241125.png](https://static.toastoven.net/prod_web_firewall/Piolink/public/ja/webfirewall_public_ja_console-guide-self-piolink_02_241125.png)
 ![webfirewall_public_ja_console-guide-self-piolink_03_241125.png](https://static.toastoven.net/prod_web_firewall/Piolink/public/ja/webfirewall_public_ja_console-guide-self-piolink_03_241125.png)
@@ -21,7 +25,8 @@ WEB Firewallサービスを利用するには、**NHN Cloud Console**にログ�
 
 <br>
 
-### Webファイアウォール作成
+<a id="create-web-firewall"></a>
+### Webファイアウォール作成 { #create-web-firewall }
 
 ![webfirewall_public_ja_console-guide-self-piolink_04_241125.png](https://static.toastoven.net/prod_web_firewall/Piolink/public/ja/webfirewall_public_ja_console-guide-self-piolink_04_241125.png)
 
@@ -34,18 +39,26 @@ WEB Firewallサービスを利用するには、**NHN Cloud Console**にログ�
 
 <br>
 
-## WAFインスタンス作成の詳細手順
+<a id="cancel-a-service"></a>
+### Webファイアウォール解除 { #cancel-a-service }
+
+<!-- TODO: translate body -->
+
+<a id="detailed-procedure-for-creating-a-web-firewall-instance"></a>
+## WAFインスタンス作成の詳細手順 { #detailed-procedure-for-creating-a-web-firewall-instance }
 WAFインスタンスを作成する際の詳細な手順をガイドします。
 <br>
 
-### 1. イメージ
+<a id="image"></a>
+### 1. イメージ { #image }
 ![webfirewall_public_ja_console-guide-self-piolink_05_241125.png](https://static.toastoven.net/prod_web_firewall/Piolink/public/ja/webfirewall_public_ja_console-guide-self-piolink_05_241125.png)
 
 1. パブリックイメージリストから「PLOS WAF」イメージを選択します。
 
 <br>
 
-### 2. インスタンス情報
+<a id="instance-information"></a>
+### 2. インスタンス情報 { #instance-information }
 <img src="https://static.toastoven.net/prod_web_firewall/Piolink/public/ja/webfirewall_public_ja_console-guide-self-piolink_06_241125.png" width="1200" />
 
 1. アベイラビリティゾーン: WAFインスタンスを配置する可用性領域を設定します。可用性領域の詳細については[「インスタンス概要のインスタンスタイプ」](https://docs.nhncloud.com/ja/Compute/Instance/ja/overview/#availability-zone)を参照してください。
@@ -63,13 +76,15 @@ WAFインスタンスを作成する際の詳細な手順をガイドします�
 
 <p align="center">[表1. WAF(WEBFRONT-KS)推奨インスタンスタイプ]</p>
 
-### 3. ルートブロックストレージ
+<a id="root-block-storage"></a>
+### 3. ルートブロックストレージ { #root-block-storage }
 <img src="https://static.toastoven.net/prod_web_firewall/Piolink/public/ja/webfirewall_public_ja_console-guide-self-piolink_07_241125.png" width="1200" />
 
 1. ブロックストレージタイプ: HDD、SSD、Encrypted HDD、Encrypted SSDから選択できます。Encrypted HDD/SSDについては[「暗号化ブロックストレージ」](https://docs.nhncloud.com/ja/Storage/Block%20Storage/ja/console-guide/#_2)を参照してください。
 2. ブロックストレージサイズ(GB): ルートブロックストレージの容量を設定します
 
-### 4. ネットワーク設定
+<a id="network-settings"></a>
+### 4. ネットワーク設定 { #network-settings }
 <img src="https://static.toastoven.net/prod_web_firewall/Piolink/public/ja/webfirewall_public_ja_console-guide-self-piolink_08_241125.png" width="1200" />
 
 1. ネットワークインターフェース設定
@@ -96,7 +111,8 @@ WAFインスタンスを作成する際の詳細な手順をガイドします�
 > * WAFのデフォルトステータス確認(health check)方式はICMPに設定されており、Webサーバとステータス確認(health check)が失敗した場合、Webサービスが動作しません。
 > * 上記[表2. セキュリティグループ設定例]のWAFの*送信ルールは、例のようにすべての外部通信を許可することを推奨します。
 
-## WAFの初期設定
+<a id="initial-setup-for-web-firewall"></a>
+## WAFの初期設定 { #initial-setup-for-web-firewall }
 
 * WAFの初期設定ガイドを参考にして初期設定を実施してください。主な内容は次のとおりです。
   * アプリケーションを設定します。
@@ -110,7 +126,8 @@ WAFインスタンスを作成する際の詳細な手順をガイドします�
 * 製造社が提供するリリースノートを参考にして、WebファイアウォールPLOSを最新バージョンにアップデートする必要があります。
   * リリースノートのダウンロード方法: Webファイアウォール接続 > SYSTEM > 一般設定 > PLOS管理 > ダウンロードPLOS > ダウンロード
 
-## WAF運営
+<a id="operate-web-firewall"></a>
+## WAF運営 { #operate-web-firewall }
 
 WAF構成の説明書を参考にして機器を運営してください。主な内容は次のとおりです。
 
