@@ -53,7 +53,7 @@ This guide provides detailed procedures to reference when creating a web firewal
 ### 2. Instance Information { #instance-information }
 <img src="https://static.toastoven.net/prod_web_firewall/Piolink/public/en/webfirewall_public_en_console-guide-self-piolink_06_241122.png" width="1200" />
 
-1. Availability Zone: Configure the availability zone where the web firewall instance will be located. For more details on availability zones, refer to [the availability zone section in the instance overview.](https://docs.nhncloud.com/en/Compute/Instance/en/overview/#availability-zone)<br>
+1. Availability Zone: Configure the availability zone where the web firewall instance will be located. For more details on availability zones, refer to [the availability zone section in the instance overview.](/Compute/Instance/en/overview/#availability-zone)<br>
 2. Instance Name: Configure the instance Name.<br>
 3. Flavor: Configure the virtual hardware performance. Set the instance type by referring to the recommended specifications table for the web firewall below.<br>
 4. Number of Instances: Set the number of instances to be created.<br>
@@ -72,7 +72,7 @@ This guide provides detailed procedures to reference when creating a web firewal
 ### 3. Root Block Storage { #root-block-storage }
 <img src="https://static.toastoven.net/prod_web_firewall/Piolink/public/en/webfirewall_public_en_console-guide-self-piolink_07_241122.png" width="1200" />
 
-1. Block Storage Type: You can select HDD, SSD, Encrypted HDD, and Encrypted SSD. For information on Encrypted HDD/SSD, refer to [the encrypted block storage section.](https://docs.nhncloud.com/en/Storage/Block%20Storage/en/console-guide/#_2)<br>
+1. Block Storage Type: You can select HDD, SSD, Encrypted HDD, and Encrypted SSD. For information on Encrypted HDD/SSD, refer to [the encrypted block storage section.](/Storage/Block%20Storage/en/console-guide/#encrypted-block-storage)<br>
 2. Block Storage Size(GB): Configure the capacity of the root block storage.
 
 <a id="network-settings"></a>
