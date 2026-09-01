@@ -22,7 +22,9 @@
 <a id="august-27-2024-feature-updates"></a>
 #### Feature Updates
 
-<!-- TODO: translate body -->
+* [Console] Changed display items in Monitoring Status - Security Monitoring Response Status.
+	* Communication direction > Host
+	* URI > URL
 
 <a id="august-27-2024-bug-fixes"></a>
 #### Bug Fixes
