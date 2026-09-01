@@ -42,7 +42,16 @@ WEB Firewallサービスを利用するには、**NHN Cloud Console**にログ�
 <a id="cancel-a-service"></a>
 ### Webファイアウォール解除 { #cancel-a-service }
 
-<!-- TODO: translate body -->
+![webfirewall_public_kr_console-guide-self-piolink_04_241122.png](https://static.toastoven.net/prod_web_firewall/Piolink/public/kr/webfirewall_public_kr_console-guide-self-piolink_04_241122.png)
+
+1. インスタンス一覧でWebファイアウォールインスタンスを選択します。
+2. 「…」ボタンをクリックし、**[インスタンスの削除]**を選択してインスタンスを削除します。
+
+> [注意]
+> * WebサービスがWebファイアウォールを経由して提供されているときにインスタンスを削除すると、サービス障害が発生する可能性があります。
+> * Webファイアウォールインスタンスを削除する際は、関連サービスに注意して削除してください。
+
+<br>
 
 <a id="detailed-procedure-for-creating-a-web-firewall-instance"></a>
 ## WAFインスタンス作成の詳細手順 { #detailed-procedure-for-creating-a-web-firewall-instance }
