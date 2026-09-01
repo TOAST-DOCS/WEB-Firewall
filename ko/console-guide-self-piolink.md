@@ -59,7 +59,7 @@ WEB Firewall 서비스를 이용하려면 **NHN Cloud Console**에 로그인하�
 ### 2. 인스턴스 정보 { #instance-information }
 <img src="https://static.toastoven.net/prod_web_firewall/Piolink/public/kr/webfirewall_public_kr_console-guide-self-piolink_06_241122.png" width="1200" />
 
-1. 가용성 영역(Availablility Zone): 웹 방화벽 인스턴스가 위치할 가용성 영역을 설정합니다. 가용성 영역에 대한 자세한 설명은 [인스턴스 개요의 가용성 영역](https://docs.nhncloud.com/ko/Compute/Instance/ko/overview/#availability-zone)을 참고합니다.
+1. 가용성 영역(Availablility Zone): 웹 방화벽 인스턴스가 위치할 가용성 영역을 설정합니다. 가용성 영역에 대한 자세한 설명은 [인스턴스 개요의 가용성 영역](/Compute/Instance/ko/overview/#availability-zone)을 참고합니다.
 2. 인스턴스 이름: 웹 방화벽 인스턴스의 이름을 설정합니다.
 3. 인스턴스 타입: 가상 하드웨어의 성능을 설정합니다. 아래 [표1. 웹 방화벽(WEBFRONT-KS) 권장 인스턴스 타입]을 참고하여 인스턴스 타입을 설정합니다.
 4. 인스턴스 수: 생성할 인스턴스의 수를 설정합니다.
@@ -78,7 +78,7 @@ WEB Firewall 서비스를 이용하려면 **NHN Cloud Console**에 로그인하�
 ### 3. 루트 블록 스토리지 { #root-block-storage }
 <img src="https://static.toastoven.net/prod_web_firewall/Piolink/public/kr/webfirewall_public_kr_console-guide-self-piolink_07_241122.png" width="1100" />
 
-1. 블록 스토리지 타입: HDD, SSD, Encrypted HDD, Encrypted SSD를 선택할 수 있습니다. Encrypted HDD/SSD에 대한 정보는 [암호화 블록 스토리지](https://docs.nhncloud.com/ko/Storage/Block%20Storage/ko/console-guide/#_2)를 참고합니다.
+1. 블록 스토리지 타입: HDD, SSD, Encrypted HDD, Encrypted SSD를 선택할 수 있습니다. Encrypted HDD/SSD에 대한 정보는 [암호화 블록 스토리지](/Storage/Block%20Storage/ko/console-guide/#encrypted-block-storage)를 참고합니다.
 2. 블록 스토리지 크기(GB): 루트 블록 스토리지의 용량을 설정합니다.
 
 <a id="network-settings"></a>

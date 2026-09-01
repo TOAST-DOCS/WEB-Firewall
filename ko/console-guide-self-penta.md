@@ -65,7 +65,7 @@ webfirewall_public_kr_console-guide-self-penta_05_241113.png](https://static.toa
 <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/kr/webfirewall_public_kr_console-guide-self-penta_06_241113.png" width="1200" />
 
 
-1. 가용성 영역(Availablility Zone): 웹 방화벽 인스턴스가 위치할 가용성 영역을 설정합니다. 가용성 영역에 대한 자세한 설명은 [인스턴스 개요의 가용성 영역](https://docs.nhncloud.com/ko/Compute/Instance/ko/overview/#availability-zone)을 참고합니다.
+1. 가용성 영역(Availablility Zone): 웹 방화벽 인스턴스가 위치할 가용성 영역을 설정합니다. 가용성 영역에 대한 자세한 설명은 [인스턴스 개요의 가용성 영역](/Compute/Instance/ko/overview/#availability-zone)을 참고합니다.
 2. 인스턴스 이름: 웹 방화벽 인스턴스의 이름을 설정합니다.
 3. 인스턴스 타입: 가상 하드웨어의 성능을 설정합니다. 아래 웹 방화벽의 권장사양 표를 참고하여 인스턴스 타입을 설정합니다.
 4. 인스턴스 수: 생성할 인스턴스의 수를 설정합니다.
@@ -88,7 +88,7 @@ webfirewall_public_kr_console-guide-self-penta_05_241113.png](https://static.toa
 ### 3. 루트 블록 스토리지 { #root-block-storage }
 <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/kr/webfirewall_public_kr_console-guide-self-penta_07_241113.png" width="1100" />
 
-1. 블록 스토리지 타입: HDD, SSD, Encrypted HDD, Encrypted SSD를 선택할 수 있습니다. Encrypted HDD/SSD에 대한 정보는 [암호화 블록 스토리지](https://docs.nhncloud.com/ko/Storage/Block%20Storage/ko/console-guide/#_2)를 참고합니다.
+1. 블록 스토리지 타입: HDD, SSD, Encrypted HDD, Encrypted SSD를 선택할 수 있습니다. Encrypted HDD/SSD에 대한 정보는 [암호화 블록 스토리지](/Storage/Block%20Storage/ko/console-guide/#encrypted-block-storage)를 참고합니다.
 2. 블록 스토리지 크기(GB): 루트 블록 스토리지의 용량을 설정합니다. PENTA WAF의 최소 용량은 200GB입니다.
 
 <a id="network-settings"></a>

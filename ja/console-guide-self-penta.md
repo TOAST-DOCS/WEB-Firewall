@@ -65,7 +65,7 @@ WAFインスタンスを作成する際の詳細な手順をガイドします�
 <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_06_241119.png" width="1200" />
 
 
-1. アベイラビリティゾーン: WAFインスタンスを配置する可用性領域を設定します。可用性領域の詳細については[「インスタンス概要のインスタンスタイプ」](https://docs.nhncloud.com/ja/Compute/Instance/ja/overview/#availability-zone)を参照してください。
+1. アベイラビリティゾーン: WAFインスタンスを配置する可用性領域を設定します。可用性領域の詳細については[「インスタンス概要のインスタンスタイプ」](/Compute/Instance/ja/overview/#availability-zone)を参照してください。
 2. インスタンス名: WAFインスタンスの名前を設定します。
 3. インスタンスタイプ: 仮想ハードウェアの性能を設定します。以下の **[表1. WAF(WAPPLES SA)推奨インスタンスタイプ]** を参考にインスタンスタイプを設定します。
 4. インスタンス数: 作成するインスタンスの数を設定します。
@@ -89,7 +89,7 @@ WAFインスタンスを作成する際の詳細な手順をガイドします�
 ### 3. ルートブロックストレージ { #root-block-storage }
 <img src="https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_07_241119.png" width="1200" />
 
-1. ブロックストレージタイプ: HDD、SSD、Encrypted HDD、Encrypted SSDから選択できます。Encrypted HDD/SSDについては[「暗号化ブロックストレージ」](https://docs.nhncloud.com/ja/Storage/Block%20Storage/ja/console-guide/#_2)を参照してください。
+1. ブロックストレージタイプ: HDD、SSD、Encrypted HDD、Encrypted SSDから選択できます。Encrypted HDD/SSDについては[「暗号化ブロックストレージ」](/Storage/Block%20Storage/ja/console-guide/#encrypted-block-storage)を参照してください。
 2. ブロックストレージサイズ(GB): ルートブロックストレージの容量を設定します。PENTA WAFの最小容量は200GBです。
 
 <a id="network-settings"></a>
