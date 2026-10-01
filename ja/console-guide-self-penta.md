@@ -16,6 +16,9 @@ WEB Firewallサービスを利用するには、**NHN Cloud Console**にログ�
 <a id="use-and-cancel-a-service"></a>
 ## サービス利用および解約 { #use-and-cancel-a-service }
 
+<a id="create-web-firewall"></a>
+### Webファイアウォール作成 { #create-web-firewall }
+
 ![webfirewall_public_ja_console-guide-self-penta_02_241119.png](https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_02_241119.png)
 ![webfirewall_public_ja_console-guide-self-penta_03_241119.png](https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_03_241119.png)
 
@@ -28,8 +31,8 @@ WEB Firewallサービスを利用するには、**NHN Cloud Console**にログ�
 
 <br>
 
-<a id="create-web-firewall"></a>
-### Webファイアウォール作成 { #create-web-firewall }
+<a id="cancel-a-service"></a>
+### Webファイアウォール解除 { #cancel-a-service }
 
 ![webfirewall_public_ja_console-guide-self-penta_04_241119.png](https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_04_241119.png)
 
@@ -39,21 +42,6 @@ WEB Firewallサービスを利用するには、**NHN Cloud Console**にログ�
 > [注意]
 > * ウェブサービスがWAFを経由して提供されている場合、インスタンスを削除するとサービス障害が発生する可能性があります。
 > * WAFインスタンスを削除する際は、関連するサービスに注意して削除してください。
-
-<br>
-
-<a id="cancel-a-service"></a>
-### Webファイアウォール解除 { #cancel-a-service }
-
-![
-webfirewall_public_kr_console-guide-self-penta_04_241113.png](https://static.toastoven.net/prod_web_firewall/Penta/public/kr/webfirewall_public_kr_console-guide-self-penta_04_241113.png)
-
-1. インスタンス一覧でWebファイアウォールインスタンスを選択します。
-2.  「…」ボタンをクリックし、**[インスタンスの削除]**を選択してインスタンスを削除します。
-
-> [注意]
-> * WebサービスがWebファイアウォールを経由してサービスが提供されている状態でインスタンスを削除すると、サービス障害が発生する可能性があります。
-> * Webファイアウォールインスタンスを削除する際は、関連サービスに注意して削除してください。
 
 <br>
 

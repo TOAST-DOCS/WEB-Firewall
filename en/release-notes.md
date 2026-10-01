@@ -30,10 +30,6 @@
 #### Bug Fixes
 * [Console] Improved to remove a WAF instance from the [Application Status - Security Monitoring Service Usage Status] when it is arbitrarily deleted without being removed from the monitoring targets.
 
-* [Console] Changed the columm item [Monitoring Status - Security Monitoring Response Status]
-	* in_out > Host
-	* URI > URL
-
 
 <a id="april-23-2024"></a>
 ### April 23, 2024 { #april-23-2024 }
