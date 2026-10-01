@@ -1,44 +1,7 @@
 ## Security > Web Firewall > 릴리스 노트
 
-### 2026. 08. 25.
-#### 제품 버전 변경
-* 펜타시큐리티(WAPPLES SA) 7 버전 WAF 제공
+{% include-markdown './release-notes-gov/2026.md' %}
 
-### 2024. 12. 24.
-#### 기능 변경
-* [Alert] Managed 서비스 신청, 관제 대상 신청, 해지 등의 각 상황 별 알림 메일 내용 개선 및 변경
+{% include-markdown './release-notes-gov/2024.md' %}
 
-### 2024. 08. 27.
-
-#### 제품 추가
-* 펜타시큐리티(WAPPLES SA) 제품 추가
-
-#### 기능 추가
-* [Console] Managed 이용 신청 시 제품을 선택할 수 있도록 기능 추가
-
-#### 기능 변경
-* [Console] 관제 현황 - 보안관제 대응 현황 표시 항목 변경
-	* 통신 방향 > Host
-	* URI > URL
-
-#### 버그 수정
-* [Console] 관제 대상 해제 없이 임의로 WAF 인스턴스를 삭제할 경우 "신청 현황 - 보안관제 서비스 이용 현황"에도 삭제하도록 개선
-
-### 2019. 10. 01.
-
-#### 기능 개선
-* [API] 메일 발송 처리 변경
-* [Console] SelectBox 초기화 기능 추가 등 UI 개선
-
-
-### 2019. 06. 21.
-
-#### 기능 개선
-* [Console] 이용자 동의문 주요 문구 강조
-
-
-### 2019. 06. 18.
-
-#### 신규 상품 출시
-
-* WEB Firewall 서비스 출시
+{% include-markdown './release-notes-gov/2019.md' %}
