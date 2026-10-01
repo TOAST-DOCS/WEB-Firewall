@@ -22,14 +22,13 @@
 <a id="august-27-2024-feature-updates"></a>
 #### 機能変更
 
-<!-- TODO: translate body -->
+* [Console] 管制状況 - セキュリティー監視対応状況の表示項目の変更
+	* 通信方向 > Host
+	* URI > URL
 
 <a id="august-27-2024-bug-fixes"></a>
 #### バグ修正
 * [Console]管制対象の解除なしに任意にWAFインスタンスを削除する場合、「申請状況-セキュリティ管制サービス利用状況」にも削除するよう改善
-* [Console]管制現況 - セキュリティ管制対応現況表示項目変更
-	* 通信方向 > Host
-	* URI > URL
 
 
 <a id="april-23-2024"></a>

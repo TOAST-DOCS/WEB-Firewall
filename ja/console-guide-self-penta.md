@@ -16,6 +16,9 @@ WEB Firewallサービスを利用するには、**NHN Cloud Console**にログ�
 <a id="use-and-cancel-a-service"></a>
 ## サービス利用および解約 { #use-and-cancel-a-service }
 
+<a id="create-web-firewall"></a>
+### Webファイアウォール作成 { #create-web-firewall }
+
 ![webfirewall_public_ja_console-guide-self-penta_02_241119.png](https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_02_241119.png)
 ![webfirewall_public_ja_console-guide-self-penta_03_241119.png](https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_03_241119.png)
 
@@ -28,8 +31,8 @@ WEB Firewallサービスを利用するには、**NHN Cloud Console**にログ�
 
 <br>
 
-<a id="create-web-firewall"></a>
-### Webファイアウォール作成 { #create-web-firewall }
+<a id="cancel-a-service"></a>
+### Webファイアウォール解除 { #cancel-a-service }
 
 ![webfirewall_public_ja_console-guide-self-penta_04_241119.png](https://static.toastoven.net/prod_web_firewall/Penta/public/ja/webfirewall_public_ja_console-guide-self-penta_04_241119.png)
 
@@ -41,11 +44,6 @@ WEB Firewallサービスを利用するには、**NHN Cloud Console**にログ�
 > * WAFインスタンスを削除する際は、関連するサービスに注意して削除してください。
 
 <br>
-
-<a id="cancel-a-service"></a>
-### Webファイアウォール解除 { #cancel-a-service }
-
-<!-- TODO: translate body -->
 
 <a id="detailed-procedure-for-creating-a-web-firewall-instance"></a>
 ## WAFインスタンス作成の詳細手順 { #detailed-procedure-for-creating-a-web-firewall-instance }

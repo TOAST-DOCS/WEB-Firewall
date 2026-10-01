@@ -22,15 +22,13 @@
 <a id="august-27-2024-feature-updates"></a>
 #### Feature Updates
 
-<!-- TODO: translate body -->
+* [Console] Changed display items in Monitoring Status - Security Monitoring Response Status.
+	* Communication direction > Host
+	* URI > URL
 
 <a id="august-27-2024-bug-fixes"></a>
 #### Bug Fixes
 * [Console] Improved to remove a WAF instance from the [Application Status - Security Monitoring Service Usage Status] when it is arbitrarily deleted without being removed from the monitoring targets.
-
-* [Console] Changed the columm item [Monitoring Status - Security Monitoring Response Status]
-	* in_out > Host
-	* URI > URL
 
 
 <a id="april-23-2024"></a>
